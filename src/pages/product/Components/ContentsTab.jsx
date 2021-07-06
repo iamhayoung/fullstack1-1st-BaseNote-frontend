@@ -9,18 +9,12 @@ class ContentsTab extends Component {
     return (
       <ul className="contentsTab">
         <li className={area === 'detail' ? 'tabItem active' : 'tabItem'}>
-          <Link
-            className="tabLink"
-            to={{ pathname: pathname, hash: `#${area}` }}
-          >
+          <Link className="tabLink" to={{ pathname, hash: `#${area}` }}>
             상세정보
           </Link>
         </li>
         <li className={area === 'review' ? 'tabItem active' : 'tabItem'}>
-          <Link
-            className="tabLink"
-            to={{ pathname: pathname, hash: `#${area}` }}
-          >
+          <Link className="tabLink" to={{ pathname, hash: `#${area}` }}>
             리뷰
           </Link>
         </li>
