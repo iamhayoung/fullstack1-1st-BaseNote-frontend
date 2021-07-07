@@ -5,16 +5,27 @@
 }
 
 .NavWrapper {
-    @include flex(space-between, center);
-    background-color: lightblue;
-    height: 70px;
-    a {
-        margin-left: 60px;
+    @include flex(space-around, center);
+    background-color: white;
+    height: 110px;
+    .navCategory {
+        margin-top: 40px;
+    }
+    .navCategory ul Link {
+        margin-left: 50px;
         font-family: 'Noto Sans KR', 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: bold;
     }
     .NavTitle {
         font-size: 40px;
-        margin-left: -70px;
+        font-weight: bold;
+        margin-right: 440px;
+        margin-top: 25px;
+    }
+    .LoginIcon {
+        height: 70px;
+        width: 30px;
+        margin-top: 40px;
+        margin-right: 150px;
     }
 }
