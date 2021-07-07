@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { withRouter, Link } from 'react-router-dom';
-import './Styles/ContentsTab.scss';
+import './ContentsTab.scss';
 
 class ContentsTab extends Component {
   render() {
