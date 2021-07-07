@@ -3,7 +3,11 @@ import './ProductDetailInfo.scss';
 
 class ProductDetailInfo extends Component {
   render() {
-    return <p>ProductDetailInfo 영역</p>;
+    return (
+      <section className="detailInfoArea">
+        <p>ProductDetailInfo 영역</p>
+      </section>
+    );
   }
 }
 export default ProductDetailInfo;
