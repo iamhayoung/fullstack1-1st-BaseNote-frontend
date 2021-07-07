@@ -1,0 +1,49 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "img": "https://images.unsplash.com/photo-1552089123-2d26226fc2b7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "series": "path",
+      "title": "01. 여름의 오렌지길",
+      "mood": "#초여름, #투명한, #푸르른",
+      "volume": "40ml",
+      "price": "48,000"
+    },
+    {
+      "id": "2",
+      "img": "https://images.unsplash.com/photo-1489419714522-eb568919d2ed?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "series": "path",
+      "title": "02. 달빛 가득 돌담길",
+      "mood": "#나무껍질, #차분한, #지적인",
+      "volume": "40ml",
+      "price": "48,000"
+    },
+    {
+      "id": "3",
+      "img": "https://images.unsplash.com/photo-1559586829-8d5fc7dd4644?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1618&q=80",
+      "series": "path",
+      "title": "03. 밤바다 드라이브",
+      "mood": "#열정적인, #시원한, #물",
+      "volume": "40ml",
+      "price": "48,000"
+    },
+    {
+      "id": "4",
+      "img": "https://images.unsplash.com/photo-1526505262320-81542978f63b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+      "series": "path",
+      "title": "04. 놀이동산 데이트",
+      "mood": "#순수한, #풀꽃, #데일리",
+      "volume": "40ml",
+      "price": "48,000"
+    },
+    {
+      "id": "5",
+      "img": "https://images.unsplash.com/photo-1605204631224-6107b31a5efa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=830&q=80",
+      "series": "path",
+      "title": "05. 우아한 코트",
+      "mood": "#우아한, #자스민, #달콤한",
+      "volume": "40ml",
+      "price": "48,000"
+    }
+  ]
+}

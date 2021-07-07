@@ -1,10 +1,10 @@
 import { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Category from './pages/category/Category';
-import Main from './pages/main/Main';
-import Member from './pages/member/Member';
-import Order from './pages/order/Order';
-import Product from './pages/product/Product';
+import Category from './pages/Category/Category';
+import Main from './pages/Main/Main';
+import Member from './pages/Member/Member';
+import Order from './pages/Order/Order';
+import Product from './pages/Product/Product';
 
 class Routes extends Component {
   render() {
