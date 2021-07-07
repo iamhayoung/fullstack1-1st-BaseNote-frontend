@@ -1,9 +1,14 @@
 import { Component } from 'react';
 import './Main.scss';
+import TopNav from '../../components/TopNav/TopNav';
 
 class Main extends Component {
   render() {
-    return <p> 메인 페이지</p>;
+    return (
+      <>
+        <TopNav />
+      </>
+    );
   }
 }
 export default Main;

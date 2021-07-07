@@ -1,0 +1,20 @@
+@mixin flex($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.NavWrapper {
+    @include flex(space-between, center);
+    background-color: lightblue;
+    height: 70px;
+    a {
+        margin-left: 60px;
+        font-family: 'Noto Sans KR', 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+    }
+    .NavTitle {
+        font-size: 40px;
+        margin-left: -70px;
+    }
+}
