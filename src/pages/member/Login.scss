@@ -1,0 +1,30 @@
+@import '../../../src/styles/mixins';
+
+.container {
+    .title {
+        color: rgb(0, 0, 0);
+        font-size: 26px;
+        font-weight: bold;
+        line-height: 1em;
+        text-align: center;
+        margin-bottom: 36px;
+    }
+
+    .loginBt {
+        user-select: none;
+        margin-top: 8px;
+        display: flex;
+        background-color: rgb(0, 0, 0);
+        height: 48px;
+        cursor: pointer;
+    }
+
+    a {
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 1em;
+        letter-spacing: normal;
+        color: rgb(150, 150, 150);
+        text-decoration: none;
+    }
+}

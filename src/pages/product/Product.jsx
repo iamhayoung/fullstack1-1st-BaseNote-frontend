@@ -3,7 +3,7 @@ import './Product.scss';
 
 class Product extends Component {
   render() {
-    return <p> 프로덕트 페이지</p>;
+    return <p></p>;
   }
 }
 export default Product;
