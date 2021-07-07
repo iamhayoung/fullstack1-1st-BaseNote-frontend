@@ -8,17 +8,17 @@
     text-align: center;
     text-transform: uppercase;
   }
-}
 
-.intro {
-  margin: 170px 0 110px;
-
-  .introText {
+  .sentence {
     color: #6e6e6e;
     font-size: 22px;
     text-align: center;
     line-height: 1.7;
   }
+}
+
+.intro {
+  margin: 170px 0 110px;
 }
 
 .noteInfo {
@@ -27,26 +27,8 @@
   margin-bottom: 200px;
 
   .noteDesc {
-    margin-bottom: 50px;
-    text-align: center;
     font-size: 30px;
     font-weight: 500;
-  }
-
-  .noteHashtags {
-    display: flex;
-    margin-bottom: 95px;
-    padding: 15px 20px;
-    border: 1px solid #c4c4c4;
-    border-radius: 30px;
-
-    .tag {
-      margin-right: 10px;
-      font-size: 25px;
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
+    text-align: center;
   }
 }

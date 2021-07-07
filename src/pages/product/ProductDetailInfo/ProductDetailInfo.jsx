@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ContentsTab from '../Components/ContentsTab';
+import Hashtags from './Hashtags';
 import NoteTable from './NoteTable';
 import './ProductDetailInfo.scss';
 
@@ -9,7 +10,7 @@ class ProductDetailInfo extends Component {
       <section className="detailInfoArea">
         <ContentsTab area="detail" />
         <div className="intro">
-          <p className="introText">
+          <p className="sentence">
             향기에는 가장 섬세하고 다양한 취향이 담겨있습니다.
             <br />
             그렇지만 어디 내가 좋아하는 향수 찾기가 쉬웠나요.
@@ -24,11 +25,7 @@ class ProductDetailInfo extends Component {
           <p className="noteDesc">
             농도 짙은 자스민과 녹진한 바닐라, 짙게 깔린 우드 노트의 찐득한 만남
           </p>
-          <div className="noteHashtags">
-            <p class="tag">#달달한</p>
-            <p class="tag">#바닐라</p>
-            <p class="tag">#어른이</p>
-          </div>
+          <Hashtags tag="달달한" />
           <NoteTable />
         </div>
       </section>
