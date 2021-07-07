@@ -1,0 +1,52 @@
+@import '../../../styles/mixins';
+
+.detailArea {
+  .title {
+    margin-bottom: 50px;
+    font-size: 35px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.intro {
+  margin: 170px 0 110px;
+
+  .introText {
+    color: #6e6e6e;
+    font-size: 22px;
+    text-align: center;
+    line-height: 1.7;
+  }
+}
+
+.noteInfo {
+  @include flex(center, center);
+  flex-direction: column;
+  margin-bottom: 200px;
+
+  .noteDesc {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .noteHashtags {
+    display: flex;
+    margin-bottom: 95px;
+    padding: 15px 20px;
+    border: 1px solid #c4c4c4;
+    border-radius: 30px;
+
+    .tag {
+      margin-right: 10px;
+      font-size: 25px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
