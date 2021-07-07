@@ -6,7 +6,7 @@ class Hashtags extends Component {
     const { tag } = this.props;
     return (
       <div className="hashtags">
-        <p class="tag">{`#${tag}`}</p>
+        <p className="tag">{`#${tag}`}</p>
       </div>
     );
   }
