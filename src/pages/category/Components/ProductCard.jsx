@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './Styles/productCard.scss';
+import './Styles/ProductCard.scss';
 
-class productCard extends Component {
+class ProductCard extends Component {
   render() {
     return (
       <div className="">
@@ -16,4 +16,4 @@ class productCard extends Component {
   }
 }
 
-export default productCard;
+export default ProductCard;
