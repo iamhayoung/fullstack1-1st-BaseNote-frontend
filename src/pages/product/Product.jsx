@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import Container from '../../components/Container/Container';
 import ProductDetailHead from './ProductDetailHead/ProductDetailHead';
 import ProductDetailInfo from './ProductDetailInfo/ProductDetailInfo';
