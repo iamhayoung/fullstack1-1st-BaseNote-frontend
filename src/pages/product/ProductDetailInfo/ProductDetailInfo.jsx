@@ -6,7 +6,7 @@ import './ProductDetailInfo.scss';
 class ProductDetailInfo extends Component {
   render() {
     return (
-      <section className="detailArea">
+      <section className="detailInfoArea">
         <ContentsTab area="detail" />
         <div className="intro">
           <p className="introText">
