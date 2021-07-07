@@ -28,6 +28,29 @@ class ProductDetailInfo extends Component {
           <Hashtags tag="달달한" />
           <NoteTable />
         </div>
+        <div className="keyword">
+          <h3 className="title">keyword</h3>
+          <p className="sentence">
+            향 전문가와 사용자들의 느낌을 키워드로 표현하였습니다.
+            <br />
+            사용자와 주변 사람들이 어떻게 느낄지 유추할 수 있습니다.
+          </p>
+          <Hashtags tag="melt01" />
+          <div className="bubbles">
+            <div className="circle xlarge">달달한</div>
+            <div className="circle xlarge">어른스러운</div>
+            <div className="circle xlarge">바닐라</div>
+            <div className="circle large">따뜻한</div>
+            <div className="circle large">무거운</div>
+            <div className="circle large">디저트</div>
+            <div className="circle medium">복합적인</div>
+            <div className="circle medium">부드러운</div>
+            <div className="circle medium">과일</div>
+            <div className="circle small">차분한</div>
+            <div className="circle small">지적인</div>
+            <div className="circle small">인센스</div>
+          </div>
+        </div>
       </section>
     );
   }
