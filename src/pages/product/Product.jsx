@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import ContentsTab from './Components/ContentsTab';
 import './Product.scss';
 
