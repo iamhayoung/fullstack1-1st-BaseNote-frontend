@@ -1,0 +1,10 @@
+.productContainer {
+  display: table;
+  width: 100%;
+}
+a {
+  background-color: blue;
+  display: table-cell;
+  vertical-align: middle;
+  border: 5px solid, black;
+}

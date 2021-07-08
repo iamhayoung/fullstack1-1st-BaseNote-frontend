@@ -4,7 +4,6 @@ import './ProductCard.scss';
 class ProductCard extends Component {
   render() {
     const { img, series, title, mood, volume, price } = this.props;
-    console.log(this.props);
     return (
       <>
         <a href="/product" classname="clickBox">
