@@ -3,26 +3,40 @@ import './NoteTable.scss';
 
 class NoteTable extends Component {
   render() {
+    const { topNote, middleNote, baseNote } = this.props;
     return (
       <>
         <div className="noteTable">
-          <div className="noteColumn">
-            <div className="cell head">top</div>
-            <div className="cell">Cardamom</div>
-            <div className="cell">Petitgrain</div>
-            <div className="cell">Blood orange</div>
-          </div>
-          <div className="noteColumn">
-            <div className="cell head">middle</div>
-            <div className="cell">Snow</div>
-            <div className="cell">Orange blossom</div>
-          </div>
-          <div className="noteColumn">
-            <div className="cell head">base</div>
-            <div className="cell">Moss</div>
-            <div className="cell">Tonka bean</div>
-            <div className="cell">Amber</div>
-          </div>
+          {topNote && (
+            <div className="noteColumn">
+              <div className="cell head">top</div>
+              {topNote.map(note => (
+                <div key={note} className="cell">
+                  {note}
+                </div>
+              ))}
+            </div>
+          )}
+          {middleNote && (
+            <div className="noteColumn">
+              <div className="cell head">middle</div>
+              {middleNote.map(note => (
+                <div key={note} className="cell">
+                  {note}
+                </div>
+              ))}
+            </div>
+          )}
+          {baseNote && (
+            <div className="noteColumn">
+              <div className="cell head">base</div>
+              {baseNote.map(note => (
+                <div key={note} className="cell">
+                  {note}
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </>
     );
