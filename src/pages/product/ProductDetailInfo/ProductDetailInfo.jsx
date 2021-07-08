@@ -2,14 +2,16 @@ import React, { Component } from 'react';
 import ContentsTab from '../Components/ContentsTab';
 import Hashtags from './Hashtags';
 import NoteTable from './NoteTable';
+import { ReactComponent as Logo } from '../../../assets/logo-BASENOTE_slogan.svg';
 import './ProductDetailInfo.scss';
 
 class ProductDetailInfo extends Component {
   render() {
     return (
-      <section className="detailInfoArea">
+      <section className="ProductDetailInfo" id="detail">
         <ContentsTab area="detail" />
         <div className="intro">
+          <Logo />
           <p className="sentence">
             향기에는 가장 섬세하고 다양한 취향이 담겨있습니다.
             <br />
