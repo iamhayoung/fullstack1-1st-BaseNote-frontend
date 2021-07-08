@@ -1,20 +1,41 @@
 .loginForm {
     .loginName .loginPwName {
-        font-size: 14px;
-        font-weight: 500;
         line-height: 1em;
         color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: 500;
     }
 
-    input {
+    .loginId {
         display: block;
         width: 100%;
-        font-weight: 400;
-        letter-spacing: -0.15px;
+        height: 48px;
+        padding: 0px 16px;
         border: 1px solid rgb(221, 224, 226);
         background-color: rgb(255, 255, 255);
-        height: 48px;
         box-sizing: border-box;
+        font-weight: 400;
+        letter-spacing: -0.15px;
+    }
+
+    .loginPw {
+        display: block;
+        width: 100%;
+        height: 48px;
         padding: 0px 16px;
+        border: 1px solid rgb(221, 224, 226);
+        background-color: rgb(255, 255, 255);
+        box-sizing: border-box;
+        font-weight: 400;
+        letter-spacing: -0.15px;
+    }
+
+    .loginBt {
+        display: flex;
+        height: 48px;
+        margin-top: 8px;
+        background-color: rgb(0, 0, 0);
+        cursor: pointer;
+        user-select: none;
     }
 }

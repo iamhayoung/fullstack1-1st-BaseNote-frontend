@@ -4,9 +4,9 @@ import './LoginForm.scss';
 class LoginForm extends Component {
   render() {
     return (
-      <form className="loginForm">
+      <form className="LoginForm">
         <div className="idWrap">
-          <div className="loginIdName">아이디</div>
+          <label className="loginIdName">아이디</label>
           <input
             className="loginId"
             type="text"
@@ -14,12 +14,15 @@ class LoginForm extends Component {
           />
         </div>
         <div className="pwWrap">
-          <div className="loginPwName">비밀번호</div>
+          <label className="loginPwName">비밀번호</label>
           <input
             className="loginPw"
             type="password"
             placeholder="비밀번호를 입력해주세요"
           />
+          <button className="loginBtn" type="button">
+            로그인
+          </button>
         </div>
       </form>
     );
