@@ -1,6 +1,6 @@
 {
-<<<<<<< HEAD
-    "endOfLine": "lf",
+    "tabWidth": 2,
+    "endOfLine": "auto",
     "arrowParens": "avoid",
     "singleQuote": true,
     "overrides": [{
@@ -10,18 +10,3 @@
         }
     }]
 }
-=======
-  "tabWidth": 2,
-  "endOfLine": "auto",
-  "arrowParens": "avoid",
-  "singleQuote": true,
-  "overrides": [
-    {
-      "files": "*.scss",
-      "options": {
-        "tabWidth": 4
-      }
-    }
-  ]
-}
->>>>>>> 04b5016f00ee2dee313e4905930acf21e9fe11b7

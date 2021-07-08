@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import './TopNav.scss';
-// import './_minxins.scss';
 import { BsPerson } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+import { ReactComponent as MainLogo } from '../../assets/logo-BASENOTE_icon.svg';
+// import member from '../../pages/member/Member';
 
 class TopNav extends Component {
   render() {
     return (
-      <div className="NavWrapper">
+      <div className="TopNav">
         <ul className="navCategory">
           <a
             href="https://paffem.me/perfume_teller.html"
@@ -26,7 +27,7 @@ class TopNav extends Component {
           </Link>
         </ul>
         <Link to="메인컴포넌트" className="NavTitle">
-          PAFFEM
+          <MainLogo />
         </Link>
         <div className="NavIcons">
           <Link to="/member">

@@ -1,11 +1,5 @@
-// @import './_minxins.scss';
-@mixin flex($justify, $align) {
-    display: flex;
-    justify-content: $justify;
-    align-items: $align;
-}
-
-.NavWrapper {
+@import '../../styles/mixins';
+.TopNav {
     @include flex(space-around, center);
     height: 110px;
     background-color: white;
@@ -17,15 +11,14 @@
         font-family: 'Noto Sans KR', 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: bold;
     }
-    .NavTitle {
+    .logo-icon {
         margin-right: 380px;
         margin-top: 25px;
-        // vertical-align: baseline;
-        font-size: 40px;
-        font-weight: bold;
+        width: 300px;
+        fill: black;
     }
     .LoginIcon {
-        margin-top: 40px;
+        margin-top: 30px;
         margin-right: 150px;
         height: 70px;
         width: 30px;
