@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Container from '../../components/Container/Container';
 import ProductCard from './Components/ProductCard/ProductCard';
 import './Category.scss';
 
@@ -19,21 +20,13 @@ class Category extends Component {
 
   render() {
     return (
-      <div clsaaName="productContainer">
-        {this.state.product.map(product => {
-          return (
-            <ProductCard
-              key={product.id}
-              img={product.img}
-              series={product.series}
-              title={product.title}
-              mood={product.mood}
-              volume={product.volume}
-              price={product.price}
-            />
-          );
-        })}
-      </div>
+      <section className="category">
+        <Container>
+          {this.state.product.map(product => {
+            return <ProductCard key={product.id} {...product} />;
+          })}
+        </Container>
+      </section>
     );
   }
 }
