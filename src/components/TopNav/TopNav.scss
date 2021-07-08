@@ -1,3 +1,4 @@
+// @import './_minxins.scss';
 @mixin flex($justify, $align) {
     display: flex;
     justify-content: $justify;
@@ -6,26 +7,27 @@
 
 .NavWrapper {
     @include flex(space-around, center);
-    background-color: white;
     height: 110px;
+    background-color: white;
     .navCategory {
         margin-top: 40px;
     }
-    .navCategory ul Link {
-        margin-left: 50px;
+    .navCategoryLink {
+        margin-left: 65px;
         font-family: 'Noto Sans KR', 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: bold;
     }
     .NavTitle {
+        margin-right: 380px;
+        margin-top: 25px;
+        // vertical-align: baseline;
         font-size: 40px;
         font-weight: bold;
-        margin-right: 440px;
-        margin-top: 25px;
     }
     .LoginIcon {
-        height: 70px;
-        width: 30px;
         margin-top: 40px;
         margin-right: 150px;
+        height: 70px;
+        width: 30px;
     }
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './TopNav.scss';
+// import './_minxins.scss';
 import { BsPerson } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
@@ -8,16 +9,29 @@ class TopNav extends Component {
     return (
       <div className="NavWrapper">
         <ul className="navCategory">
-          <Link to="https://paffem.me/perfume_teller.html">Perfume Teller</Link>
-          <Link to="/"> SHOP </Link>
-          <Link to="https://paffem.me/about.html"> ABOUT </Link>
-          <Link to="https://paffem.me/event.html"> EVENT </Link>
+          <a
+            href="https://paffem.me/perfume_teller.html"
+            className="navCategoryLink"
+          >
+            Perfume Teller
+          </a>
+          <Link to="/" className="navCategoryLink">
+            SHOP
+          </Link>
+          <Link to="/" className="navCategoryLink">
+            ABOUT
+          </Link>
+          <Link to="/" className="navCategoryLink">
+            EVENT
+          </Link>
         </ul>
         <Link to="메인컴포넌트" className="NavTitle">
           PAFFEM
         </Link>
         <div className="NavIcons">
-          <BsPerson className="LoginIcon" />
+          <Link to="/member">
+            <BsPerson className="LoginIcon" />
+          </Link>
         </div>
       </div>
     );
