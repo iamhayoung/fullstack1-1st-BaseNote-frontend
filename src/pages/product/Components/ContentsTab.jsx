@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
 import './ContentsTab.scss';
 
 class ContentsTab extends Component {
@@ -33,4 +32,4 @@ class ContentsTab extends Component {
     );
   }
 }
-export default withRouter(ContentsTab);
+export default ContentsTab;
