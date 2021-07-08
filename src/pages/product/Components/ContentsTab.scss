@@ -11,6 +11,7 @@
         height: 48px;
         color: #575757;
         border-bottom: 1px solid $grey-30;
+        cursor: pointer;
 
         &.active {
             color: $black;
