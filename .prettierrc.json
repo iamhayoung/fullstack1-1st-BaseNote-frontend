@@ -1,6 +1,14 @@
 {
   "tabWidth": 2,
-  "endOfLine": "lf",
+  "endOfLine": "auto",
   "arrowParens": "avoid",
-  "singleQuote": true
+  "singleQuote": true,
+  "overrides": [
+    {
+      "files": "*.scss",
+      "options": {
+        "tabWidth": 4
+      }
+    }
+  ]
 }
