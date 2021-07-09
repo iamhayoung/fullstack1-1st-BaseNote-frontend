@@ -4,6 +4,7 @@ import './Hashtags.scss';
 class Hashtags extends Component {
   render() {
     const { first_mood, series, seriesNumber, name } = this.props;
+
     return (
       <div className="hashtags">
         {first_mood &&
