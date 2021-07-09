@@ -1,7 +1,6 @@
 @import '../../styles/mixins';
 .TopNav {
     @include flex(space-around, center);
-    height: 110px;
     background-color: white;
     .navCategory {
         margin-top: 40px;
@@ -11,6 +10,8 @@
         margin-left: 50px;
         font-family: 'Noto Sans KR', 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: bold;
+        padding-bottom: 50px;
+        height: 101px;
     }
     .logo-icon {
         margin-right: 380px;
@@ -24,21 +25,29 @@
         height: 70px;
         width: 30px;
     }
-}
-
-.hiddenButton:hover .hideMenu,
-.hideMenu:hover {
-    display: block;
-    position: absolute;
-    top: 110px;
-    left: 0px;
-    width: 100vw;
-    z-index: 100;
-}
-
-.hideMenu {
-    display: none;
-    float: left;
-    background-color: #f6fafaf5;
-    height: 32vh;
+    .hideButton {
+        .hiddenMenu {
+            position: absolute;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            z-index: 100;
+            top: 110px;
+            left: 0px;
+            width: 1800px;
+            height: 330px;
+            background-color: rgba(237, 237, 241, 0.781);
+            font-weight: normal;
+            font-family: 'Noto Sans KR', 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .active {
+            display: none;
+            height: 110px;
+        }
+        .hiddenMenuTitle {
+            margin-left: 330px;
+            margin-top: 45px;
+            font-size: 15px;
+        }
+    }
 }

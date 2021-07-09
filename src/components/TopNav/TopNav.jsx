@@ -5,6 +5,23 @@ import { Link } from 'react-router-dom';
 import { ReactComponent as MainLogo } from '../../assets/logo-BASENOTE_icon.svg';
 
 class TopNav extends Component {
+  constructor() {
+    super();
+    this.state = {
+      hiddenMenu: true,
+    };
+  }
+
+  mouseEnter = () => {
+    this.setState({
+      hiddenMenu: false,
+    });
+  };
+  mouseLeave = () => {
+    this.setState({
+      hiddenMenu: true,
+    });
+  };
   render() {
     return (
       <div className="TopNavWrapper">
@@ -16,19 +33,29 @@ class TopNav extends Component {
             >
               Perfume Teller
             </a>
-            <Link to="/" className="navCategoryLink hiddenButton">
+            <Link
+              to="/"
+              className="navCategoryLink hideButton"
+              onMouseOver={this.mouseEnter}
+              onMouseLeave={this.mouseLeave}
+            >
               SHOP
-              <ul className="hideMenu">
-                <Link to="/" className="hiddenMenuTitle">
+              <ul
+                className={
+                  this.state.hiddenMenu ? 'hiddenMenu active' : 'hiddenMenu'
+                }
+                onMouseLeave={this.mouseLeave}
+              >
+                <Link to="/category" className="hiddenMenuTitle">
                   2.5ml / 데일리키트
                 </Link>
-                <Link to="/" className="hiddenMenuTitle">
+                <Link to="/category" className="hiddenMenuTitle">
                   40ml
                 </Link>
-                <Link to="/" className="hiddenMenuTitle">
+                <Link to="/category" className="hiddenMenuTitle">
                   SET
                 </Link>
-                <Link to="/" className="hiddenMenuTitle">
+                <Link to="/category" className="hiddenMenuTitle">
                   GOODS
                 </Link>
               </ul>
