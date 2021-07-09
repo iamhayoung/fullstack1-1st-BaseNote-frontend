@@ -3,8 +3,6 @@
 
 .noteTable {
     @include flex(center, flex-start);
-    max-width: 815px;
-    width: 100%;
     border-top: 1px solid $grey-90;
     border-bottom: 1px solid $grey-90;
 }
@@ -12,7 +10,7 @@
 .noteColumn {
     display: flex;
     flex-direction: column;
-    width: calc(100% / 3);
+    width: 270px;
 
     .cell {
         width: 100%;
