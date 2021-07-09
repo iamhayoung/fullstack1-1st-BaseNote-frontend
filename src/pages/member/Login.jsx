@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import './Login.scss';
 import LoginForm from './Componenets/LoginForm';
 
@@ -12,16 +11,9 @@ class Login extends Component {
           <div>
             <LoginForm />
           </div>
-          <Link to="#" className="findAccountBtn">
-            계정을 잊으셨나요?
-          </Link>
-          /
-          <Link to="#" className="findPasswordBtn">
-            비밀번호를 잊으셨나요?
-          </Link>
-          <Link to="#" className="signUpBtn">
-            회원 가입하기
-          </Link>
+          <button className="otherButton">
+            BASENOTE 여러분 사랑하고 고맙습니다
+          </button>
         </div>
       </div>
     );
