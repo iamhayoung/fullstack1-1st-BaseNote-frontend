@@ -15,11 +15,7 @@ class ProductDetailInfo extends Component {
   }
 
   getProductData = async () => {
-    const {
-      match: {
-        params: { id },
-      },
-    } = this.props;
+    const { id } = this.props.match.params;
 
     try {
       const response = await fetch('http://localhost:3000/data/mockData.json');
