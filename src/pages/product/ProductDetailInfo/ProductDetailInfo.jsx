@@ -39,13 +39,14 @@ class ProductDetailInfo extends Component {
 
   render() {
     const { productData } = this.state;
+    const { keywords } = productData;
 
     return (
       <section className="ProductDetailInfo" id="detail">
         <ContentsTab area="detail" />
         <ProductIntro {...productData} />
         <NoteInfo {...productData} />
-        {productData.keywords && <Keyword {...productData} />}
+        {keywords && <Keyword {...productData} />}
       </section>
     );
   }
