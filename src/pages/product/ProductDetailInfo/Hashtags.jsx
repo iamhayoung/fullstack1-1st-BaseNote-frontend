@@ -7,10 +7,9 @@ class Hashtags extends Component {
 
     return (
       <div className="hashtags">
-        {first_mood &&
-          first_mood.map(mood => (
-            <p key={mood} className="tag">{`#${mood}`}</p>
-          ))}
+        {first_mood?.map(mood => (
+          <p key={mood} className="tag">{`#${mood}`}</p>
+        ))}
         {series && seriesNumber && (
           <p className="tag">{`#${series}${seriesNumber}`}</p>
         )}
