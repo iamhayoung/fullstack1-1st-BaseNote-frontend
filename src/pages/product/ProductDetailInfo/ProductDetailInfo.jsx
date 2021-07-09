@@ -45,7 +45,7 @@ class ProductDetailInfo extends Component {
         <ContentsTab area="detail" />
         <ProductIntro {...productData} />
         <NoteInfo {...productData} />
-        <Keyword {...productData} />
+        {productData.keywords && <Keyword {...productData} />}
       </section>
     );
   }
