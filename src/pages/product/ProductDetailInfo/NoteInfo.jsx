@@ -7,6 +7,7 @@ class NoteInfo extends Component {
   render() {
     const { description, keywords, top_note, middle_note, base_note } =
       this.props;
+
     return (
       <div className="noteInfo">
         <h3 className="title">note</h3>

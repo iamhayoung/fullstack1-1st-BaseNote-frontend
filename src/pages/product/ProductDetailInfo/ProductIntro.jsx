@@ -6,6 +6,7 @@ import './ProductIntro.scss';
 class ProductIntro extends Component {
   render() {
     const { name, series, series_number } = this.props;
+
     return (
       <div className="productIntro">
         <Logo />

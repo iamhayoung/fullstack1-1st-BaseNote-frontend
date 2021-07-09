@@ -43,6 +43,7 @@ class ProductDetailInfo extends Component {
 
   render() {
     const { productData } = this.state;
+
     return (
       <section className="ProductDetailInfo" id="detail">
         <ContentsTab area="detail" />

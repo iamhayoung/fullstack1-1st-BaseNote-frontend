@@ -5,6 +5,7 @@ import './Keyword.scss';
 class Keyword extends Component {
   render() {
     const { series, series_number, name, keywords } = this.props;
+
     return (
       <>
         {keywords && (

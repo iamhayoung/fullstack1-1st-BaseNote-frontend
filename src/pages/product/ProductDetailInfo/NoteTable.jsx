@@ -4,6 +4,7 @@ import './NoteTable.scss';
 class NoteTable extends Component {
   render() {
     const { topNote, middleNote, baseNote } = this.props;
+
     return (
       <>
         <div className="noteTable">
