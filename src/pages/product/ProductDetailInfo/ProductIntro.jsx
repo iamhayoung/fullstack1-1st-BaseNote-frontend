@@ -5,7 +5,7 @@ import './ProductIntro.scss';
 
 class ProductIntro extends Component {
   render() {
-    const { name, series, series_number, concept } = this.props;
+    const { name, series, series_number } = this.props;
     return (
       <div className="productIntro">
         <Logo />
@@ -18,14 +18,14 @@ class ProductIntro extends Component {
           <br />
           가장 '나다운 향'을 찾기 위한 여정을 함께 합니다.
         </p>
-        <div className="productConceptBox">
+        <div className="productIntroductionBox">
           <img className="img-product" src={PerfumeConceptImage} alt={name} />
-          <div className="conceptIntroduction">
+          <div className="productIntroduction">
             <p className="productSeries">
               {series}
               <span className="productSeriesNumber">{series_number}</span>
             </p>
-            <p className="conceptDesc">{concept}</p>
+            <p className="productName">{name}</p>
           </div>
         </div>
       </div>
