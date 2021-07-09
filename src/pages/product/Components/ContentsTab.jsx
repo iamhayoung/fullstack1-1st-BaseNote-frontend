@@ -8,12 +8,16 @@ class ContentsTab extends Component {
     destination.scrollIntoView({ behavior: 'smooth' });
   };
 
-  render() {
+  isTabItemActive = value => {
     const { area } = this.props;
+    return `tabItem ${area === value ? 'active' : ''}`;
+  };
+
+  render() {
     return (
       <ul className="contentsTab">
         <li
-          className={area === 'detail' ? 'tabItem active' : 'tabItem'}
+          className={this.isTabItemActive('detail')}
           onClick={this.moveToAnchor}
         >
           <span className="tabLink" href="detail">
@@ -21,7 +25,7 @@ class ContentsTab extends Component {
           </span>
         </li>
         <li
-          className={area === 'review' ? 'tabItem active' : 'tabItem'}
+          className={this.isTabItemActive('review')}
           onClick={this.moveToAnchor}
         >
           <span className="tabLink" href="review">
