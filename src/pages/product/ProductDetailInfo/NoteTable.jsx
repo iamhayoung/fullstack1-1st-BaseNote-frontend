@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import NoteColumn from './NoteColumn';
 import './NoteTable.scss';
 
 class NoteTable extends Component {
@@ -6,41 +7,13 @@ class NoteTable extends Component {
     const { topNote, middleNote, baseNote } = this.props;
 
     return (
-      <>
-        <div className="noteTable">
-          {topNote && (
-            <div className="noteColumn">
-              <div className="cell head">top</div>
-              {topNote.map(note => (
-                <div key={note} className="cell">
-                  {note}
-                </div>
-              ))}
-            </div>
-          )}
-          {middleNote && (
-            <div className="noteColumn">
-              <div className="cell head">middle</div>
-              {middleNote.map(note => (
-                <div key={note} className="cell">
-                  {note}
-                </div>
-              ))}
-            </div>
-          )}
-          {baseNote && (
-            <div className="noteColumn">
-              <div className="cell head">base</div>
-              {baseNote.map(note => (
-                <div key={note} className="cell">
-                  {note}
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-      </>
+      <div className="noteTable">
+        {topNote && <NoteColumn type="top" topNote={topNote} />}
+        {middleNote && <NoteColumn type="middle" middleNote={middleNote} />}
+        {baseNote && <NoteColumn type="base" baseNote={baseNote} />}
+      </div>
     );
   }
 }
+
 export default NoteTable;

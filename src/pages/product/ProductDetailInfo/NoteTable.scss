@@ -6,31 +6,3 @@
     border-top: 1px solid $grey-90;
     border-bottom: 1px solid $grey-90;
 }
-
-.noteColumn {
-    display: flex;
-    flex-direction: column;
-    width: 270px;
-
-    .cell {
-        width: 100%;
-        padding: 30px 10px 10px;
-        font-size: 29px;
-        text-align: center;
-
-        &.head {
-            padding: 30px 10px;
-            border-bottom: 1px solid $grey-30;
-            font-weight: 900;
-            text-transform: uppercase;
-        }
-
-        &:nth-child(2) {
-            margin-top: 10px;
-        }
-
-        &:last-child {
-            margin-bottom: 30px;
-        }
-    }
-}
