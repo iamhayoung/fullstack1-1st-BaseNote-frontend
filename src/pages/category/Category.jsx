@@ -21,7 +21,7 @@ class Category extends Component {
   render() {
     return (
       <section className="category">
-        <Container>
+        <Container option="wide listGrid">
           {this.state.product.map(product => {
             return <ProductCard key={product.id} {...product} />;
           })}

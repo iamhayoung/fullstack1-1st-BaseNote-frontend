@@ -7,15 +7,18 @@ class ProductCard extends Component {
     return (
       <section className="productCard">
         <a href="/product" classname="clickBox">
-          <img src={img} alt="productImg" classname="productCard" />
-          <p classname="productTitle">
+          <div className="productImg">
+            <img src={img} alt="productImg" />
+          </div>
+          <p className="productTitle">
             {series}
+            &nbsp;
             {title}
           </p>
-          <p classname="productMood">{mood}</p>
-          <div classname="amount">
+          <p className="productMood">{mood}</p>
+          <div className="amount">
             {volume}
-            <span classname="divider">/</span>
+            <span className="divider">/</span>
             {price}
           </div>
         </a>

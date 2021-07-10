@@ -1,10 +1,11 @@
-.productContainer {
-  display: table;
-  width: 100%;
+@import '../../Styles/_variables';
+
+* {
+    background-color: $grey-10;
 }
-a {
-  background-color: blue;
-  display: table-cell;
-  vertical-align: middle;
-  border: 5px solid, black;
+
+.listGrid {
+    display: grid;
+    grid-template-columns: repeat(4, calc(100% / 4));
+    grid-template-rows: 500px;
 }
