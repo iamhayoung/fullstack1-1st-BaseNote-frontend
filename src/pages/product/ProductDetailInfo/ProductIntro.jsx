@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import { ReactComponent as Logo } from '../../../assets/logo-BASENOTE_slogan.svg';
-import PerfumeConceptImage from '../../../assets/perfumeConceptImage.png';
 import './ProductIntro.scss';
 
 class ProductIntro extends Component {
   render() {
-    const { name, series, series_number } = this.props;
+    const { name, image_url, series, series_number } = this.props;
 
     return (
       <div className="productIntro">
@@ -20,7 +19,7 @@ class ProductIntro extends Component {
           가장 '나다운 향'을 찾기 위한 여정을 함께 합니다.
         </p>
         <div className="productIntroductionBox">
-          <img className="img-product" src={PerfumeConceptImage} alt={name} />
+          <img className="img-product" src={image_url} alt={name} />
           <div className="productIntroduction">
             <p className="productSeries">
               {series}

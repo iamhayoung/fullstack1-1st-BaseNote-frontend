@@ -4,6 +4,7 @@ import ContentsTab from '../Components/ContentsTab';
 import ProductIntro from './ProductIntro';
 import NoteInfo from './NoteInfo';
 import Keyword from './Keyword';
+import ConceptImage from './ConceptImage';
 import './ProductDetailInfo.scss';
 
 class ProductDetailInfo extends Component {
@@ -47,6 +48,7 @@ class ProductDetailInfo extends Component {
         <ProductIntro {...productData} />
         <NoteInfo {...productData} />
         {keywords && <Keyword {...productData} />}
+        <ConceptImage />
       </section>
     );
   }
