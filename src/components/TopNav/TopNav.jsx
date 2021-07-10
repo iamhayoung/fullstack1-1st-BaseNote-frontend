@@ -9,9 +9,12 @@ class TopNav extends Component {
     super();
     this.state = {
       hiddenMenu: true,
+      hiddenCard1: true,
+      hiddenCard2: true,
+      hiddenCard3: true,
+      hiddenCard4: true,
     };
   }
-
   mouseEnter = () => {
     this.setState({
       hiddenMenu: false,
@@ -22,7 +25,50 @@ class TopNav extends Component {
       hiddenMenu: true,
     });
   };
+  cardMouseEnter1 = () => {
+    this.setState({
+      hiddenCard1: false,
+    });
+  };
+  cardMouseLeave1 = () => {
+    this.setState({
+      hiddenCard1: true,
+    });
+  };
+  cardMouseEnter2 = () => {
+    this.setState({
+      hiddenCard2: false,
+    });
+  };
+  cardMouseLeave2 = () => {
+    this.setState({
+      hiddenCard2: true,
+    });
+  };
+  cardMouseEnter3 = () => {
+    this.setState({
+      hiddenCard3: false,
+    });
+  };
+  cardMouseLeave3 = () => {
+    this.setState({
+      hiddenCard3: true,
+    });
+  };
+  cardMouseEnter4 = () => {
+    this.setState({
+      hiddenCard4: false,
+    });
+  };
+  cardMouseLeave4 = () => {
+    this.setState({
+      hiddenCard4: true,
+    });
+  };
+
   render() {
+    const { hiddenMenu, hiddenCard1, hiddenCard2, hiddenCard3, hiddenCard4 } =
+      this.state;
     return (
       <div className="TopNavWrapper">
         <div className="TopNav shopHover">
@@ -42,22 +88,122 @@ class TopNav extends Component {
               SHOP
               <ul
                 className={
-                  this.state.hiddenMenu ? 'hiddenMenu active' : 'hiddenMenu'
+                  hiddenMenu ? 'hiddenMenu menuInactive' : 'hiddenMenu'
                 }
                 onMouseLeave={this.mouseLeave}
               >
-                <Link to="/category" className="hiddenMenuTitle">
-                  2.5ml / 데일리키트
+                <Link
+                  to="/category"
+                  className="hiddenMenuTitle"
+                  onMouseOver={this.cardMouseEnter1}
+                  onMouseLeave={this.cardMouseLeave1}
+                >
+                  <p
+                    className={
+                      hiddenCard1
+                        ? 'hiddenMenuTitleBefore1'
+                        : 'hiddenMenuTitle1'
+                    }
+                  >
+                    2.5ml / 데일리키트
+                  </p>
                 </Link>
-                <Link to="/category" className="hiddenMenuTitle">
-                  40ml
+                <div
+                  className={
+                    hiddenCard1 ? 'hiddenCard1 cardInactive' : 'hiddenCard1'
+                  }
+                >
+                  <img
+                    className="hiddenCardImage"
+                    src="https://images.unsplash.com/photo-1582616698198-f978da534162?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fHBlcmZ1bWV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                    alt="2.5ml/데일리키트 이미지"
+                  />
+                  <span className="hiddenCardDescription">데일리키트</span>
+                </div>
+                <Link
+                  to="/category"
+                  className="hiddenMenuTitle"
+                  onMouseOver={this.cardMouseEnter2}
+                  onMouseLeave={this.cardMouseLeave2}
+                >
+                  <p
+                    className={
+                      hiddenCard2
+                        ? 'hiddenMenuTitleBefore2'
+                        : 'hiddenMenuTitle2'
+                    }
+                  >
+                    40ml
+                  </p>
                 </Link>
-                <Link to="/category" className="hiddenMenuTitle">
-                  SET
+                <div
+                  className={
+                    hiddenCard2 ? 'hiddenCard2 cardInactive' : 'hiddenCard2'
+                  }
+                >
+                  <img
+                    className="hiddenCardImage"
+                    src="https://images.unsplash.com/photo-1612871178341-33f941a841e3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTg2fHxwZXJmdW1lfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                    alt="40ml 이미지"
+                  />
+                  <span className="hiddenCardDescription">40ml</span>
+                </div>
+                <Link
+                  to="/category"
+                  className="hiddenMenuTitle"
+                  onMouseOver={this.cardMouseEnter3}
+                  onMouseLeave={this.cardMouseLeave3}
+                >
+                  <p
+                    className={
+                      hiddenCard3
+                        ? 'hiddenMenuTitleBefore3'
+                        : 'hiddenMenuTitle3'
+                    }
+                  >
+                    SET
+                  </p>
                 </Link>
-                <Link to="/category" className="hiddenMenuTitle">
-                  GOODS
+                <div
+                  className={
+                    hiddenCard3 ? 'hiddenCard3 cardInactive' : 'hiddenCard3'
+                  }
+                >
+                  <img
+                    className="hiddenCardImage"
+                    src="https://images.unsplash.com/photo-1588159509476-9a71061bd9e2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDIxfHxwZXJmdW1lfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                    alt="SET 이미지"
+                  />
+                  <span className="hiddenCardDescription">SET</span>
+                </div>
+                <Link
+                  to="/category"
+                  className="hiddenMenuTitle"
+                  onMouseOver={this.cardMouseEnter4}
+                  onMouseLeave={this.cardMouseLeave4}
+                >
+                  <p
+                    className={
+                      hiddenCard4
+                        ? 'hiddenMenuTitleBefore4'
+                        : 'hiddenMenuTitle4'
+                    }
+                  >
+                    GOODS
+                  </p>
                 </Link>
+                <div
+                  className={
+                    hiddenCard4 ? 'hiddenCard4 cardInactive' : 'hiddenCard4'
+                  }
+                >
+                  <img
+                    className="hiddenCardImage"
+                    src="https://images.unsplash.com/photo-1612871178341-33f941a841e3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTg2fHxwZXJmdW1lfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                    alt="GOODS 이미지"
+                  />
+                  <span className="hiddenCardDescription">GOODS</span>
+                </div>
               </ul>
             </Link>
             <Link to="/" className="navCategoryLink">
@@ -76,23 +222,6 @@ class TopNav extends Component {
             </Link>
           </div>
         </div>
-        {/* <div className="hideMenu"> */}
-        {/* <ul className="hideMenu">
-          <Link to="/" className="hiddenMenuTitle">
-            2.5ml / 데일리키트
-          </Link>
-          <Link to="/" className="hiddenMenuTitle">
-            40ml
-          </Link>
-          <Link to="/" className="hiddenMenuTitle">
-            SET
-          </Link>
-          <Link to="/" className="hiddenMenuTitle">
-            GOODS
-          </Link>
-        </ul> */}
-        {/* </div> */}
-        {/* <div className="nono"> dkfjdlkfjklsdjf</div> */}
       </div>
     );
   }

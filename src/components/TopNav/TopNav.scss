@@ -2,16 +2,17 @@
 .TopNav {
     @include flex(space-around, center);
     background-color: white;
+    border-bottom: 3px solid #fafafa;
     .navCategory {
         margin-top: 40px;
         margin-left: 50px;
     }
     .navCategoryLink {
         margin-left: 50px;
-        font-family: 'Noto Sans KR', 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-weight: bold;
         padding-bottom: 50px;
         height: 101px;
+        font-family: 'Noto Sans KR', 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
     }
     .logo-icon {
         margin-right: 380px;
@@ -31,23 +32,59 @@
             display: flex;
             justify-content: flex-start;
             flex-direction: column;
-            z-index: 100;
-            top: 110px;
+            top: 100px;
             left: 0px;
             width: 1800px;
             height: 330px;
-            background-color: rgba(237, 237, 241, 0.781);
+            background-color: rgba(255, 255, 255, 0.9);
             font-weight: normal;
             font-family: 'Noto Sans KR', 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+            z-index: 100;
         }
-        .active {
+        .menuInactive {
             display: none;
             height: 110px;
         }
         .hiddenMenuTitle {
             margin-left: 330px;
             margin-top: 45px;
+            margin-bottom: 1px;
             font-size: 15px;
+        }
+        .hiddenCard1,
+        .hiddenCard2,
+        .hiddenCard3,
+        .hiddenCard4 {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 200px;
+            top: 50px;
+        }
+        .hiddenCardImage {
+            width: 320px;
+            height: 200px;
+        }
+        .cardInactive {
+            display: none;
+        }
+        .hiddenMenuTitle1,
+        .hiddenMenuTitle2,
+        .hiddenMenuTitle3,
+        .hiddenMenuTitle4 {
+            display: inline-block;
+            margin-bottom: -3px;
+            border-bottom: 0.5px solid black;
+            font-weight: 600;
+        }
+        .hiddenCardDescription {
+            padding-top: 10px;
+        }
+        .hiddenMenuTitleBefore1,
+        .hiddenMenuTitleBefore2,
+        .hiddenMenuTitleBefore3,
+        .hiddenMenuTitleBefore4 {
+            font-weight: 500;
         }
     }
 }
