@@ -5,6 +5,11 @@
       "name": "어른의 솜사탕",
       "series": "melt",
       "series_number": "01",
+      "image_url": "https://images.unsplash.com/photo-1526505262320-81542978f63b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+      "price": {
+        "small": "4000",
+        "standard": "48000"
+      },
       "description": "농도 짙은 자스민과 녹진한 바닐라, 짙게 깔린 우드 노트의 찐득한 만남",
       "top_note": ["Cardamom", "Coffee"],
       "middle_note": ["Jasmine", "Fir"],
@@ -21,6 +26,11 @@
       "name": "백색 향",
       "series": "wind",
       "series_number": "02",
+      "image_url": "https://images.unsplash.com/photo-1602473395999-7e8b95d173e4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2734&q=80",
+      "price": {
+        "small": "4000",
+        "standard": "48000"
+      },
       "description": "은은한 화이트 플로럴과 부드러운 머스크가 만들어내는 관능적인 향",
       "top_note": ["Lily of the valley"],
       "middle_note": ["Blond wood"],
@@ -35,8 +45,13 @@
     {
       "id": 3,
       "name": "물기 머금은 장미",
-      "series": "drop",
+      "series": "path",
       "series_number": "01",
+      "image_url": "https://images.unsplash.com/photo-1602078794418-dba87dccba4d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=788&q=80",
+      "price": {
+        "small": "4000",
+        "standard": "48000"
+      },
       "description": "만다린의 상큼한 시작과 머스크의 포근한 여운이 함께하는 깔끔한 장미 향",
       "top_note": ["Mandarin", "Orange", "Rose"],
       "middle_note": ["Rose", "Musk"],
