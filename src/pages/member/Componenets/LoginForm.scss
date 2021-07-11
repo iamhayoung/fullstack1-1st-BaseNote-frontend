@@ -30,7 +30,7 @@
 
     span,
     a,
-    .signUpBtn {
+    .signupBtn {
         line-height: 1em;
         color: rgb(150, 150, 150);
         font-size: 11px;
@@ -52,5 +52,9 @@
         font-weight: bold;
         cursor: pointer;
         user-select: none;
+    }
+
+    .signupBtn {
+        margin-left: 180px;
     }
 }

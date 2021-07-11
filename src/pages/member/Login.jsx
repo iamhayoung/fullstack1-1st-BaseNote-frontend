@@ -11,8 +11,11 @@ class Login extends Component {
           <div>
             <LoginForm />
           </div>
-          <button className="otherButton">
-            BASENOTE 여러분 사랑하고 고맙습니다
+          <button
+            className="otherBtn"
+            onClick={() => alert('BASENOTE팀과 함께해보실까요?')}
+          >
+            다른 방법으로 시작하기
           </button>
         </div>
       </div>
