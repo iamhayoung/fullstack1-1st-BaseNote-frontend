@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
 import ContentsTab from '../Components/ContentsTab';
 import ProductIntro from './ProductIntro';
 import NoteInfo from './NoteInfo';
@@ -24,4 +23,4 @@ class ProductDetailInfo extends Component {
   }
 }
 
-export default withRouter(ProductDetailInfo);
+export default ProductDetailInfo;
