@@ -3,12 +3,12 @@ import './Hashtags.scss';
 
 class Hashtags extends Component {
   render() {
-    const { first_mood, series, seriesNumber, name } = this.props;
+    const { first_moods, series, seriesNumber, name } = this.props;
 
     return (
       <div className="hashtags">
-        {first_mood?.map(mood => (
-          <p key={mood} className="tag">{`#${mood}`}</p>
+        {first_moods?.map(keyword => (
+          <p key={keyword.mood} className="tag">{`#${keyword.mood}`}</p>
         ))}
         {series && seriesNumber && (
           <p className="tag">{`#${series}${seriesNumber}`}</p>
