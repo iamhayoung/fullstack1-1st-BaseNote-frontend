@@ -16,24 +16,24 @@ class Keyword extends Component {
         </p>
         <Hashtags series={series} seriesNumber={series_number} name={name} />
         <div className={`bubbles {${series} ? ${series} : ''}`}>
-          {keywords.first_mood.map(mood => (
-            <div key={mood} className="circle xlarge">
-              {mood}
+          {keywords.first_moods.map(keyword => (
+            <div key={keyword.id} className="circle xlarge">
+              {keyword.mood}
             </div>
           ))}
-          {keywords.second_mood.map(mood => (
-            <div key={mood} className="circle large">
-              {mood}
+          {keywords.first_moods.map(keyword => (
+            <div key={keyword.id} className="circle large">
+              {keyword.mood}
             </div>
           ))}
-          {keywords.third_mood.map(mood => (
-            <div key={mood} className="circle medium">
-              {mood}
+          {keywords.third_moods.map(keyword => (
+            <div key={keyword.id} className="circle medium">
+              {keyword.mood}
             </div>
           ))}
-          {keywords.fourth_mood.map(mood => (
-            <div key={mood} className="circle small">
-              {mood}
+          {keywords.fourth_moods.map(keyword => (
+            <div key={keyword.id} className="circle small">
+              {keyword.mood}
             </div>
           ))}
         </div>

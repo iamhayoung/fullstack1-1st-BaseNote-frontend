@@ -17,10 +17,62 @@
         "base_note": ["Sandalwood", "Vanilla", "Laotian oud"]
       },
       "keywords": {
-        "first_mood": ["달달한", "어른스러운", "바닐라"],
-        "second_mood": ["따뜻한", "무거운", "디저트"],
-        "third_mood": ["복합적인", "부드러운", "과일"],
-        "fourth_mood": ["차분한", "지적인", "인센스"]
+        "first_moods": [
+          {
+            "id": 1,
+            "mood": "달달한"
+          },
+          {
+            "id": 2,
+            "mood": "어른스러운"
+          },
+          {
+            "id": 3,
+            "mood": "바닐라"
+          }
+        ],
+        "second_moods": [
+          {
+            "id": 1,
+            "mood": "따뜻한"
+          },
+          {
+            "id": 2,
+            "mood": "무거운"
+          },
+          {
+            "id": 3,
+            "mood": "디저트"
+          }
+        ],
+        "third_moods": [
+          {
+            "id": 1,
+            "mood": "복합적인"
+          },
+          {
+            "id": 2,
+            "mood": "부드러운"
+          },
+          {
+            "id": 3,
+            "mood": "과일"
+          }
+        ],
+        "fourth_moods": [
+          {
+            "id": 1,
+            "mood": "차분한"
+          },
+          {
+            "id": 2,
+            "mood": "지적인"
+          },
+          {
+            "id": 3,
+            "mood": "인센스"
+          }
+        ]
       }
     },
     {
@@ -40,10 +92,62 @@
         "base_note": ["Musk"]
       },
       "keywords": {
-        "first_mood": ["사랑스러운", "부드러운", "비누향"],
-        "second_mood": ["은은한", "달달한", "하얀 꽃"],
-        "third_mood": ["여리여리한", "깔끔한", "섬유유연제"],
-        "fourth_mood": ["포근한", "파우더", "가벼운 과일"]
+        "first_moods": [
+          {
+            "id": 1,
+            "mood": "사랑스러운"
+          },
+          {
+            "id": 2,
+            "mood": "부드러운"
+          },
+          {
+            "id": 3,
+            "mood": "비누향"
+          }
+        ],
+        "second_moods": [
+          {
+            "id": 1,
+            "mood": "은은한"
+          },
+          {
+            "id": 2,
+            "mood": "달달한"
+          },
+          {
+            "id": 3,
+            "mood": "하얀 꽃"
+          }
+        ],
+        "third_moods": [
+          {
+            "id": 1,
+            "mood": "여리여리한"
+          },
+          {
+            "id": 2,
+            "mood": "깔끔한"
+          },
+          {
+            "id": 3,
+            "mood": "섬유유연제"
+          }
+        ],
+        "fourth_moods": [
+          {
+            "id": 1,
+            "mood": "포근한"
+          },
+          {
+            "id": 2,
+            "mood": "파우더"
+          },
+          {
+            "id": 3,
+            "mood": "가벼운 과일"
+          }
+        ]
       }
     },
     {
@@ -63,10 +167,62 @@
         "base_note": ["Woody"]
       },
       "keywords": {
-        "first_mood": ["가벼운", "장미", "깔끔한"],
-        "second_mood": ["산뜻한", "시원한", "풀잎"],
-        "third_mood": ["고요한", "맑은", "이슬"],
-        "fourth_mood": ["새벽", "숲", "청량한"]
+        "first_moods": [
+          {
+            "id": 1,
+            "mood": "가벼운"
+          },
+          {
+            "id": 2,
+            "mood": "장미"
+          },
+          {
+            "id": 3,
+            "mood": "깔끔한"
+          }
+        ],
+        "second_moods": [
+          {
+            "id": 1,
+            "mood": "산뜻한"
+          },
+          {
+            "id": 2,
+            "mood": "시원한"
+          },
+          {
+            "id": 3,
+            "mood": "풀잎"
+          }
+        ],
+        "third_moods": [
+          {
+            "id": 1,
+            "mood": "고요한"
+          },
+          {
+            "id": 2,
+            "mood": "맑은"
+          },
+          {
+            "id": 3,
+            "mood": "이슬"
+          }
+        ],
+        "fourth_moods": [
+          {
+            "id": 1,
+            "mood": "새벽"
+          },
+          {
+            "id": 2,
+            "mood": "숲"
+          },
+          {
+            "id": 3,
+            "mood": "청량한"
+          }
+        ]
       }
     }
   ]
