@@ -1,3 +1,4 @@
+@import '../../../styles/mixins';
 .ProductDetailHead {
     display: flex;
     justify-content: space-between;
@@ -102,12 +103,37 @@
 }
 
 .Option_40ml_HiddenBox {
-    display: flex;
+    @include flex(space-between, center);
     margin-top: 20px;
+    padding-top: 25px;
+    border-top: 1px solid rgb(214, 214, 214);
+}
+
+.HiddenBoxInactive {
+    display: none;
 }
 
 .HiddenCountBox {
-    display: flex;
-    margin-left: 20px;
-    border: 1px solid black;
+    @include flex(space-around, center);
+    margin-left: 40px;
+    width: 85px;
+    height: 30px;
+    border: 1px solid rgb(214, 214, 214);
+}
+
+.Only_40ml_HiddenTitle {
+    font-size: 14px;
+}
+
+.productDetailOptionPrice {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.Only_40ml_PlusButton,
+.Only_40ml_MinusButton {
+    font-size: 20px;
+    line-height: 1;
+    background-color: white;
+    color: rgb(214, 214, 214);
 }

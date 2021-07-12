@@ -8,8 +8,14 @@ class ProductDetailHead extends Component {
     this.state = {
       clicks: 1,
       show: true,
+      Option_40ml_HiddenBox: true,
     };
   }
+  Click40mlOption = () => {
+    this.setState({
+      Option_40ml_HiddenBox: false,
+    });
+  };
 
   IncrementItem = () => {
     this.setState({ clicks: this.state.clicks + 1 });
@@ -24,7 +30,7 @@ class ProductDetailHead extends Component {
   };
 
   render() {
-    const { clicks } = this.state;
+    const { clicks, Option_40ml_HiddenBox } = this.state;
     const { name, image_url, price, series_number, series } =
       this.props.productData;
 
@@ -42,14 +48,20 @@ class ProductDetailHead extends Component {
             {series} {series_number}. {name}
           </div>
           <div className="productDetailPrice">{this.formatMoney(price)}원</div>
-          <select className="productOption">
+          <select className="productOption" onChange={this.Click40mlOption}>
             <option value="productOptionTitle">
               -[필수] 옵션을 선택해 주세요 -
             </option>
             <option value="40ml">40ml Only</option>
             <option value="40ml_Message">40ml + 각인메세지 (+5000원)</option>
           </select>
-          <div className="Option_40ml_HiddenBox">
+          <div
+            className={
+              Option_40ml_HiddenBox
+                ? 'Option_40ml_HiddenBox HiddenBoxInactive'
+                : 'Option_40ml_HiddenBox'
+            }
+          >
             <p className="Only_40ml_HiddenTitle">40ML Only</p>
             <div className="HiddenCountBox">
               <button
@@ -70,13 +82,13 @@ class ProductDetailHead extends Component {
                 +
               </button>
             </div>
-            <div className="productDetailOptionPrice">
+            <span className="productDetailOptionPrice">
               {this.formatMoney(price * clicks)}원
-            </div>
+            </span>
           </div>
           <div className="productTotalPrice">
             <p className="totalPriceTitle">총 상품금액</p>
-            <p className="totalPrice">0원</p>
+            <p className="totalPrice">{this.formatMoney(price * clicks)}원</p>
           </div>
           <div className="productDetailButtons">
             <button className="productPurchaseButton buttonCommon">

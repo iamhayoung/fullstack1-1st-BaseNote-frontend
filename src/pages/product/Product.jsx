@@ -29,7 +29,6 @@ class Product extends Component {
         const productData = result.products.filter(
           data => data.id === parseInt(id)
         );
-
         productData[0].price = productData[0].price[volume];
 
         return this.setState({ productData: productData[0] });
