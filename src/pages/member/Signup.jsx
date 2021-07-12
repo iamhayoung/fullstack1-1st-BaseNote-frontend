@@ -19,7 +19,7 @@ class Signup extends Component {
             <Link to="#">개인정보 수집 및 이용</Link>
             <span className="sign">, </span>
             <Link to="#">개인정보 정보 제공</Link>
-            <span className="sign">을 확인하였고 동의합니다 </span>
+            <span className="sign">을 확인하였고 동의합니다</span>
           </div>
         </div>
       </div>
