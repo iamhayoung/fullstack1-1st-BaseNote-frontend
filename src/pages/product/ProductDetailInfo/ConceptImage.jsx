@@ -7,7 +7,7 @@ class ConceptImage extends Component {
     return (
       <div className="conceptImage">
         <img
-          className="img-concept"
+          className="imgConcept"
           src={PerfumeConceptImage}
           alt="BASENOTE perfume"
         />
