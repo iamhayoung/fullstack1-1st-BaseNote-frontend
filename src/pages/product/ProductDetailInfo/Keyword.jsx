@@ -15,7 +15,7 @@ class Keyword extends Component {
           사용자와 주변 사람들이 어떻게 느낄지 유추할 수 있습니다.
         </p>
         <Hashtags series={series} seriesNumber={series_number} name={name} />
-        <div className={`bubbles${series !== undefined ? ` ${series}` : ''}`}>
+        <div className={`bubbles {${series} ? ${series} : ''}`}>
           {keywords.first_mood.map(mood => (
             <div key={mood} className="circle xlarge">
               {mood}
