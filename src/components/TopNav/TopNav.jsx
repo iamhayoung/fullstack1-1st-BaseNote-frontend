@@ -73,14 +73,10 @@ class TopNav extends Component {
       <div className="TopNavWrapper">
         <div className="TopNav shopHover">
           <ul className="navCategory">
-            <a
-              href="https://paffem.me/perfume_teller.html"
-              className="navCategoryLink"
-            >
+            <Link to="/" className="navCategoryLink">
               Perfume Teller
-            </a>
-            <Link
-              to="/"
+            </Link>
+            <span
               className="navCategoryLink hideButton"
               onMouseOver={this.mouseEnter}
               onMouseLeave={this.mouseLeave}
@@ -93,7 +89,7 @@ class TopNav extends Component {
                 onMouseLeave={this.mouseLeave}
               >
                 <Link
-                  to="/category"
+                  to="/category/2.5ml"
                   className="hiddenMenuTitle"
                   onMouseOver={this.cardMouseEnter1}
                   onMouseLeave={this.cardMouseLeave1}
@@ -121,7 +117,7 @@ class TopNav extends Component {
                   <span className="hiddenCardDescription">데일리키트</span>
                 </div>
                 <Link
-                  to="/category"
+                  to="/category/40ml"
                   className="hiddenMenuTitle"
                   onMouseOver={this.cardMouseEnter2}
                   onMouseLeave={this.cardMouseLeave2}
@@ -205,7 +201,7 @@ class TopNav extends Component {
                   <span className="hiddenCardDescription">GOODS</span>
                 </div>
               </ul>
-            </Link>
+            </span>
             <Link to="/" className="navCategoryLink">
               ABOUT
             </Link>
@@ -213,7 +209,7 @@ class TopNav extends Component {
               EVENT
             </Link>
           </ul>
-          <Link to="메인컴포넌트" className="NavTitle">
+          <Link to="메인컴포넌트" className="avTitle">
             <MainLogo />
           </Link>
           <div className="NavIcons">
