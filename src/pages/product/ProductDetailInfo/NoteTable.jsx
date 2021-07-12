@@ -4,13 +4,13 @@ import './NoteTable.scss';
 
 class NoteTable extends Component {
   render() {
-    const { topNote, middleNote, baseNote } = this.props;
+    const { top_note, middle_note, base_note } = this.props;
 
     return (
       <div className="noteTable">
-        {topNote && <NoteColumn type="top" topNote={topNote} />}
-        {middleNote && <NoteColumn type="middle" middleNote={middleNote} />}
-        {baseNote && <NoteColumn type="base" baseNote={baseNote} />}
+        {top_note && <NoteColumn type="top" topNote={top_note} />}
+        {middle_note && <NoteColumn type="middle" middleNote={middle_note} />}
+        {base_note && <NoteColumn type="base" baseNote={base_note} />}
       </div>
     );
   }

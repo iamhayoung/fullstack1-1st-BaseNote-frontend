@@ -5,19 +5,14 @@ import './NoteInfo.scss';
 
 class NoteInfo extends Component {
   render() {
-    const { description, keywords, top_note, middle_note, base_note } =
-      this.props;
+    const { description, keywords, notes } = this.props;
 
     return (
       <div className="noteInfo">
         <h3 className="title">note</h3>
         <p className="noteDesc">{description}</p>
         {keywords && <Hashtags {...keywords} />}
-        <NoteTable
-          topNote={top_note}
-          middleNote={middle_note}
-          baseNote={base_note}
-        />
+        <NoteTable {...notes} />
       </div>
     );
   }
