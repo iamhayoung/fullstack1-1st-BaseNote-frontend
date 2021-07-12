@@ -35,9 +35,9 @@
       },
       "description": "은은한 화이트 플로럴과 부드러운 머스크가 만들어내는 관능적인 향",
       "notes": {
-        "top_note": ["Cardamom", "Coffee"],
-        "middle_note": ["Jasmine", "Fir"],
-        "base_note": ["Sandalwood", "Vanilla", "Laotian oud"]
+        "top_note": ["Lily of the valley"],
+        "middle_note": ["Blond wood"],
+        "base_note": ["Musk"]
       },
       "keywords": {
         "first_mood": ["사랑스러운", "부드러운", "비누향"],
@@ -58,9 +58,9 @@
       },
       "description": "만다린의 상큼한 시작과 머스크의 포근한 여운이 함께하는 깔끔한 장미 향",
       "notes": {
-        "top_note": ["Cardamom", "Coffee"],
-        "middle_note": ["Jasmine", "Fir"],
-        "base_note": ["Sandalwood", "Vanilla", "Laotian oud"]
+        "top_note": ["Mandarin", "Orange", "Rose"],
+        "middle_note": ["Rose", "Musk"],
+        "base_note": ["Woody"]
       },
       "keywords": {
         "first_mood": ["가벼운", "장미", "깔끔한"],

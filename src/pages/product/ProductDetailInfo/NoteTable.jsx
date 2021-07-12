@@ -8,9 +8,9 @@ class NoteTable extends Component {
 
     return (
       <div className="noteTable">
-        {top_note && <NoteColumn type="top" topNote={top_note} />}
-        {middle_note && <NoteColumn type="middle" middleNote={middle_note} />}
-        {base_note && <NoteColumn type="base" baseNote={base_note} />}
+        {top_note && <NoteColumn type="top" note={top_note} />}
+        {middle_note && <NoteColumn type="middle" note={middle_note} />}
+        {base_note && <NoteColumn type="base" note={base_note} />}
       </div>
     );
   }
