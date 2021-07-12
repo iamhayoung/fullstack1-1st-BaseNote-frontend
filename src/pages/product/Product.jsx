@@ -14,24 +14,25 @@ class Product extends Component {
   }
 
   getProductData = async () => {
-    let { volume, id } = this.props.match.params;
+    const { volume, id } = this.props.match.params;
 
     try {
-      const response = await fetch('/data/mockData.json');
-      if (!response.ok) {
-        throw new Error(`HTTP Status code: ${response.status}`);
-      }
-
-      const result = await response.json();
-      const productData = result.products.filter(
-        data => data.id === parseInt(id)
-      );
-
-      if (['2.5ml', '40ml'].includes(volume)) {
-        productData[0].price = productData[0].price[volume];
-        return this.setState({ productData: productData[0] });
-      } else {
+      if (!['2.5ml', '40ml'].includes(volume)) {
         this.props.history.push('');
+      } else {
+        const response = await fetch('/data/mockData.json');
+
+        if (!response.ok)
+          throw new Error(`HTTP Status code: ${response.status}`);
+
+        const result = await response.json();
+        const productData = result.products.filter(
+          data => data.id === parseInt(id)
+        );
+
+        productData[0].price = productData[0].price[volume];
+
+        return this.setState({ productData: productData[0] });
       }
     } catch (error) {
       console.error(error);
