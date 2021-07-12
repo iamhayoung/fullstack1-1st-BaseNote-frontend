@@ -4,7 +4,7 @@ import './ProductReview.scss';
 class ProductReview extends Component {
   render() {
     return (
-      <section className="reviewArea">
+      <section className="ProductReview">
         <p>ProductReview 영역</p>
       </section>
     );
