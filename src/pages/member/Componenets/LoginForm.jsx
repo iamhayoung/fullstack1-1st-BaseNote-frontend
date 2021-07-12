@@ -11,6 +11,18 @@ class LoginForm extends Component {
     };
   }
 
+  handleIdInput = event => {
+    this.setState({
+      loginIdValue: event.target.value,
+    });
+  };
+
+  handlePwInput = event => {
+    this.setState({
+      loginPwValue: event.target.value,
+    });
+  };
+
   login = () => {
     fetch('', {
       method: 'POST',
@@ -33,6 +45,7 @@ class LoginForm extends Component {
             className="loginInput loginId"
             type="text"
             placeholder="아이디를 입력해주세요"
+            onChange={this.handleIdInput}
           />
         </div>
         <div className="pwWrap">
@@ -41,6 +54,7 @@ class LoginForm extends Component {
             className="loginInput"
             type="password"
             placeholder="비밀번호를 입력해주세요"
+            onChange={this.handlePwInput}
           />
           <div className="linkWrap">
             <div className="forgotLink">
@@ -50,15 +64,7 @@ class LoginForm extends Component {
               <button className="signupBtn">회원 가입하기</button>
             </div>
           </div>
-          <button
-            className={
-              this.state.loginIdValue > 4 && this.state.loginPwValue.length > 4
-                ? 'loginBtn loginBtnActive'
-                : 'loginBtn'
-            }
-            type="button"
-            onClick={this.login}
-          >
+          <button className="loginBtn" type="button" onClick={this.login}>
             로그인
           </button>
         </div>
