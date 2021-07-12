@@ -30,8 +30,8 @@ class LoginForm extends Component {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        user_account: this.stateloginIdValue,
-        password: this.stateloginPwValue,
+        user_account: this.state.loginIdValue,
+        password: this.state.loginPwValue,
       }),
     }).then(response => response.json());
   };
