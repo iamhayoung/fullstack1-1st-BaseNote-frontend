@@ -12,33 +12,28 @@ class LoginForm extends Component {
   }
 
   handleIdInput = event => {
-    if (event.target.value.length < 1) {
-      this.setState({
-        message: '아이디 항목은 필수 입력값입니다.',
-        checkId: false,
-      });
-    } else {
-      this.setState({
-        message: '',
-        checkId: true,
-      });
-    }
+    this.setState({
+      loginIdValue: event.target.value,
+    });
   };
+
   handlePwInput = event => {
-    if (event.target.value.length < 5) {
-      this.setState({
-        message: '패스워드 항목이 4자(개) 이상으로 해주십시오.',
-        checkPw: false,
-      });
-    } else {
-      this.setState({
-        message: '',
-        checkPw: true,
-      });
-    }
+    this.setState({
+      loginPwValue: event.target.value,
+    });
   };
 
   login = () => {
+    const { loginIdValue, loginPwValue } = this.state;
+    if (!loginIdValue) {
+      alert('아이디 항목은 필수 입력값입니다.');
+      return;
+    }
+    if (loginPwValue.length < 5) {
+      alert('패스워드 항목이 4자(개) 이상으로 해주십시오.');
+      return;
+    }
+
     fetch('', {
       method: 'POST',
       headers: {
