@@ -7,7 +7,7 @@ class Category extends Component {
   constructor() {
     super();
     this.state = {
-      product: [],
+      products: [],
     };
   }
   componentDidMount() {
@@ -22,8 +22,8 @@ class Category extends Component {
     return (
       <section className="category">
         <Container option="wide listGrid">
-          {this.state.product.map(product => {
-            return <ProductCard key={product.id} {...product} />;
+          {this.state.products.map(products => {
+            return <ProductCard key={products.id} {...products} />;
           })}
         </Container>
       </section>

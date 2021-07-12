@@ -12,7 +12,7 @@ class Routes extends Component {
       <Router>
         <Switch>
           <Route exact path="/" component={Main} />
-          <Route exact path="/category" component={Category} />
+          <Route exact path="/category/:volume" component={Category} />
           <Route exact path="/member" component={Member} />
           <Route exact path="/order" component={Order} />
           <Route exact path="/product" component={Product} />
