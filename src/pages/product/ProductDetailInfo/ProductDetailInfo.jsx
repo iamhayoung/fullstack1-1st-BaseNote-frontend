@@ -7,13 +7,20 @@ import ConceptImage from './ConceptImage';
 import './ProductDetailInfo.scss';
 
 class ProductDetailInfo extends Component {
+  constructor() {
+    super();
+    this.detailInfoRef = React.createRef();
+  }
+
   render() {
     const { productData } = this.props;
     const { keywords } = productData;
+    console.log(productData);
+    console.log('this.detailInfoRef', this.detailInfoRef);
 
     return (
-      <section className="ProductDetailInfo" id="detail">
-        <ContentsTab area="detail" />
+      <section className="ProductDetailInfo" ref={this.detailInfoRef}>
+        <ContentsTab ref={this.detailInfoRef} area="detail" />
         <ProductIntro {...productData} />
         <NoteInfo {...productData} />
         {keywords && <Keyword {...productData} />}
