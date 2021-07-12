@@ -10,8 +10,6 @@ import Product from './pages/product/Product';
 
 class Routes extends Component {
   render() {
-    // console.log('signup in routes: ', SignUp);
-
     return (
       <Router>
         <Switch>
@@ -19,8 +17,8 @@ class Routes extends Component {
           <Route exact path="/category" component={Category} />
           <Route exact path="/member" component={Member} />
           <Route exact path="/member/login" component={Login} />
-          <Route exact path="/member/signup" component={Signup} />
           <Route exact path="/order" component={Order} />
+          <Route exact path="/member/signup" component={Signup} />
           <Route exact path="/product" component={Product} />
         </Switch>
       </Router>
