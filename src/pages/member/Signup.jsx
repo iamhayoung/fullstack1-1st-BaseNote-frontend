@@ -1,16 +1,29 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import './Signup.scss';
+import SignupForm from './Componenets/SignupForm';
 
-class SignUp extends Component {
+class Signup extends Component {
   render() {
     return (
-      <div>
-        <h1>
-          Signup 레이아웃은 다른 Signup 브랜치에 PR 보냈습니다. 확인
-          부탁드립니다!!
-        </h1>
+      <div className="Signup">
+        <div>
+          <header className="title">회원가입</header>
+          <div>
+            <SignupForm />
+          </div>
+          <div className="termsLink">
+            <Link to="#">이용약관</Link>
+            <span className="sign">, </span>
+            <Link to="#">개인정보 수집 및 이용</Link>
+            <span className="sign">, </span>
+            <Link to="#">개인정보 정보 제공</Link>
+            <span className="sign">을 확인하였고 동의합니다 </span>
+          </div>
+        </div>
       </div>
     );
   }
 }
 
-export default SignUp;
+export default Signup;
