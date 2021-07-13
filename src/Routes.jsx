@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Redirect,
+  Route,
+  Switch,
+} from 'react-router-dom';
 import Category from './pages/category/Category';
 import Main from './pages/main/Main';
 import Member from './pages/member/Member';
@@ -14,12 +19,14 @@ class Routes extends Component {
       <Router>
         <Switch>
           <Route exact path="/" component={Main} />
-          <Route exact path="/category" component={Category} />
+          <Route exact path="/category/:volume" component={Category} />
           <Route exact path="/member" component={Member} />
           <Route exact path="/member/login" component={Login} />
-          <Route exact path="/order" component={Order} />
           <Route exact path="/member/signup" component={Signup} />
-          <Route exact path="/product" component={Product} />
+          <Route exact path="/order" component={Order} />
+          <Route exact path="/product/2.5ml/:id" component={Product} />
+          <Route exact path="/product/40ml/:id" component={Product} />
+          <Redirect path="*" to="/" />
         </Switch>
       </Router>
     );
