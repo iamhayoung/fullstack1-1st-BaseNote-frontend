@@ -1,8 +1,6 @@
 @import '../../../styles/variables';
-@import '../../../styles/mixins';
 
 .totalPriceTableHeadRow {
-    @include flex(space-between, center);
     border-bottom: 1px solid $grey-60;
 
     & .cell {

@@ -6,10 +6,10 @@ import './TotalPriceTable.scss';
 class TotalPriceTable extends Component {
   render() {
     return (
-      <div className="totalPriceTable">
+      <table className="totalPriceTable">
         <TotalPriceTableHeadRow />
         <TotalPriceTableDataRow />
-      </div>
+      </table>
     );
   }
 }
