@@ -1,0 +1,79 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.totalPriceTableDataRow {
+    @include flex(space-between, center);
+    height: 120px;
+
+    & .price {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    & .unit {
+        font-size: 26px;
+        font-weight: 400;
+    }
+}
+
+.circle {
+    position: relative;
+    width: 37px;
+    height: 37px;
+    background: $grey-30;
+    border-radius: 50%;
+
+    &:before,
+    &:after {
+        position: absolute;
+        content: '';
+        display: block;
+        background: $black;
+    }
+
+    &.minus {
+        &:before {
+            width: 12px;
+            height: 2px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &.plus {
+        &:before,
+        &:after {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &:before {
+            width: 12px;
+            height: 2px;
+        }
+
+        &:after {
+            width: 2px;
+            height: 12px;
+        }
+    }
+
+    &.result {
+        &:before,
+        &:after {
+            width: 12px;
+            height: 2px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &:before {
+            top: calc(50% - 3px);
+        }
+
+        &:after {
+            top: calc(50% + 3px);
+        }
+    }
+}
