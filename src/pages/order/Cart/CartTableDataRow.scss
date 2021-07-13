@@ -5,10 +5,6 @@
     border-top: 1px solid $grey-60;
     border-bottom: 1px solid $grey-60;
 
-    & + & {
-        border-top: 0;
-    }
-
     .productColumn {
         text-align: left;
 
@@ -29,6 +25,10 @@
         font-size: 20px;
         font-weight: 500;
     }
+}
+
+.cartTableDataRow + .cartTableDataRow {
+    border-top: 0;
 }
 
 .quantityBox {
