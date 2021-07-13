@@ -1,0 +1,18 @@
+@import '../../../styles/variables';
+
+.ProductDetailInfo {
+    .title {
+        margin-bottom: 50px;
+        font-size: 35px;
+        font-weight: 900;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .sentence {
+        color: $grey-90;
+        font-size: 22px;
+        text-align: center;
+        line-height: 1.7;
+    }
+}
