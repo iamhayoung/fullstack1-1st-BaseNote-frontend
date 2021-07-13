@@ -6,7 +6,7 @@ import './CartTable.scss';
 class CartTable extends Component {
   render() {
     return (
-      <div className="cartTable">
+      <table className="cartTable">
         <CartTableHeadRow />
         <CartTableDataRow
           series="wind"
@@ -18,7 +18,7 @@ class CartTable extends Component {
           seriesNumber="02"
           name="포근한 겨울밤"
         />
-      </div>
+      </table>
     );
   }
 }

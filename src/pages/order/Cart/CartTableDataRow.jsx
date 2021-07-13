@@ -6,25 +6,25 @@ class CartTableDataRow extends Component {
     const { series, seriesNumber, name } = this.props;
 
     return (
-      <div className="cartTableDataRow">
-        <div className="cell selectHead">
+      <tr className="cartTableDataRow">
+        <td className="cell selectHead">
           <input className="cartItemCheckBox" type="checkbox" />
           <img src="https://placehold.jp/125x160.png" alt="Product thumbnail" />
-        </div>
-        <div className="cell">
+        </td>
+        <td className="cell">
           <p className="productName">{`${series} ${seriesNumber}. ${name}`}</p>
           <p className="volume">40ML only</p>
-        </div>
-        <div className="cell">
+        </td>
+        <td className="cell">
           <div className="quantityBox">
             <div className="item btnQuantity decrease"></div>
             <div className="item value">1개</div>
             <div className="item btnQuantity increase"></div>
           </div>
-        </div>
-        <div className="cell price">무료</div>
-        <div className="cell price">48000</div>
-      </div>
+        </td>
+        <td className="cell price">무료</td>
+        <td className="cell price">48000</td>
+      </tr>
     );
   }
 }

@@ -2,26 +2,25 @@
 @import '../../../styles/mixins';
 
 .cartTableHeadRow {
-    @include flex(center, center);
     @include cartTableCell(center);
-}
 
-.selectOption {
-    color: $grey-90;
-    font-size: 16px;
-    font-weight: 500;
+    .selectOption {
+        color: $grey-90;
+        font-size: 16px;
+        font-weight: 500;
 
-    &.isRemove {
-        color: $black;
-        font-weight: 700;
-        cursor: pointer;
+        &.isRemove {
+            color: $black;
+            font-weight: 700;
+            cursor: pointer;
+        }
     }
-}
 
-.divider {
-    display: inline-block;
-    width: 1px;
-    height: 12px;
-    margin: 0 12px;
-    background: $grey-50;
+    .divider {
+        display: inline-block;
+        width: 1px;
+        height: 12px;
+        margin: 0 12px;
+        background: $grey-50;
+    }
 }

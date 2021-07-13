@@ -6,21 +6,21 @@
 
 @mixin cartTableCell($textAlign) {
     .cell {
-        padding: 20px;
+        padding: 15px;
         text-align: center;
+        vertical-align: middle;
 
         &:first-child {
-            flex: 5;
-            padding: 0;
+            padding: 15px 0;
         }
 
         &:nth-child(2) {
-            flex: 6;
+            width: 34%;
             text-align: $textAlign;
         }
 
         &:nth-child(n + 3) {
-            flex: 3;
+            width: 15%;
         }
 
         & .productName {
