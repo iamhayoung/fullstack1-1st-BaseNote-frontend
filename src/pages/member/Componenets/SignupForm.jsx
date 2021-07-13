@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import './SignupForm.scss';
 
 class SignupForm extends Component {
+  constructor() {
+    super();
+    this.state = {
+      isChecked: false,
+    };
+  }
+
   render() {
     return (
       <form className="SignupForm">
@@ -52,8 +59,16 @@ class SignupForm extends Component {
             type="password"
             placeholder="비밀번호를 다시 입력해주세요"
           />
-          <input type="checkbox" checked={true} name="agree"></input>
-          이벤트 및 할인 소식 알림 동의 (선택)
+          <input
+            type="checkbox"
+            checked={this.state.isChecked}
+            onChange={() => {
+              this.setState({ isChecked: true });
+            }}
+          ></input>
+          <label className="eventAgreement">
+            이벤트 및 할인 소식 알림 동의 (선택)
+          </label>
         </div>
         <button className="signUpBtn">동의하고 회원가입</button>
       </form>
