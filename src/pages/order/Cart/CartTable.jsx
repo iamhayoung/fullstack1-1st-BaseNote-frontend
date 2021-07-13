@@ -7,17 +7,21 @@ class CartTable extends Component {
   render() {
     return (
       <table className="cartTable">
-        <CartTableHeadRow />
-        <CartTableDataRow
-          series="wind"
-          seriesNumber="03"
-          name="오후의 디저트"
-        />
-        <CartTableDataRow
-          series="time"
-          seriesNumber="02"
-          name="포근한 겨울밤"
-        />
+        <thead>
+          <CartTableHeadRow />
+        </thead>
+        <tbody>
+          <CartTableDataRow
+            series="wind"
+            seriesNumber="03"
+            name="오후의 디저트"
+          />
+          <CartTableDataRow
+            series="time"
+            seriesNumber="02"
+            name="포근한 겨울밤"
+          />
+        </tbody>
       </table>
     );
   }

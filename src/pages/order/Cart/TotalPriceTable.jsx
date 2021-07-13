@@ -7,8 +7,12 @@ class TotalPriceTable extends Component {
   render() {
     return (
       <table className="totalPriceTable">
-        <TotalPriceTableHeadRow />
-        <TotalPriceTableDataRow />
+        <thead>
+          <TotalPriceTableHeadRow />
+        </thead>
+        <tbody>
+          <TotalPriceTableDataRow />
+        </tbody>
       </table>
     );
   }
