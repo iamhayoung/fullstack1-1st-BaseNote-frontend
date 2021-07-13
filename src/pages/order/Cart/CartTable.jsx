@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import HeadRow from './HeadRow';
 import DataRow from './DataRow';
 import './CartTable.scss';
