@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { FaRegHeart } from 'react-icons/fa';
-import './ProductDetailBigVolumeHead.scss';
+import './ProductDetailSmallVolumeHead.scss';
 
 class ProductDetailSmallVolumeHead extends Component {
   constructor(props) {
