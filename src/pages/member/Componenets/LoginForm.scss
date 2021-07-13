@@ -38,7 +38,8 @@
     }
 
     .forgotLink {
-        justify-content: space-between;
+        display: flex;
+        align-items: center;
     }
 
     .loginBtn {
@@ -50,9 +51,5 @@
         font-weight: bold;
         cursor: pointer;
         user-select: none;
-    }
-
-    .signupBtn {
-        margin-left: 180px;
     }
 }
