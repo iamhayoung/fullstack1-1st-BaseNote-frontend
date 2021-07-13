@@ -1,0 +1,39 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.cartTable {
+    width: 100%;
+    margin-bottom: 90px;
+    border-top: 2px solid $black;
+
+    th,
+    td {
+        padding: 15px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .selectColumn {
+        @include flex(normal, center);
+
+        padding: 15px 0;
+    }
+
+    .productColumn {
+        width: 34%;
+    }
+
+    .priceColumn {
+        width: 15%;
+    }
+}
+
+.cartItemCheckBox[type='checkbox'] {
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+    background: $white;
+    border: 1px solid $black;
+    border-radius: 0;
+    cursor: pointer;
+}

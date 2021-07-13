@@ -7,10 +7,8 @@ import {
 } from 'react-router-dom';
 import Main from './pages/main/Main';
 import Category from './pages/category/Category';
-// import Login from './pages/member/Login';
-// import Signup from './pages/member/Signup';
-import Order from './pages/order/Order';
 import Member from './pages/member/Member';
+import { Cart } from './pages/order';
 import Product from './pages/product/Product';
 class Routes extends Component {
   render() {
@@ -20,7 +18,7 @@ class Routes extends Component {
           <Route exact path="/" component={Main} />
           <Route exact path="/category/:volume" component={Category} />
           <Route exact path="/member" component={Member} />
-          <Route exact path="/order" component={Order} />
+          <Route exact path="/order/cart" component={Cart} />
           <Route exact path="/product/:volume/:id" component={Product} />
           <Redirect path="*" to="/" />
         </Switch>
