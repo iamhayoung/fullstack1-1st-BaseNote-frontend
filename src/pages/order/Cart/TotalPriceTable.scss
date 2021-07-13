@@ -6,17 +6,18 @@
     border-top: 2px solid $black;
     border-bottom: 1px solid $grey-60;
 
-    .cell {
+    th,
+    td {
         padding: 20px;
         text-align: center;
         vertical-align: middle;
+    }
 
-        &:nth-child(odd) {
-            width: 18%;
-        }
+    .contentsColumn {
+        width: 18%;
+    }
 
-        &:nth-child(even) {
-            width: 9%;
-        }
+    .dividerColumn {
+        width: 9%;
     }
 }

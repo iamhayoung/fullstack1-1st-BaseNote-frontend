@@ -5,28 +5,28 @@ class TotalPriceTableDataRow extends Component {
   render() {
     return (
       <tr className="totalPriceTableDataRow">
-        <td className="cell">
+        <td>
           <span className="price">48000</span>
           <span className="unit">원</span>
         </td>
-        <td className="cell">
+        <td>
           <div className="circle minus"></div>
         </td>
-        <td className="cell">
+        <td>
           <span className="price">0</span>
           <span className="unit">원</span>
         </td>
-        <td className="cell">
+        <td>
           <div className="circle plus"></div>
         </td>
-        <td className="cell">
+        <td>
           <span className="price">0</span>
           <span className="unit">원</span>
         </td>
-        <td className="cell">
+        <td>
           <div className="circle result"></div>
         </td>
-        <td className="cell">
+        <td>
           <span className="price">48000</span>
           <span className="unit">원</span>
         </td>
