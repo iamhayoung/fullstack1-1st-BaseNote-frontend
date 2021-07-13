@@ -71,10 +71,10 @@ class LoginForm extends Component {
               <Link to="#">계정을 잊으셨나요?</Link>
               <span className="sign"> / </span>
               <Link to="#">비밀번호를 잊으셨나요?</Link>
-              <Link to="/member/signup" className="signupBtn">
-                회원 가입하기
-              </Link>
             </div>
+            <Link to="/member/signup" className="signupBtn">
+              회원 가입하기
+            </Link>
           </div>
           <button className="loginBtn" type="button" onClick={this.login}>
             로그인
