@@ -9,10 +9,25 @@
         border-top: 0;
     }
 
-    & .cell {
-        &:nth-child(2) {
-            text-align: left;
+    .productCell {
+        text-align: left;
+
+        & .productName {
+            font-size: 16px;
+            font-weight: 700;
         }
+
+        & .volume {
+            margin-top: 15px;
+            color: $grey-70;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+
+    .priceCell {
+        font-size: 20px;
+        font-weight: 500;
     }
 }
 

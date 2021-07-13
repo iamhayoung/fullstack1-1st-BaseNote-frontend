@@ -6,44 +6,26 @@
     margin-bottom: 90px;
     border-top: 2px solid $black;
 
-    .cell {
+    th,
+    td {
         padding: 15px;
         text-align: center;
         vertical-align: middle;
-
-        &:first-child {
-            padding: 15px 0;
-        }
-
-        &:nth-child(2) {
-            width: 34%;
-        }
-
-        &:nth-child(n + 3) {
-            width: 15%;
-        }
-
-        & .productName {
-            font-size: 16px;
-            font-weight: 700;
-        }
-
-        & .volume {
-            margin-top: 15px;
-            color: $grey-70;
-            font-size: 14px;
-            font-weight: 400;
-        }
-
-        &.price {
-            font-size: 20px;
-            font-weight: 500;
-        }
     }
-}
 
-.selectHead {
-    @include flex(normal, center);
+    .selectCell {
+        @include flex(normal, center);
+
+        padding: 15px 0;
+    }
+
+    .productCell {
+        width: 34%;
+    }
+
+    .priceCell {
+        width: 15%;
+    }
 }
 
 .cartItemCheckBox[type='checkbox'] {
