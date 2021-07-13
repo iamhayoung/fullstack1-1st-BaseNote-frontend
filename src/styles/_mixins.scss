@@ -3,3 +3,41 @@
     justify-content: $justify;
     align-items: $align;
 }
+
+@mixin cartTableCell($textAlign) {
+    .cell {
+        padding: 20px;
+        text-align: center;
+
+        &:first-child {
+            flex: 5;
+            padding: 0;
+        }
+
+        &:nth-child(2) {
+            flex: 6;
+            text-align: $textAlign;
+        }
+
+        &:nth-child(n + 3) {
+            flex: 3;
+        }
+
+        & .productName {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        & .volume {
+            margin-top: 15px;
+            color: #999;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        &.price {
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+}
