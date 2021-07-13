@@ -1,0 +1,84 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.cartTableDataRow {
+    border-top: 1px solid $grey-60;
+    border-bottom: 1px solid $grey-60;
+
+    .productColumn {
+        text-align: left;
+
+        & .productName {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        & .volume {
+            margin-top: 15px;
+            color: $grey-70;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+
+    .price {
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+.cartTableDataRow + .cartTableDataRow {
+    border-top: 0;
+}
+
+.quantityBox {
+    @include flex(center, center);
+
+    width: 110px;
+    height: 36px;
+    margin: 0 auto;
+    border: 1px solid $black;
+
+    & .item {
+        width: calc(100% / 3);
+        height: 100%;
+    }
+
+    & .btnQuantity {
+        position: relative;
+        cursor: pointer;
+
+        &:before,
+        &:after {
+            position: absolute;
+            content: '';
+            left: 50%;
+            top: 50%;
+            width: 12px;
+            height: 1px;
+            background: $black;
+            transform: translate(-50%, -50%);
+        }
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.06);
+        }
+
+        &.increase {
+            &:before {
+                transform: translate(-50%, -50%) rotate(90deg);
+            }
+
+            &::after {
+                transform: translate(-50%, -50%) rotate(180deg);
+            }
+        }
+    }
+
+    & .value {
+        @include flex(center, center);
+
+        font-size: 13px;
+        font-weight: 400;
+    }
+}
