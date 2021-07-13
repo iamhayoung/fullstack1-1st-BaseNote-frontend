@@ -7,23 +7,27 @@ class CartTableDataRow extends Component {
 
     return (
       <tr className="cartTableDataRow">
-        <td className="selectCell">
+        <td className="selectColumn">
           <input className="cartItemCheckBox" type="checkbox" />
           <img src="https://placehold.jp/125x160.png" alt="Product thumbnail" />
         </td>
-        <td className="productCell">
+        <td className="productColumn">
           <p className="productName">{`${series} ${seriesNumber}. ${name}`}</p>
           <p className="volume">40ML only</p>
         </td>
-        <td class="priceCell">
+        <td>
           <div className="quantityBox">
             <div className="item btnQuantity decrease"></div>
             <div className="item value">1개</div>
             <div className="item btnQuantity increase"></div>
           </div>
         </td>
-        <td className="priceCell">무료</td>
-        <td className="priceCell">48000</td>
+        <td>
+          <p className="price">무료</p>
+        </td>
+        <td>
+          <p className="price">48000</p>
+        </td>
       </tr>
     );
   }

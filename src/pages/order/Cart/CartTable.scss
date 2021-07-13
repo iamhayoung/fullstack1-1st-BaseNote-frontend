@@ -13,17 +13,17 @@
         vertical-align: middle;
     }
 
-    .selectCell {
+    .selectColumn {
         @include flex(normal, center);
 
         padding: 15px 0;
     }
 
-    .productCell {
+    .productColumn {
         width: 34%;
     }
 
-    .priceCell {
+    .priceColumn {
         width: 15%;
     }
 }

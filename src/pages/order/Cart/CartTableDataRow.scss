@@ -9,7 +9,7 @@
         border-top: 0;
     }
 
-    .productCell {
+    .productColumn {
         text-align: left;
 
         & .productName {
@@ -25,7 +25,7 @@
         }
     }
 
-    .priceCell {
+    .price {
         font-size: 20px;
         font-weight: 500;
     }
