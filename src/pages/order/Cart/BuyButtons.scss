@@ -1,0 +1,30 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.buyButtons {
+    .btnBuy {
+        width: 100%;
+        padding: 18px;
+        color: $white;
+        background: $black;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        cursor: pointer;
+
+        &.isNaver {
+            @include flex(center, center);
+            background: $naver-green;
+
+            .logo-naver {
+                margin-right: 8px;
+                width: 22px;
+                height: 26.4px;
+            }
+        }
+    }
+
+    .btnBuy + .btnBuy {
+        margin-top: 10px;
+    }
+}
