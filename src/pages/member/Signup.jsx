@@ -7,7 +7,6 @@ class Signup extends Component {
   render() {
     return (
       <div className="Signup">
-        {/* {console.log('출력')} */}
         <div>
           <header className="title">회원가입</header>
           <div>
@@ -26,6 +25,5 @@ class Signup extends Component {
     );
   }
 }
-// console.log('signup: ', SignUp);
 
 export default Signup;

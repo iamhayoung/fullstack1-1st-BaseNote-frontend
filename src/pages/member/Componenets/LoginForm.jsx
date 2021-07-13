@@ -24,6 +24,16 @@ class LoginForm extends Component {
   };
 
   login = () => {
+    const { loginIdValue, loginPwValue } = this.state;
+    if (!loginIdValue) {
+      alert('아이디 항목은 필수 입력값입니다.');
+      return;
+    }
+    if (loginPwValue.length < 5) {
+      alert('패스워드 항목이 4자(개) 이상으로 해주십시오.');
+      return;
+    }
+
     fetch('', {
       method: 'POST',
       headers: {
@@ -61,7 +71,9 @@ class LoginForm extends Component {
               <Link to="#">계정을 잊으셨나요?</Link>
               <span className="sign"> / </span>
               <Link to="#">비밀번호를 잊으셨나요?</Link>
-              <button className="signupBtn">회원 가입하기</button>
+              <Link to="/member/signup" className="signupBtn">
+                회원 가입하기
+              </Link>
             </div>
           </div>
           <button className="loginBtn" type="button" onClick={this.login}>
