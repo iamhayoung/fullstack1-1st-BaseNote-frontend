@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import './DataRow.scss';
+import './CartTableDataRow.scss';
 
-class DataRow extends Component {
+class CartTableDataRow extends Component {
   render() {
     const { series, seriesNumber, name } = this.props;
 
     return (
-      <div className="dataRow">
+      <div className="cartTableDataRow">
         <div className="cell selectHead">
           <input className="cartItemCheckBox" type="checkbox" />
           <img src="https://placehold.jp/125x160.png" alt="Product thumbnail" />
@@ -28,4 +28,4 @@ class DataRow extends Component {
     );
   }
 }
-export default DataRow;
+export default CartTableDataRow;

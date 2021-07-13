@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './HeadRow.scss';
+import './CartTableHeadRow.scss';
 
-class HeadRow extends Component {
+class CartTableHeadRow extends Component {
   render() {
     return (
-      <div className="headRow">
+      <div className="cartTableHeadRow">
         <div className="cell selectHead">
           <input className="cartItemCheckBox" type="checkbox" />
           <div className="selectOption">전체 선택</div>
@@ -19,4 +19,4 @@ class HeadRow extends Component {
     );
   }
 }
-export default HeadRow;
+export default CartTableHeadRow;
