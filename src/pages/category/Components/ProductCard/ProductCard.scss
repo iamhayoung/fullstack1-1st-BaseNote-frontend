@@ -1,10 +1,10 @@
 @import '../../../../Styles/mixins';
 
 .productCard {
-    width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .productImg {

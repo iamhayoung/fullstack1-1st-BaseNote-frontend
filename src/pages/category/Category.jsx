@@ -7,22 +7,40 @@ class Category extends Component {
   constructor() {
     super();
     this.state = {
-      products: [],
+      productData: [],
     };
   }
+
+  getProductData = async () => {
+    const { volume } = this.props.match.params;
+    try {
+      if (!['2.5ml', '40ml'].includes(volume)) {
+        this.props.history.push('');
+      } else {
+        const response = await fetch('/data/mockData.json');
+        if (!response.ok)
+          throw new Error(`HTTP Status code: ${response.status}`);
+        const result = await response.json();
+
+        const productData = result.products;
+
+        productData[0].price = productData[0].price[volume];
+        console.log(productData[0].price[volume]);
+        this.setState({ productData: productData });
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  };
   componentDidMount() {
-    fetch('http://localhost:3000/data/mockdata.json')
-      .then(res => res.json())
-      .then(data => {
-        this.setState({ product: data.data });
-      });
+    this.getProductData();
   }
 
   render() {
     return (
       <section className="category">
         <Container option="wide listGrid">
-          {this.state.products.map(products => {
+          {this.state.productData.map(products => {
             return <ProductCard key={products.id} {...products} />;
           })}
         </Container>
