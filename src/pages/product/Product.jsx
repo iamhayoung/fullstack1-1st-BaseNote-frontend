@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Container from '../../components/Container/Container';
-import ProductDetailHead from './ProductDetailHead/ProductDetailHead';
+import ProductDetailBigVolumeHead from './ProductDetailHead/ProductDetailBigVolumeHead';
+import ProductDetailSmallVolumeHead from './ProductDetailHead/ProductDetailSmallVolumeHead';
 import ProductDetailInfo from './ProductDetailInfo/ProductDetailInfo';
 import ProductReview from './ProductReview/ProductReview';
 import './Product.scss';
@@ -44,10 +45,15 @@ class Product extends Component {
 
   render() {
     const { productData } = this.state;
-
+    const pricevalidation = this.state.price;
+    console.log('dafd:', this.state.productData);
     return (
       <Container>
-        <ProductDetailHead productData={productData} />
+        {pricevalidation === 48000 ? (
+          <ProductDetailBigVolumeHead productData={productData} />
+        ) : (
+          <ProductDetailSmallVolumeHead productData={productData} />
+        )}
         <ProductDetailInfo productData={productData} />
         <ProductReview />
       </Container>

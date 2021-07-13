@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { FaRegHeart } from 'react-icons/fa';
-import './ProductDetailHead.scss';
+import './ProductDetailBigVolumeHead.scss';
 
-class ProductDetailHead extends Component {
+class ProductDetailSmallVolumeHead extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -30,7 +30,7 @@ class ProductDetailHead extends Component {
   };
 
   render() {
-    const { clicks, Option_40ml_HiddenBox } = this.state;
+    const { clicks } = this.state;
     const { name, image_url, price, series_number, series } =
       this.props.productData;
 
@@ -48,21 +48,10 @@ class ProductDetailHead extends Component {
             {series} {series_number}. {name}
           </div>
           <div className="productDetailPrice">{this.formatMoney(price)}원</div>
-          <select className="productOption" onChange={this.Click40mlOption}>
-            <option value="productOptionTitle">
-              -[필수] 옵션을 선택해 주세요 -
-            </option>
-            <option value="40ml">40ml Only</option>
-            <option value="40ml_Message">40ml + 각인메세지 (+5000원)</option>
-          </select>
-          <div
-            className={
-              Option_40ml_HiddenBox
-                ? 'Option_40ml_HiddenBox HiddenBoxInactive'
-                : 'Option_40ml_HiddenBox'
-            }
-          >
-            <p className="Only_40ml_HiddenTitle">40ML Only</p>
+          <div className="Option_40ml_HiddenBox">
+            <p className="Only_40ml_HiddenTitle">
+              {series} {series_number}. {name}
+            </p>
             <div className="HiddenCountBox">
               <button
                 type="button"
@@ -92,19 +81,11 @@ class ProductDetailHead extends Component {
           </div>
           <div className="productDetailButtons">
             <button className="productPurchaseButton buttonCommon">
-              바로구매
-            </button>
-            <button className="productNaverPurchaseButton buttonCommon">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtfSR-h7jsc9ADW5NBa-KbcW_Mb4VpR6nj2KzJDeIDC5N8Nruxq2dJUgYXkjI_wuPB9TA&usqp=CAU"
-                alt="NaverIcon"
-                className="naver_icon"
-              />
-              네이버로 구매하기
+              단품장바구니
             </button>
             <div className="cardButton_Heart">
               <button className="productCartButton buttonCommon">
-                장바구니
+                데일리키트담기
               </button>
               <FaRegHeart className="productHeartIcon" />
             </div>
@@ -118,4 +99,4 @@ class ProductDetailHead extends Component {
   }
 }
 
-export default ProductDetailHead;
+export default ProductDetailSmallVolumeHead;
