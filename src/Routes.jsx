@@ -15,8 +15,6 @@ import Product from './pages/product/Product';
 
 class Routes extends Component {
   render() {
-    // console.log('signup in routes: ', SignUp);
-
     return (
       <Router>
         <Switch>
