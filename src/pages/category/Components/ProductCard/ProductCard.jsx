@@ -1,29 +1,42 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 import './ProductCard.scss';
 
 class ProductCard extends Component {
   goToDetail = () => {
-    console.log('click');
-    this.props.history.push(`/product/${this.props.volume}/${this.props.id}`);
+    this.props.history.push(
+      `/product/${this.props.volume}'/'${this.props.id}'`
+    );
   };
 
   render() {
     const { image_url, series, series_number, name, keywords, price } =
       this.props;
+    console.log(price);
+    console.log(this.props.volume);
+    console.log(keywords.first_moods);
+
     return (
       <section className="productCard" onClick={this.goToDetail}>
-        <div classname="clickBox">
+        <div className="clickBox">
           <div className="productImg">
             <img src={image_url} alt="productImg" />
           </div>
           <p className="productTitle">
             {series}
+            &nbsp;
             {series_number}
             <span>.{name}</span>
           </p>
-          <p className="productMood">{keywords.first_mood}</p>
+          <div className="productMood">
+            {keywords.first_moods.map(keyword => (
+              <span key={keyword.id} className="hashtag">
+                #{keyword.mood}
+              </span>
+            ))}
+          </div>
           <div className="amount">
-            {price[this.props.volume]}
+            {this.props.volume}
             <span className="divider">/</span>
             {price[this.props.volume]}
           </div>
@@ -33,4 +46,4 @@ class ProductCard extends Component {
   }
 }
 
-export default ProductCard;
+export default withRouter(ProductCard);
