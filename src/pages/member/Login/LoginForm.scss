@@ -37,6 +37,13 @@
         letter-spacing: normal;
     }
 
+    .linkWrap {
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     .forgotLink {
         display: flex;
         align-items: center;
@@ -51,12 +58,5 @@
         font-weight: bold;
         cursor: pointer;
         user-select: none;
-    }
-
-    .linkWrap {
-        display: flex;
-        margin-top: 20px;
-        justify-content: space-between;
-        align-items: center;
     }
 }

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
+import SignupForm from './SignupForm';
 import { Link } from 'react-router-dom';
 import './Signup.scss';
-import SignupForm from './Componenets/SignupForm';
 
-class Signup extends Component {
+class SignUp extends Component {
   render() {
     return (
       <div className="Signup">
@@ -26,4 +26,4 @@ class Signup extends Component {
   }
 }
 
-export default Signup;
+export default SignUp;
