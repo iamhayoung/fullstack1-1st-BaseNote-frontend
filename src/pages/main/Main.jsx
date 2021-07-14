@@ -9,7 +9,7 @@ class Main extends Component {
         <TopNav />
         <img
           className="MainImage"
-          src="https://image.shutterstock.com/image-photo/grasse-france-21-apr-2018-600w-1085613191.jpg"
+          src="https://images.unsplash.com/photo-1582616698198-f978da534162?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fHBlcmZ1bWV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
           alt="메인 테스트 이미지"
         />
       </>
