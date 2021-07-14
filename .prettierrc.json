@@ -1,14 +1,12 @@
 {
-  "tabWidth": 2,
-  "endOfLine": "auto",
-  "arrowParens": "avoid",
-  "singleQuote": true,
-  "overrides": [
-    {
-      "files": "*.scss",
-      "options": {
-        "tabWidth": 4
-      }
-    }
-  ]
+    "tabWidth": 2,
+    "endOfLine": "auto",
+    "arrowParens": "avoid",
+    "singleQuote": true,
+    "overrides": [{
+        "files": "*.scss",
+        "options": {
+            "tabWidth": 4
+        }
+    }]
 }

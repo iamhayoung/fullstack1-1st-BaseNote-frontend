@@ -5,12 +5,10 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
-import Category from './pages/category/Category';
 import Main from './pages/main/Main';
 import { Login, Signup } from './pages/member';
 import { Cart } from './pages/order';
 import Product from './pages/product/Product';
-
 class Routes extends Component {
   render() {
     return (
@@ -28,5 +26,4 @@ class Routes extends Component {
     );
   }
 }
-
 export default Routes;
