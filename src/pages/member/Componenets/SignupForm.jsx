@@ -9,6 +9,12 @@ class SignupForm extends Component {
     };
   }
 
+  checkChange = () => {
+    this.setState({
+      isChecked: !this.state.isChecked,
+    });
+  };
+
   render() {
     return (
       <form className="SignupForm">
@@ -62,9 +68,7 @@ class SignupForm extends Component {
           <input
             type="checkbox"
             checked={this.state.isChecked}
-            onChange={() => {
-              this.setState({ isChecked: true });
-            }}
+            onChange={this.checkChange}
           ></input>
           <label className="eventAgreement">
             이벤트 및 할인 소식 알림 동의 (선택)
