@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './Main.scss';
 import TopNav from '../../components/TopNav/TopNav';
+import './Main.scss';
 
 class Main extends Component {
   render() {

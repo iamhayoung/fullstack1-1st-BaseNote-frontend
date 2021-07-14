@@ -11,6 +11,7 @@ class TopNav extends Component {
     this.state = {
       index: -1,
       hiddenCard: true,
+      hiddenMenu: true,
     };
   }
   mouseEnter = () => {
