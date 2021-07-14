@@ -1,0 +1,14 @@
+.mainVideo {
+    position: relative;
+    width: 100%;
+    height: 890px;
+}
+
+.mainVideoTitle {
+    position: absolute;
+    left: 30%;
+    top: 400px;
+    color: white;
+    font-size: 50px;
+    z-index: 100;
+}

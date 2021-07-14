@@ -1,17 +1,27 @@
 import React, { Component } from 'react';
 import TopNav from '../../components/TopNav/TopNav';
 import './Main.scss';
+// import cup from './Videos/cup.mp4';
+// import ocean from './Videos/ocean.mp4';
+// import penguin from './Videos/penguin.mp4';
+// import peopleWalking from './Videos/peopleWalking.mp4';
+// import road from './Videos/road.mp4';
+import swimmingPool from './Videos/swimmingPool.mp4';
 
 class Main extends Component {
   render() {
     return (
       <>
         <TopNav />
-        <img
-          className="MainImage"
-          src="https://images.unsplash.com/photo-1582616698198-f978da534162?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fHBlcmZ1bWV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
-          alt="메인 테스트 이미지"
-        />
+        <video
+          autoPlay
+          muted
+          loop
+          src={swimmingPool}
+          type="video/mp4"
+          className="mainVideo"
+        ></video>
+        <p className="mainVideoTitle">가나다라마바사</p>
       </>
     );
   }
