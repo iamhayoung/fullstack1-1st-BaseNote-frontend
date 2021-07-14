@@ -73,7 +73,7 @@ class Main extends Component {
             <div className="reviewText">
               달달~한 향이나는게 이거 뭐 천국의 향이있다면 이걸까요
             </div>
-            <div className="reviewDate">2021.07.14</div>
+            <div className="reviewDate">2021.07.14 신수호</div>
           </div>
         </a>
       </div>
