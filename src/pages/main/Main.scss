@@ -1,4 +1,71 @@
-.mainVideo {
-    height: 890px;
-    width: 100%;
+.main {
+    .mainVideo {
+        position: relative;
+        background-position: center;
+        margin-bottom: -67px;
+        height: 890px;
+        width: 1440px;
+    }
+    .topImageTitleWrapper {
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        top: 40%;
+        left: 30%;
+        width: 40vw;
+        z-index: 100;
+        .mainVideoTitle {
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 2em;
+        }
+        .mainVideoTitle2 {
+            font-size: 52px;
+            font-weight: bold;
+            margin-bottom: 100px;
+        }
+        .findDetails {
+            border: 1px solid black;
+            width: 325px;
+            height: 60px;
+        }
+    }
+    .mainImage {
+        position: relative;
+        height: 600px;
+        width: 1440px;
+    }
+    .secondImageTitleWrapper {
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        top: 120%;
+        left: 30%;
+        width: 40vw;
+        z-index: 100;
+    }
+    .mainPictureTitle {
+        font-size: 37px;
+        font-weight: bold;
+        color: white;
+    }
+    .mainPictureTitle2 {
+        margin-bottom: 60px;
+        font-size: 30px;
+        line-height: 3em;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        color: white;
+    }
+    .changeService {
+        border: 1px solid white;
+        color: white;
+        width: 325px;
+        height: 60px;
+    }
 }
