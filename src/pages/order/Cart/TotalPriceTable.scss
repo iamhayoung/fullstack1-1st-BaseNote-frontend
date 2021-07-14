@@ -1,0 +1,23 @@
+@import '../../../styles/variables';
+
+.totalPriceTable {
+    width: 100%;
+    margin-bottom: 50px;
+    border-top: 2px solid $black;
+    border-bottom: 1px solid $grey-60;
+
+    th,
+    td {
+        padding: 20px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .contentsColumn {
+        width: 18%;
+    }
+
+    .dividerColumn {
+        width: 9%;
+    }
+}

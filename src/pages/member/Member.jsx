@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
-import './Member.scss';
 
 class Member extends Component {
   render() {
-    return <p> 멤버 페이지</p>;
+    return (
+      <div>
+        <p>멤버 페이지</p>
+      </div>
+    );
   }
 }
+
 export default Member;
