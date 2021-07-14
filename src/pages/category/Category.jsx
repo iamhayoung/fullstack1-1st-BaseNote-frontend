@@ -38,11 +38,6 @@ class Category extends Component {
 
   render() {
     return (
-<<<<<<< HEAD
-      <Container>
-        <p>카테고리 페이지</p>
-      </Container>
-=======
       <section className="category">
         <Container option="wide listGrid">
           {this.state.productData.map(products => {
@@ -50,7 +45,6 @@ class Category extends Component {
           })}
         </Container>
       </section>
->>>>>>> main
     );
   }
 }

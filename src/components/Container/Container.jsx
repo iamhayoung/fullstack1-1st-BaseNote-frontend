@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import TopNav from '../TopNav/TopNav';
 import './Container.scss';
+import TopNav from '../../components/TopNav/TopNav';
 
 class Container extends Component {
   render() {
