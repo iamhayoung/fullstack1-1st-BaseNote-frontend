@@ -24,9 +24,7 @@ class Category extends Component {
 
         const productData = result.products;
 
-        productData[0].price = productData[0].price[volume];
-        console.log(productData[0].price[volume]);
-        this.setState({ productData: productData });
+        this.setState({ productData });
       }
     } catch (error) {
       console.error(error);
@@ -36,12 +34,24 @@ class Category extends Component {
     this.getProductData();
   }
 
+  componentDidUpdate(prevProps) {
+    if (prevProps.match.params.volume !== this.props.match.params.volume) {
+      this.getProductData();
+    }
+  }
+
   render() {
     return (
       <section className="category">
         <Container option="wide listGrid">
           {this.state.productData.map(products => {
-            return <ProductCard key={products.id} {...products} />;
+            return (
+              <ProductCard
+                key={products.id}
+                {...products}
+                volume={this.props.match.params.volume}
+              />
+            );
           })}
         </Container>
       </section>
