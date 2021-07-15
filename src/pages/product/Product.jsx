@@ -3,7 +3,6 @@ import Container from '../../components/Container/Container';
 import ProductDetailBigVolumeHead from './ProductDetailHead/ProductDetailBigVolumeHead';
 import ProductDetailSmallVolumeHead from './ProductDetailHead/ProductDetailSmallVolumeHead';
 import ProductDetailInfo from './ProductDetailInfo/ProductDetailInfo';
-import ProductReview from './ProductReview/ProductReview';
 import './Product.scss';
 
 class Product extends Component {
@@ -55,7 +54,6 @@ class Product extends Component {
           <ProductDetailSmallVolumeHead productData={productData} />
         )}
         <ProductDetailInfo productData={productData} />
-        <ProductReview />
       </Container>
     );
   }
