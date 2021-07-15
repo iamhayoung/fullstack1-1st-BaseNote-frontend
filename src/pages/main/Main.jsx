@@ -2,10 +2,7 @@ import React, { Component } from 'react';
 import TopNav from '../../components/TopNav/TopNav';
 import './Main.scss';
 import SwimmingPool from './Videos/SwimmingPool.mp4';
-// import Load from './Videos/Load.mp4';
-// import Apple from './Videos/Apple.mp4';
-// import Cocktail from './Videos/Cocktail.mp4';
-import Beach from './Videos/Beach.mp4';
+import Cocktail from './Videos/Cocktail.mp4';
 
 class Main extends Component {
   constructor() {
@@ -125,7 +122,7 @@ class Main extends Component {
             autoPlay
             muted
             loop
-            src={Beach}
+            src={Cocktail}
             type="video/mp4"
             className="mainVideo2"
           ></video>

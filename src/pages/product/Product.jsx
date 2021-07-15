@@ -45,11 +45,7 @@ class Product extends Component {
 
   render() {
     const { productData } = this.state;
-    const { price } = productData;
     const { volume } = this.props.match.params;
-
-    console.log('price;;;;', price);
-    console.log('product:', productData);
 
     return (
       <Container>

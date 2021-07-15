@@ -8,19 +8,18 @@ class ProductDetailBigVolumeHead extends Component {
     this.state = {
       clicks: 1,
       show: true,
-      Option_40ml_HiddenBox: true,
     };
   }
-  Click40mlOption = () => {
+  click40mlOption = () => {
     this.setState({
-      Option_40ml_HiddenBox: false,
+      option_40ml_HiddenBox: false,
     });
   };
 
-  IncrementItem = () => {
+  incrementItem = () => {
     this.setState({ clicks: this.state.clicks + 1 });
   };
-  DecreaseItem = () => {
+  decreaseItem = () => {
     if (this.state.clicks > 1) {
       this.setState({ clicks: this.state.clicks - 1 });
     }
@@ -30,13 +29,13 @@ class ProductDetailBigVolumeHead extends Component {
   };
 
   render() {
-    const { clicks, Option_40ml_HiddenBox } = this.state;
+    const { clicks, option_40ml_HiddenBox } = this.state;
     const { name, image_url, price, series_number, series } =
       this.props.productData;
 
     return (
-      <div className="ProductDetailHead">
-        <div className="pdoructDetailLeftSection">
+      <div className="ProductDetailBigVolumeHead">
+        <div className="productDetailLeftSection">
           <img
             src={image_url}
             alt="제품이미지"
@@ -48,7 +47,7 @@ class ProductDetailBigVolumeHead extends Component {
             {series} {series_number}. {name}
           </div>
           <div className="productDetailPrice">{this.formatMoney(price)}원</div>
-          <select className="productOption" onChange={this.Click40mlOption}>
+          <select className="productOption" onChange={this.click40mlOption}>
             <option value="productOptionTitle">
               -[필수] 옵션을 선택해 주세요 -
             </option>
@@ -57,27 +56,27 @@ class ProductDetailBigVolumeHead extends Component {
           </select>
           <div
             className={
-              Option_40ml_HiddenBox
-                ? 'Option_40ml_HiddenBox HiddenBoxInactive'
-                : 'Option_40ml_HiddenBox'
+              option_40ml_HiddenBox
+                ? 'option_40ml_HiddenBox hiddenBoxInactive'
+                : 'option_40ml_HiddenBox'
             }
           >
-            <p className="Only_40ml_HiddenTitle">40ML Only</p>
-            <div className="HiddenCountBox">
+            <p className="only_40ml_HiddenTitle">40ML Only</p>
+            <div className="hiddenCountBox">
               <button
                 type="button"
-                className="Only_40ml_MinusButton"
-                onClick={this.DecreaseItem}
+                className="only_40ml_MinusButton"
+                onClick={this.decreaseItem}
               >
                 -
               </button>
-              <div className="HiddenQuantity">
+              <div className="hiddenQuantity">
                 {this.state.show ? <h2>{this.state.clicks}</h2> : ''}
               </div>
               <button
                 type="button"
-                className="Only_40ml_PlusButton"
-                onClick={this.IncrementItem}
+                className="only_40ml_PlusButton"
+                onClick={this.incrementItem}
               >
                 +
               </button>
@@ -109,7 +108,7 @@ class ProductDetailBigVolumeHead extends Component {
               <FaRegHeart className="productHeartIcon" />
             </div>
           </div>
-          <p className="ProductUserLetter">
+          <p className="productUserLetter">
             회원 가입 시 할인, 포인트 적립 등 다양한 혜택을 받을 수 있습니다.
           </p>
         </section>
