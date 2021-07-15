@@ -8,7 +8,6 @@ class ProductDetailBigVolumeHead extends Component {
     this.state = {
       clicks: 1,
       show: true,
-      option_40ml_HiddenBox: true,
     };
   }
   click40mlOption = () => {

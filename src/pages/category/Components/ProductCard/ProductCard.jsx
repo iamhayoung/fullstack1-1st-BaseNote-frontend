@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import './ProductCard.scss';
 
+
 class ProductCard extends Component {
   goToDetail = () => {
     console.log('click');
-    this.props.history.push(`/product/${this.props.volume}/${this.props.id}`);
+    this.props.history.push('/product/${this.props.volume}/${this.props.id}`);
   };
 
   render() {
