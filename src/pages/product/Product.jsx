@@ -45,11 +45,15 @@ class Product extends Component {
 
   render() {
     const { productData } = this.state;
-    const pricevalidation = this.state.price;
-    console.log('dafd:', this.state.productData);
+    const { price } = productData;
+    const { volume } = this.props.match.params;
+
+    console.log('price;;;;', price);
+    console.log('product:', productData);
+
     return (
       <Container>
-        {pricevalidation === 48000 ? (
+        {volume === '40ml' ? (
           <ProductDetailBigVolumeHead productData={productData} />
         ) : (
           <ProductDetailSmallVolumeHead productData={productData} />
