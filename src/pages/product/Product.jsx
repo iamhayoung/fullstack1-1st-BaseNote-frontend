@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Container from '../../components/Container/Container';
-import ProductDetailHead from './ProductDetailHead/ProductDetailHead';
+import ProductDetailBigVolumeHead from './ProductDetailHead/ProductDetailBigVolumeHead';
+import ProductDetailSmallVolumeHead from './ProductDetailHead/ProductDetailSmallVolumeHead';
 import ProductDetailInfo from './ProductDetailInfo/ProductDetailInfo';
 import ProductReview from './ProductReview/ProductReview';
 import './Product.scss';
@@ -29,7 +30,6 @@ class Product extends Component {
         const productData = result.products.filter(
           data => data.id === parseInt(id)
         );
-
         productData[0].price = productData[0].price[volume];
 
         return this.setState({ productData: productData[0] });
@@ -45,10 +45,15 @@ class Product extends Component {
 
   render() {
     const { productData } = this.state;
+    const { volume } = this.props.match.params;
 
     return (
       <Container>
-        <ProductDetailHead productData={productData} />
+        {volume === '40ml' ? (
+          <ProductDetailBigVolumeHead productData={productData} />
+        ) : (
+          <ProductDetailSmallVolumeHead productData={productData} />
+        )}
         <ProductDetailInfo productData={productData} />
         <ProductReview />
       </Container>
