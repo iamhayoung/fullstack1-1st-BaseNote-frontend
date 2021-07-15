@@ -55,7 +55,6 @@ class Product extends Component {
           <ProductDetailSmallVolumeHead productData={productData} />
         )}
         <ProductDetailInfo productData={productData} />
-        <ProductReview />
       </Container>
     );
   }
