@@ -4,9 +4,8 @@ import './ProductCard.scss';
 
 class ProductCard extends Component {
   goToDetail = () => {
-    this.props.history.push(
-      `/product/${this.props.volume}'/'${this.props.id}'`
-    );
+    this.props.history.push(`/product/${this.props.volume}/${this.props.id}`);
+    console.log(this.props.volume);
   };
 
   render() {
