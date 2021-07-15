@@ -47,7 +47,7 @@ class Main extends Component {
         </div>
         <img
           src="https://cdn.pixabay.com/photo/2015/04/20/13/38/furniture-731449_1280.jpg"
-          alt="들판이미지"
+          alt="이미지"
           className="mainImage"
         />
         <div className="secondImageTitleWrapper">
