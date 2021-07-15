@@ -1,11 +1,11 @@
 @import '../../../styles/mixins';
-.ProductDetailBigVolumeHead {
+.ProductDetailSmallVolumeHead {
     display: flex;
     justify-content: space-between;
     margin-top: 8vh;
     width: 100%;
     height: 600px;
-    .pdoructDetailLeftSection {
+    .productDetailLeftSection {
         width: 44%;
         .productDetailImage {
             width: 100%;
@@ -24,13 +24,6 @@
             font-size: 16px;
             line-height: 4em;
         }
-        .productOption {
-            width: 100%;
-            height: 48px;
-            border: 1px solid rgb(214, 214, 214);
-            color: rgb(172, 172, 172);
-            font-size: 16px;
-        }
         .option_40ml_HiddenBox {
             @include flex(space-between, center);
             margin-top: 20px;
@@ -43,18 +36,15 @@
                 background-color: white;
                 color: rgb(214, 214, 214);
             }
-        }
-        .hiddenBoxInactive {
-            display: none;
-        }
-        .hiddenCountBox {
-            @include flex(space-around, center);
-            margin-left: 40px;
-            width: 85px;
-            height: 30px;
-            border: 1px solid rgb(214, 214, 214);
-            .only_40ml_HiddenTitle {
-                font-size: 14px;
+            .hiddenCountBox {
+                @include flex(space-around, center);
+                margin-left: 40px;
+                width: 85px;
+                height: 30px;
+                border: 1px solid rgb(214, 214, 214);
+                .only_40ml_HiddenTitle {
+                    font-size: 14px;
+                }
             }
         }
         .productDetailOptionPrice {
@@ -67,35 +57,23 @@
             padding-top: 30px;
             margin-top: 30px;
             border-top: 1px solid rgb(214, 214, 214);
-        }
-        .totalPrice {
-            font-weight: bold;
-            font-size: 20px;
+            .totalPrice {
+                font-weight: bold;
+                font-size: 20px;
+            }
         }
         .productDetailButtons {
             display: flex;
             flex-direction: column;
-        }
-        .buttonCommon {
-            margin-top: 15px;
-            height: 48px;
-            font-size: 16px;
-            font-weight: bold;
-            .productPurchaseButton {
-                background-color: white;
-                border: 1px solid black;
-            }
-        }
-        .productNaverPurchaseButton {
-            position: relative;
-            align-items: baseline;
-            background-color: #00c73c;
-            color: white;
-            .naver_icon {
-                position: absolute;
-                top: 13px;
-                left: 28%;
-                height: 20px;
+            .buttonCommon {
+                margin-top: 15px;
+                height: 48px;
+                font-size: 16px;
+                font-weight: bold;
+                .productPurchaseButton {
+                    background-color: white;
+                    border: 1px solid black;
+                }
             }
         }
         .productCartButton {
@@ -110,9 +88,9 @@
             margin-left: 23px;
             margin-bottom: -6px;
         }
-    }
-    .productUserLetter {
-        font-size: 14px;
-        margin-top: 13px;
+        .productUserLetter {
+            font-size: 14px;
+            margin-top: 13px;
+        }
     }
 }

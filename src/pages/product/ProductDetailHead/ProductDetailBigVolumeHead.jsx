@@ -35,7 +35,7 @@ class ProductDetailBigVolumeHead extends Component {
 
     return (
       <div className="ProductDetailBigVolumeHead">
-        <div className="pdoructDetailLeftSection">
+        <div className="productDetailLeftSection">
           <img
             src={image_url}
             alt="제품이미지"

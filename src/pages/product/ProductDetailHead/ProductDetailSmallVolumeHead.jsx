@@ -29,7 +29,7 @@ class ProductDetailSmallVolumeHead extends Component {
       this.props.productData;
 
     return (
-      <div className="productDetailSmallVolumeHead">
+      <div className="ProductDetailSmallVolumeHead">
         <div className="producttDetailLeftSection">
           <img
             src={image_url}
