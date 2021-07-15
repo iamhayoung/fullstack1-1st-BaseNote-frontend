@@ -12,7 +12,7 @@ class ProductCard extends Component {
       this.props;
 
     return (
-      <section className="productCard" onClick={this.goToDetail}>
+      <div className="productCard" onClick={this.goToDetail}>
         <div className="clickBox">
           <div className="productImg">
             <img src={image_url} alt="productImg" />
@@ -36,7 +36,7 @@ class ProductCard extends Component {
             {price[this.props.volume]}
           </div>
         </div>
-      </section>
+      </div>
     );
   }
 }

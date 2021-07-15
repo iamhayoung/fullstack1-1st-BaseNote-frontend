@@ -24,8 +24,6 @@ class Category extends Component {
 
         const productData = result.products;
 
-        const amount = productData[0].price[volume];
-        productData[0].price = amount;
         this.setState({ productData });
       }
     } catch (error) {
@@ -35,6 +33,13 @@ class Category extends Component {
   componentDidMount() {
     this.getProductData();
   }
+
+  componentDidUpdate(prevProps) {
+    if (prevProps.match.params.volume !== this.props.match.params.volume) {
+      this.getProductData();
+    }
+  }
+
   render() {
     return (
       <section className="category">
