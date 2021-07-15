@@ -32,13 +32,13 @@
             width: 325px;
             height: 60px;
         }
-    }
-    .changedColor {
-        background-color: black;
-        color: white;
-        width: 325px;
-        height: 60px;
-        transition: 'opacity 500ms , visibility 500ms';
+        .changedColor {
+            background-color: black;
+            color: white;
+            width: 325px;
+            height: 60px;
+            transition: 'opacity 500ms , visibility 500ms';
+        }
     }
     .mainImage {
         position: relative;
@@ -55,26 +55,26 @@
         left: 30%;
         width: 40vw;
         z-index: 100;
-    }
-    .mainPictureTitle {
-        font-size: 37px;
-        font-weight: bold;
-        color: white;
-    }
-    .mainPictureTitle2 {
-        margin-bottom: 60px;
-        font-size: 30px;
-        line-height: 3em;
-        font-weight: 400;
-        text-align: center;
-        white-space: nowrap;
-        color: white;
-    }
-    .changeService {
-        border: 1px solid white;
-        color: white;
-        width: 325px;
-        height: 60px;
+        .mainPictureTitle {
+            font-size: 37px;
+            font-weight: bold;
+            color: white;
+        }
+        .mainPictureTitle2 {
+            margin-bottom: 60px;
+            font-size: 30px;
+            line-height: 3em;
+            font-weight: 400;
+            text-align: center;
+            white-space: nowrap;
+            color: white;
+        }
+        .changeService {
+            border: 1px solid white;
+            color: white;
+            width: 325px;
+            height: 60px;
+        }
     }
     .totalReviewWrapper {
         @include flex(space-around, center);
