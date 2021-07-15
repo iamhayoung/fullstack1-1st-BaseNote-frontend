@@ -6,7 +6,7 @@ class SignupForm extends Component {
     super();
     this.state = {
       isChecked: false,
-      name: '',햣
+      name: '',
       id: '',
       email: '',
       phoneNumber: '',
