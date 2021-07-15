@@ -1,8 +1,8 @@
 @import '../../Styles/_variables';
-.listGrid {
+
+.category {
     background-color: $grey-10;
 }
-
 .listGrid {
     display: grid;
     grid-template-columns: repeat(4, calc(100% / 4));
