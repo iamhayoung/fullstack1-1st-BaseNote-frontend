@@ -12,9 +12,6 @@ class ProductCard extends Component {
   render() {
     const { image_url, series, series_number, name, keywords, price } =
       this.props;
-    console.log(price);
-    console.log(this.props.volume);
-    console.log(keywords.first_moods);
 
     return (
       <section className="productCard" onClick={this.goToDetail}>
