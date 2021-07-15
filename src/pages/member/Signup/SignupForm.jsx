@@ -6,6 +6,12 @@ class SignupForm extends Component {
     super();
     this.state = {
       isChecked: false,
+      name: '',
+      id: '',
+      email: '',
+      phoneNumber: '',
+      pw: '',
+      pwCheck: '',
     };
   }
 
@@ -13,6 +19,58 @@ class SignupForm extends Component {
     this.setState({
       isChecked: !this.state.isChecked,
     });
+  };
+
+  handleNameInput = event => {
+    this.setState({
+      name: event.target.value,
+    });
+  };
+
+  handleIdInput = event => {
+    this.setState({
+      id: event.target.value,
+    });
+  };
+
+  handleEmailInput = event => {
+    this.setState({
+      email: event.target.value,
+    });
+  };
+
+  handlePhoneNumberInput = event => {
+    this.setState({
+      phoneNumber: event.target.value,
+    });
+  };
+
+  handlePwInput = event => {
+    this.setState({
+      pw: event.target.value,
+    });
+  };
+
+  handlePwCheckInput = event => {
+    this.setState({
+      pwCheck: event.target.value,
+    });
+  };
+
+  signup = () => {
+    fetch('', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name: this.state.name,
+        userAccount: this.state.id,
+        email: this.state.email,
+        phoneNumber: this.state.phoneNumber,
+        password: this.state.pw,
+      }),
+    }).then(response => response.json());
   };
 
   render() {
@@ -24,6 +82,7 @@ class SignupForm extends Component {
             className="infoInput name"
             type="text"
             placeholder="이름을 입력해주세요"
+            onClick={this.handleNameInput}
           />
         </div>
         <div className="idWrap">
@@ -32,6 +91,7 @@ class SignupForm extends Component {
             className="infoInput id"
             type="text"
             placeholder="아이디를 입력해주세요"
+            onClick={this.handleIdInput}
           />
         </div>
         <div className="emailWrap">
@@ -40,6 +100,7 @@ class SignupForm extends Component {
             className="infoInput email"
             type="email"
             placeholder="이메일을 입력해주세요"
+            onClick={this.handleEmailInput}
           />
         </div>
         <div className="telWrap">
@@ -48,6 +109,7 @@ class SignupForm extends Component {
             className="infoInput tel"
             type="tel"
             placeholder="000-0000-0000"
+            onClick={this.handlePhoneNumberInput}
           />
         </div>
         <div className="pWWrap">
@@ -56,6 +118,7 @@ class SignupForm extends Component {
             className="infoInput pw"
             type="password"
             placeholder="비밀번호를 입력해주세요"
+            onClick={this.handlePwInput}
           />
         </div>
         <div className="pwCheckWrap">
@@ -64,6 +127,7 @@ class SignupForm extends Component {
             className="infoInput pwCheck"
             type="password"
             placeholder="비밀번호를 다시 입력해주세요"
+            onClick={this.handlePwCheckInput}
           />
           <input
             type="checkbox"
