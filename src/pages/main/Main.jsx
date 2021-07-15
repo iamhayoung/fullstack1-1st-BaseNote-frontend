@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import TopNav from '../../components/TopNav/TopNav';
 import './Main.scss';
-// import Cup from './Videos/Cup.mp4';
-// import Ocean from './Videos/Ocean.mp4';
-// import penguin from './Videos/penguin.mp4';
-// import PeopleWalking from './Videos/PeopleWalking.mp4';
-// import Road from './Videos/Road.mp4';
 import SwimmingPool from './Videos/SwimmingPool.mp4';
+// import Load from './Videos/Load.mp4';
+// import Apple from './Videos/Apple.mp4';
+// import Cocktail from './Videos/Cocktail.mp4';
+import Beach from './Videos/Beach.mp4';
 
 class Main extends Component {
   constructor() {
@@ -73,7 +72,8 @@ class Main extends Component {
               <div className="review">
                 <div className="reviewTitle">melt 01. 어른의 솜사탕</div>
                 <div className="reviewText">
-                  달달~한 향이나는게 이거 뭐 천국의 향이있다면 이걸까요
+                  달달~한 향이나는게 이거 뭐 솜사탕 향기 못참죠. 이거하나만
+                  있으면 데이트할떄 완전히 만구땡입니다.
                 </div>
                 <div className="reviewDate">2021.07.14 신수호</div>
                 <img
@@ -89,8 +89,9 @@ class Main extends Component {
               <div className="review">
                 <div className="reviewTitle">wind 02. 백색 향</div>
                 <div className="reviewText">
-                  깔끔하면서 상쾌한 향입니다. 일요일 아침에 뿌리고 나가면
-                  하루종일 기분이 좋아요. 코드리뷰할때 더 잘 보이는거같아요.
+                  깔끔하면서 상쾌한 향입니다. 출근길 아침에 뿌리고 나가면
+                  하루종일 기분이 좋아요. 코드리뷰할때 문제가 더 잘보이는것
+                  같아요
                 </div>
                 <div className="reviewDate">2021.01.21 이장현</div>
                 <img
@@ -106,8 +107,8 @@ class Main extends Component {
               <div className="review">
                 <div className="reviewTitle">path 01. 물기 머금은 장미</div>
                 <div className="reviewText">
-                  여름이 떠오르는 싱그러운 향이에요. 재구매의사 100%입니다.
-                  머리가 맑아지고 코딩이 잘됩니다.
+                  여름이 떠오르는 싱그러운 향이에요, 재구매의사 100%입니다.
+                  머리가 맑아지고 코딩이 잘됩니다
                 </div>
                 <div className="reviewDate">2021.02.11 이소헌</div>
                 <img
@@ -118,6 +119,16 @@ class Main extends Component {
               </div>
             </a>
           </div>
+        </div>
+        <div className="mainVideo2Wrapper">
+          <video
+            autoPlay
+            muted
+            loop
+            src={Beach}
+            type="video/mp4"
+            className="mainVideo2"
+          ></video>
         </div>
       </div>
     );
