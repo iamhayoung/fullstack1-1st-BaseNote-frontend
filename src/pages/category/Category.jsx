@@ -35,7 +35,6 @@ class Category extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    console.log(prevProps.match.params.volume, this.props.match.params.volume);
     if (prevProps.match.params.volume !== this.props.match.params.volume) {
       this.getProductData();
     }
