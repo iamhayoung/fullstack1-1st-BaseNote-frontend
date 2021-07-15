@@ -8,19 +8,13 @@ class ProductDetailSmallVolumeHead extends Component {
     this.state = {
       clicks: 1,
       show: true,
-      Option_40ml_HiddenBox: true,
     };
   }
-  Click40mlOption = () => {
-    this.setState({
-      Option_40ml_HiddenBox: false,
-    });
-  };
 
-  IncrementItem = () => {
+  incrementItem = () => {
     this.setState({ clicks: this.state.clicks + 1 });
   };
-  DecreaseItem = () => {
+  decreaseItem = () => {
     if (this.state.clicks > 1) {
       this.setState({ clicks: this.state.clicks - 1 });
     }
@@ -35,7 +29,7 @@ class ProductDetailSmallVolumeHead extends Component {
       this.props.productData;
 
     return (
-      <div className="ProductDetailSmallVolumeHead">
+      <div className="productDetailSmallVolumeHead">
         <div className="producttDetailLeftSection">
           <img
             src={image_url}
@@ -56,7 +50,7 @@ class ProductDetailSmallVolumeHead extends Component {
               <button
                 type="button"
                 className="only_40ml_MinusButton"
-                onClick={this.DecreaseItem}
+                onClick={this.decreaseItem}
               >
                 -
               </button>
@@ -66,7 +60,7 @@ class ProductDetailSmallVolumeHead extends Component {
               <button
                 type="button"
                 className="only_40ml_PlusButton"
-                onClick={this.IncrementItem}
+                onClick={this.incrementItem}
               >
                 +
               </button>
