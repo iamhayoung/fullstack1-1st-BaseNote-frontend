@@ -32,13 +32,13 @@
             width: 325px;
             height: 60px;
         }
-        .changedColor {
-            background-color: black;
-            color: white;
-            width: 325px;
-            height: 60px;
-            transition: 'opacity 500ms , visibility 500ms';
-        }
+    }
+    .changedColor {
+        background-color: black;
+        color: white;
+        width: 325px;
+        height: 60px;
+        transition: 'opacity 500ms , visibility 500ms';
     }
     .mainImage {
         position: relative;
