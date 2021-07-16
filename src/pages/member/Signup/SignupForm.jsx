@@ -57,12 +57,8 @@ class SignupForm extends Component {
     });
   };
 
-  // 회원가입하는 함수
   signup = () => {
-    // alert('hi');
-    console.log('fetch 직전에 값 확인', this.state);
-    // 회원가입 fetch
-    fetch('http://10.89.1.225:8000/member/signup', {
+    fetch('', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

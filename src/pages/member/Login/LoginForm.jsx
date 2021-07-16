@@ -34,7 +34,7 @@ class LoginForm extends Component {
       return;
     }
 
-    fetch('http://10.89.1.225:8000/member/login', {
+    fetch('', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -46,21 +46,13 @@ class LoginForm extends Component {
     })
       .then(response => response.json())
       .then(result => {
-        console.log(result.accessToken); // <- token값 저장!
+        console.log(result.accessToken);
         if (result.accessToken) {
           localStorage.setItem('token', result.accessToken);
           this.props.history.push('/');
         } else {
           alert('아이디 또는 비밀번호가 일치하지 않습니다.');
         }
-
-        // 자바스크립트의 경우 아래로 코드를 입력할 수 있음!
-        // if(result.access_token) { <-- 로그인 성공/실패 조건문?
-        // 	window.location.href="main";
-        // } else {
-
-        //} 	alert('아이디 또는 비밀번호가 일치하지 않습니다.')
-        // })
       });
   };
 
