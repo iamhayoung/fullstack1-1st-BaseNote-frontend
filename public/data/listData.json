@@ -1,0 +1,229 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "작은 소년",
+      "series": "wind",
+      "seriesNumber": "01",
+      "imageUrl": "https://images.unsplash.com/photo-1526505262320-81542978f63b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+      "price": {
+        "2.5ml": "4000",
+        "40ml": "48000"
+      },
+      "keywords": [
+        {
+          "id": 1,
+          "mood": "겨울숲"
+        },
+        {
+          "id": 2,
+          "mood": "부드러운"
+        },
+        {
+          "id": 3,
+          "mood": "자스민"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "신스케의 솜사탕",
+      "series": "wind",
+      "seriesNumber": "02",
+      "imageUrl": "https://images.unsplash.com/photo-1602473395999-7e8b95d173e4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2734&q=80",
+      "price": {
+        "2.5ml": "4000",
+        "40ml": "48000"
+      },
+      "keywords": [
+        {
+          "id": 1,
+          "mood": "겨울숲"
+        },
+        {
+          "id": 2,
+          "mood": "사랑스러운"
+        },
+        {
+          "id": 3,
+          "mood": "비누향"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "도토리의 추억",
+      "series": "wind",
+      "seriesNumber": "03",
+      "imageUrl": "https://images.unsplash.com/photo-1602078794418-dba87dccba4d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=788&q=80",
+      "price": {
+        "2.5ml": "4000",
+        "40ml": "48000"
+      },
+      "keywords": [
+        {
+          "id": 1,
+          "mood": "따뜻한"
+        },
+        {
+          "id": 2,
+          "mood": "내추럴"
+        },
+        {
+          "id": 3,
+          "mood": "청량한"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "생각의 창의성",
+      "series": "melt",
+      "seriesNumber": "01",
+      "imageUrl": "https://images.unsplash.com/photo-1489419714522-eb568919d2ed?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "price": {
+        "2.5ml": "4000",
+        "40ml": "48000"
+      },
+      "keywords": [
+        {
+          "id": 1,
+          "mood": "어른스러운"
+        },
+        {
+          "id": 2,
+          "mood": "풀잎"
+        },
+        {
+          "id": 3,
+          "mood": "프리지아"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "카페인",
+      "series": "melt",
+      "seriesNumber": "02",
+      "imageUrl": "https://images.unsplash.com/photo-1515471897120-85416077e011?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80",
+      "price": {
+        "2.5ml": "4000",
+        "40ml": "48000"
+      },
+      "keywords": [
+        {
+          "id": 1,
+          "mood": "지적인"
+        },
+        {
+          "id": 2,
+          "mood": "청량한"
+        },
+        {
+          "id": 3,
+          "mood": "따뜻한"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "저녁의 디저트",
+      "series": "melt",
+      "seriesNumber": "03",
+      "imageUrl": "https://images.unsplash.com/photo-1615832494873-b0c52d519696?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2734&q=80",
+      "price": {
+        "2.5ml": "4000",
+        "40ml": "48000"
+      },
+      "keywords": [
+        {
+          "id": 1,
+          "mood": "차분한"
+        },
+        {
+          "id": 2,
+          "mood": "깔끔한"
+        },
+        {
+          "id": 3,
+          "mood": "겨울숲"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "바닷가 데이트",
+      "series": "path",
+      "seriesNumber": "01",
+      "imageUrl": "https://images.unsplash.com/photo-1522098605161-cc0c1434c31a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2734&q=80",
+      "price": {
+        "2.5ml": "4000",
+        "40ml": "48000"
+      },
+      "keywords": [
+        {
+          "id": 1,
+          "mood": "섬세한"
+        },
+        {
+          "id": 2,
+          "mood": "가벼운"
+        },
+        {
+          "id": 3,
+          "mood": "시원한"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "푸른 오렌지길",
+      "series": "path",
+      "seriesNumber": "02",
+      "imageUrl": "https://images.unsplash.com/photo-1552089123-2d26226fc2b7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "price": {
+        "2.5ml": "4000",
+        "40ml": "48000"
+      },
+      "keywords": [
+        {
+          "id": 1,
+          "mood": "초여름"
+        },
+        {
+          "id": 2,
+          "mood": "투명한"
+        },
+        {
+          "id": 3,
+          "mood": "초콜릿"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "편안한 인센스",
+      "series": "path",
+      "seriesNumber": "03",
+      "imageUrl": "https://images.unsplash.com/photo-1613750255797-7d4f877615df?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80",
+      "price": {
+        "2.5ml": "4000",
+        "40ml": "48000"
+      },
+      "keywords": [
+        {
+          "id": 1,
+          "mood": "달달한"
+        },
+        {
+          "id": 2,
+          "mood": "프루티"
+        },
+        {
+          "id": 3,
+          "mood": "따뜻한"
+        }
+      ]
+    }
+  ]
+}
