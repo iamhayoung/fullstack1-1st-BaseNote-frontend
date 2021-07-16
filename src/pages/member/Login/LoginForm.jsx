@@ -34,21 +34,21 @@ class LoginForm extends Component {
       return;
     }
 
-    fetch('/member/login', {
+    fetch('http://10.89.1.225:8000/member/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        user_account: this.state.loginIdValue,
+        userAccount: this.state.loginIdValue,
         password: this.state.loginPwValue,
       }),
     })
       .then(response => response.json())
       .then(result => {
-        console.log(result.access_token); // <- token값 저장!
-        if (result.access_token) {
-          localStorage.setItem('token', result.access_token);
+        console.log(result.accessToken); // <- token값 저장!
+        if (result.accessToken) {
+          localStorage.setItem('token', result.accessToken);
           this.props.history.push('/');
         } else {
           alert('아이디 또는 비밀번호가 일치하지 않습니다.');
