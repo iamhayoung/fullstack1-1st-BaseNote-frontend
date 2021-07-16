@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TopNav from '../../../../src/components/TopNav';
+import TopNav from '../../../../src/components/TopNav/TopNav';
 import './Login.scss';
 import LoginForm from './LoginForm';
 
