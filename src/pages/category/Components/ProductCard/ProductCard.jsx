@@ -8,23 +8,23 @@ class ProductCard extends Component {
   };
 
   render() {
-    const { image_url, series, series_number, name, keywords, price } =
+    const { imageUrl, series, seriesNumber, name, keywords, price } =
       this.props;
 
     return (
       <div className="productCard" onClick={this.goToDetail}>
         <div className="clickBox">
           <div className="productImg">
-            <img src={image_url} alt="productImg" />
+            <img src={imageUrl} alt="productImg" />
           </div>
           <p className="productTitle">
             {series}
             &nbsp;
-            {series_number}
+            {seriesNumber}
             <span>.{name}</span>
           </p>
           <div className="productMood">
-            {keywords.first_moods.map(keyword => (
+            {keywords.map(keyword => (
               <span key={keyword.id} className="hashtag">
                 #{keyword.mood}
               </span>

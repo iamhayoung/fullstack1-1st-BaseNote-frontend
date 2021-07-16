@@ -21,7 +21,7 @@ class Keyword extends Component {
               {keyword.mood}
             </div>
           ))}
-          {keywords.first_moods.map(keyword => (
+          {keywords.second_moods.map(keyword => (
             <div key={keyword.id} className="circle large">
               {keyword.mood}
             </div>
