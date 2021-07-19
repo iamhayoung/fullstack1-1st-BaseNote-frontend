@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import TopNav from '../../components/TopNav/TopNav';
-import './Main.scss';
 import SwimmingPool from './Videos/SwimmingPool.mp4';
 import Cocktail from './Videos/Cocktail.mp4';
+import './Main.scss';
 
 class Main extends Component {
   constructor() {
@@ -25,7 +24,6 @@ class Main extends Component {
     const { index } = this.state;
     return (
       <div className="main">
-        <TopNav />
         <video
           autoPlay
           muted
