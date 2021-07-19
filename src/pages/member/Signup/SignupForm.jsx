@@ -22,38 +22,44 @@ class SignupForm extends Component {
   };
 
   handleNameInput = event => {
+    const { value } = event.target;
     this.setState({
-      name: event.target.value,
+      name: value,
     });
   };
 
   handleIdInput = event => {
+    const { value } = event.target;
     this.setState({
-      id: event.target.value,
+      id: value,
     });
   };
 
   handleEmailInput = event => {
+    const { value } = event.target;
     this.setState({
-      email: event.target.value,
+      email: value,
     });
   };
 
   handlePhoneNumberInput = event => {
+    const { value } = event.target;
     this.setState({
-      phoneNumber: event.target.value,
+      phoneNumber: value,
     });
   };
 
   handlePwInput = event => {
+    const { value } = event.target;
     this.setState({
-      pw: event.target.value,
+      pw: value,
     });
   };
 
   handlePwCheckInput = event => {
+    const { value } = event.target;
     this.setState({
-      pwCheck: event.target.value,
+      pwCheck: value,
     });
   };
 
