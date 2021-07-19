@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import TopNav from '../../../../src/components/TopNav/TopNav';
-import './Login.scss';
 import LoginForm from './LoginForm';
+import './Login.scss';
 
 class Login extends Component {
   render() {
@@ -24,4 +23,5 @@ class Login extends Component {
     );
   }
 }
+
 export default Login;

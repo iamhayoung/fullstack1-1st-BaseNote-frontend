@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import './LoginForm.scss';
 
 class LoginForm extends Component {
@@ -40,13 +40,24 @@ class LoginForm extends Component {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        user_account: this.state.loginIdValue,
+        userAccount: this.state.loginIdValue,
         password: this.state.loginPwValue,
       }),
-    }).then(response => response.json());
+    })
+      .then(response => response.json())
+      .then(result => {
+        console.log(result.accessToken);
+        if (result.accessToken) {
+          localStorage.setItem('token', result.accessToken);
+          this.props.history.push('/');
+        } else {
+          alert('아이디 또는 비밀번호가 일치하지 않습니다.');
+        }
+      });
   };
 
   render() {
+    console.log(this.props);
     return (
       <form className="LoginForm">
         <div className="idWrap">
@@ -85,4 +96,4 @@ class LoginForm extends Component {
   }
 }
 
-export default LoginForm;
+export default withRouter(LoginForm);

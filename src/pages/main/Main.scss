@@ -1,0 +1,128 @@
+@import '../../styles/mixins';
+.main {
+    .mainVideo {
+        position: relative;
+        background-position: center;
+        margin-bottom: -67px;
+        height: 100%;
+        width: 100%;
+    }
+    .topImageTitleWrapper {
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        top: 40%;
+        left: 30%;
+        width: 40vw;
+        z-index: 100;
+        .mainVideoTitle {
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 2em;
+        }
+        .mainVideoTitle2 {
+            font-size: 52px;
+            font-weight: bold;
+            margin-bottom: 100px;
+        }
+        .findDetails {
+            border: 1px solid black;
+            width: 325px;
+            height: 60px;
+        }
+    }
+    .changedColor {
+        background-color: black;
+        color: white;
+        width: 325px;
+        height: 60px;
+        transition: 'opacity 500ms , visibility 500ms';
+    }
+    .mainImage {
+        position: relative;
+        height: 600px;
+        width: 100%;
+    }
+    .secondImageTitleWrapper {
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        top: 115%;
+        left: 30%;
+        width: 40vw;
+        z-index: 100;
+        .mainPictureTitle {
+            font-size: 37px;
+            font-weight: bold;
+            color: white;
+        }
+        .mainPictureTitle2 {
+            margin-bottom: 60px;
+            font-size: 30px;
+            line-height: 3em;
+            font-weight: 400;
+            text-align: center;
+            white-space: nowrap;
+            color: white;
+        }
+        .changeService {
+            border: 1px solid white;
+            color: white;
+            width: 325px;
+            height: 60px;
+        }
+    }
+    .totalReviewWrapper {
+        @include flex(space-around, center);
+        margin-top: 50px;
+        margin-bottom: 40px;
+        .reviewWrapper {
+            width: 266px;
+            height: 290px;
+            .review {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+            .reviewTitle {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 1em;
+                color: black;
+            }
+            .reviewText {
+                margin-top: 30px;
+                max-height: 72px;
+                overflow: hidden;
+                font-size: 16px;
+            }
+            .reviewDate {
+                margin-top: 30px;
+                font-size: 12px;
+                font-weight: 300;
+                line-height: 1em;
+            }
+            .reviewImage {
+                margin-top: 30px;
+                height: 80px;
+                width: 80px;
+                border-radius: 70%;
+                overflow: hidden;
+            }
+        }
+    }
+    .mainVideo2Wrapper {
+        position: relative;
+        margin: 0px auto;
+        overflow: hidden;
+        width: 100%;
+        height: 600px;
+        .mainVideo2 {
+            width: 100%;
+        }
+    }
+}

@@ -58,9 +58,6 @@ class SignupForm extends Component {
   };
 
   signup = () => {
-    alert('hi');
-    console.log('fetch 직전에 값 확인', this.state);
-
     fetch('', {
       method: 'POST',
       headers: {

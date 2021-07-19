@@ -20,7 +20,7 @@ class Product extends Component {
       if (!['2.5ml', '40ml'].includes(volume)) {
         this.props.history.push('');
       } else {
-        const response = await fetch('/data/mockData.json');
+        const response = await fetch('/data/detailData.json');
 
         if (!response.ok)
           throw new Error(`HTTP Status code: ${response.status}`);
