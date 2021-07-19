@@ -23,16 +23,18 @@ class MainImageTitle extends Component {
 
   render() {
     const { index } = this.state;
+    const { title, title2, buttonTitle } = this.props;
+    console.log('props:', this.props);
     return (
       <div className="ImageTitleWrapper">
-        <div className="mainVideoTitle">"그 시절 여름의 향기"</div>
-        <div className="mainVideoTitle2">SUMMER EDITION'3</div>
+        <div className="mainVideoTitle">"{title}"</div>
+        <div className="mainVideoTitle2">{title2}</div>
         <button
-          className={index === 0 ? 'changedColor' : 'findDetails'}
+          className={index === { index } ? 'changedColor' : 'findDetails'}
           onMouseOver={() => this.mouseEnter(0)}
           onMouseLeave={this.mouseLeave}
         >
-          자세히보기
+          {buttonTitle}
         </button>
       </div>
     );

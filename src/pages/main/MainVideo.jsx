@@ -4,7 +4,6 @@ import './MainVideo.scss';
 class MainVideo extends Component {
   render() {
     const { src } = this.props;
-    console.log('video:', this.props.src);
     return (
       <video
         autoPlay
