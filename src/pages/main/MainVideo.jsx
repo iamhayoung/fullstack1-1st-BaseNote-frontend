@@ -3,7 +3,7 @@ import './MainVideo.scss';
 
 class MainVideo extends Component {
   render() {
-    const videoSrc = this.props.src;
+    const { videoSrc } = this.props.src;
     console.log('video:', videoSrc);
     return (
       <video

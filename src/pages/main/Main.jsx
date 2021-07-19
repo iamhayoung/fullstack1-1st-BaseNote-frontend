@@ -4,44 +4,16 @@ import './Main.scss';
 import SwimmingPool from './Videos/SwimmingPool.mp4';
 import Cocktail from './Videos/Cocktail.mp4';
 import MainVideo from './MainVideo';
+import MainImageTitle from './MainImageTitle';
 
 class Main extends Component {
-  constructor() {
-    super();
-    this.state = {
-      index: -1,
-    };
-  }
-
-  mouseEnter = index => {
-    this.setState({
-      index,
-    });
-  };
-
-  mouseLeave = () => {
-    this.setState({
-      index: -1,
-    });
-  };
-
   render() {
     const { index } = this.state;
     return (
       <div className="main">
         <TopNav />
         <MainVideo src={SwimmingPool} />
-        <div className="ImageTitleWrapper">
-          <div className="mainVideoTitle">"그 시절 여름의 향기"</div>
-          <div className="mainVideoTitle2">SUMMER EDITION'3</div>
-          <button
-            className={index === 0 ? 'changedColor' : 'findDetails'}
-            onMouseOver={() => this.mouseEnter(0)}
-            onMouseLeave={this.mouseLeave}
-          >
-            자세히보기
-          </button>
-        </div>
+        <MainImageTitle />
         <img
           src="https://cdn.pixabay.com/photo/2015/04/20/13/38/furniture-731449_1280.jpg"
           alt="이미지"
