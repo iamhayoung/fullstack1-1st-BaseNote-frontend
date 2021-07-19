@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import SignupForm from './SignupForm';
-import TopNav from '../../../components/TopNav/TopNav';
 import { Link } from 'react-router-dom';
 import './Signup.scss';
 
@@ -8,7 +7,6 @@ class SignUp extends Component {
   render() {
     return (
       <div className="Signup">
-        <TopNav />
         <div>
           <header className="title">회원가입</header>
           <div>
