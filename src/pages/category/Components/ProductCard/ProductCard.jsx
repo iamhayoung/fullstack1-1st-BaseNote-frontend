@@ -22,13 +22,6 @@ class ProductCard extends Component {
             {seriesNumber}
             <span>.{name}</span>
           </p>
-          {/* <div className="productMood">
-            {keywords.map(keyword => (
-              <span key={keyword.id} className="hashtag">
-                #{keyword.mood}
-              </span>
-            ))}
-          </div> */}
           <div className="amount">
             {volume}
             <span className="divider">/</span>
