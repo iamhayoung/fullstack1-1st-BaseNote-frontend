@@ -8,14 +8,13 @@ class ProductCard extends Component {
   };
 
   render() {
-    const { imageUrl, series, seriesNumber, name, keywords, price } =
-      this.props;
+    const { imageURL, series, seriesNumber, name, volume, price } = this.props;
 
     return (
       <div className="productCard" onClick={this.goToDetail}>
         <div className="clickBox">
           <div className="productImg">
-            <img src={imageUrl} alt="productImg" />
+            <img src={imageURL} alt="productImg" />
           </div>
           <p className="productTitle">
             {series}
@@ -23,17 +22,10 @@ class ProductCard extends Component {
             {seriesNumber}
             <span>.{name}</span>
           </p>
-          <div className="productMood">
-            {keywords.map(keyword => (
-              <span key={keyword.id} className="hashtag">
-                #{keyword.mood}
-              </span>
-            ))}
-          </div>
           <div className="amount">
-            {this.props.volume}
+            {volume}
             <span className="divider">/</span>
-            {price[this.props.volume]}
+            {price}
           </div>
         </div>
       </div>

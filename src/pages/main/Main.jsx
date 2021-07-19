@@ -1,17 +1,14 @@
 import React, { Component } from 'react';
-import TopNav from '../../components/TopNav/TopNav';
-import './Main.scss';
 import SwimmingPool from './Videos/SwimmingPool.mp4';
 import Cocktail from './Videos/Cocktail.mp4';
 import MainVideo from './MainVideo';
 import MainImageTitle from './MainImageTitle';
+import './Main.scss';
 
 class Main extends Component {
   render() {
-    const { index } = this.state;
     return (
       <div className="main">
-        <TopNav />
         <MainVideo src={SwimmingPool} />
         <MainImageTitle />
         <img
@@ -19,19 +16,6 @@ class Main extends Component {
           alt="이미지"
           className="mainImage"
         />
-        <div className="ImageTitleWrapper">
-          <div className="mainPictureTitle">Change For Signiture</div>
-          <div className="mainPictureTitle2">
-            시그니처 향수를 찾기위한 교환 서비스
-          </div>
-          <button
-            className={index === 1 ? 'changedColor' : 'changeService'}
-            onMouseOver={() => this.mouseEnter(1)}
-            onMouseLeave={this.mouseLeave}
-          >
-             교환서비스
-          </button>
-        </div>
         <div className="totalReviewWrapper">
           <div className="reviewWrapper">
             <a href="/product/40ml/1">

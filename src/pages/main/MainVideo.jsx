@@ -3,14 +3,14 @@ import './MainVideo.scss';
 
 class MainVideo extends Component {
   render() {
-    const { videoSrc } = this.props.src;
-    console.log('video:', videoSrc);
+    const { src } = this.props;
+    console.log('video:', this.props.src);
     return (
       <video
         autoPlay
         muted
         loop
-        src={videoSrc}
+        src={src}
         type="video/mp4"
         className="mainVideo"
       ></video>
