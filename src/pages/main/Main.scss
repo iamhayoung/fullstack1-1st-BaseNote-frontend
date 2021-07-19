@@ -1,12 +1,5 @@
 @import '../../styles/mixins';
 .main {
-    .mainVideo {
-        position: relative;
-        background-position: center;
-        margin-bottom: -67px;
-        height: 100%;
-        width: 100%;
-    }
     .topImageTitleWrapper {
         position: absolute;
         flex-direction: column;
@@ -23,21 +16,21 @@
             line-height: 2em;
         }
         .mainVideoTitle2 {
+            margin-bottom: 100px;
             font-size: 52px;
             font-weight: bold;
-            margin-bottom: 100px;
         }
         .findDetails {
-            border: 1px solid black;
             width: 325px;
             height: 60px;
+            border: 1px solid black;
         }
     }
     .changedColor {
-        background-color: black;
-        color: white;
         width: 325px;
         height: 60px;
+        background-color: black;
+        color: white;
         transition: 'opacity 500ms , visibility 500ms';
     }
     .mainImage {
@@ -56,9 +49,9 @@
         width: 40vw;
         z-index: 100;
         .mainPictureTitle {
+            color: white;
             font-size: 37px;
             font-weight: bold;
-            color: white;
         }
         .mainPictureTitle2 {
             margin-bottom: 60px;
@@ -70,10 +63,10 @@
             color: white;
         }
         .changeService {
-            border: 1px solid white;
-            color: white;
             width: 325px;
             height: 60px;
+            border: 1px solid white;
+            color: white;
         }
     }
     .totalReviewWrapper {
@@ -89,16 +82,16 @@
                 flex-direction: column;
             }
             .reviewTitle {
+                color: black;
                 font-size: 16px;
                 font-weight: 500;
                 line-height: 1em;
-                color: black;
             }
             .reviewText {
                 margin-top: 30px;
                 max-height: 72px;
-                overflow: hidden;
                 font-size: 16px;
+                overflow: hidden;
             }
             .reviewDate {
                 margin-top: 30px;

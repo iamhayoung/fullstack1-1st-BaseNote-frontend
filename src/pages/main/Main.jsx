@@ -3,6 +3,7 @@ import TopNav from '../../components/TopNav/TopNav';
 import './Main.scss';
 import SwimmingPool from './Videos/SwimmingPool.mp4';
 import Cocktail from './Videos/Cocktail.mp4';
+import MainVideo from './MainVideo';
 
 class Main extends Component {
   constructor() {
@@ -11,30 +12,26 @@ class Main extends Component {
       index: -1,
     };
   }
+
   mouseEnter = index => {
     this.setState({
-      index: index,
+      index,
     });
   };
+
   mouseLeave = () => {
     this.setState({
       index: -1,
     });
   };
+
   render() {
     const { index } = this.state;
     return (
       <div className="main">
         <TopNav />
-        <video
-          autoPlay
-          muted
-          loop
-          src={SwimmingPool}
-          type="video/mp4"
-          className="mainVideo"
-        ></video>
-        <div className="topImageTitleWrapper">
+        <MainVideo src={SwimmingPool} />
+        <div className="ImageTitleWrapper">
           <div className="mainVideoTitle">"그 시절 여름의 향기"</div>
           <div className="mainVideoTitle2">SUMMER EDITION'3</div>
           <button
@@ -50,7 +47,7 @@ class Main extends Component {
           alt="이미지"
           className="mainImage"
         />
-        <div className="secondImageTitleWrapper">
+        <div className="ImageTitleWrapper">
           <div className="mainPictureTitle">Change For Signiture</div>
           <div className="mainPictureTitle2">
             시그니처 향수를 찾기위한 교환 서비스
@@ -117,16 +114,7 @@ class Main extends Component {
             </a>
           </div>
         </div>
-        <div className="mainVideo2Wrapper">
-          <video
-            autoPlay
-            muted
-            loop
-            src={Cocktail}
-            type="video/mp4"
-            className="mainVideo2"
-          ></video>
-        </div>
+        <MainVideo src={Cocktail} />
       </div>
     );
   }
