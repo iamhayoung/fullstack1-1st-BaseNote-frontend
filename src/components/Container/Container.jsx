@@ -4,13 +4,8 @@ import './Container.scss';
 class Container extends Component {
   render() {
     const { children, option } = this.props;
-    return (
-      <div
-        className={option === undefined ? 'container' : `container ${option}`}
-      >
-        {children}
-      </div>
-    );
+
+    return <div className={`container ${option || ''}`}>{children}</div>;
   }
 }
 

@@ -15,13 +15,13 @@ class Keyword extends Component {
           사용자와 주변 사람들이 어떻게 느낄지 유추할 수 있습니다.
         </p>
         <Hashtags series={series} seriesNumber={series_number} name={name} />
-        <div className={`bubbles ${series ? series : ''}`}>
+        <div className={`bubbles ${series || ''}`}>
           {keywords.first_moods.map(keyword => (
             <div key={keyword.id} className="circle xlarge">
               {keyword.mood}
             </div>
           ))}
-          {keywords.first_moods.map(keyword => (
+          {keywords.second_moods.map(keyword => (
             <div key={keyword.id} className="circle large">
               {keyword.mood}
             </div>

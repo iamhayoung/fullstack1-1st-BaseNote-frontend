@@ -5,10 +5,10 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
-import Category from './pages/category/Category';
+import TopNav from './components/TopNav/TopNav';
 import Main from './pages/main/Main';
-import Login from './pages/member/Login';
-import Signup from './pages/member/Signup';
+import Category from './pages/category/Category';
+import { Login, Signup } from './pages/member';
 import { Cart } from './pages/order';
 import Product from './pages/product/Product';
 
@@ -16,6 +16,7 @@ class Routes extends Component {
   render() {
     return (
       <Router>
+        <TopNav />
         <Switch>
           <Route exact path="/" component={Main} />
           <Route exact path="/category/:volume" component={Category} />

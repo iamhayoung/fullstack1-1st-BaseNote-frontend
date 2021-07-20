@@ -2,9 +2,11 @@
 
 .productCard {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     width: 100%;
+    cursor: pointer;
 }
 
 .productImg {
@@ -44,7 +46,9 @@ img {
     font-weight: 200px;
     margin-bottom: 30px;
 }
-
+.hashtag {
+    margin: 0 2px;
+}
 .divider {
     margin: 10px 5px;
 }
