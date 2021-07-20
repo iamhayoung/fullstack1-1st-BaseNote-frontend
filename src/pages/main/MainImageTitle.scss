@@ -1,3 +1,4 @@
+@import '../../styles/variables';
 .ImageTitleWrapper {
     position: absolute;
     flex-direction: column;
@@ -21,15 +22,15 @@
     .findDetails {
         width: 325px;
         height: 60px;
-        border: 1px solid black;
+        border: 1px solid $black;
     }
 }
 
 .changedColor {
     width: 325px;
     height: 60px;
-    background-color: black;
-    color: white;
+    background-color: $black;
+    color: $white;
     transition: 'opacity 500ms , visibility 500ms';
 }
 
@@ -44,7 +45,7 @@
     width: 40vw;
     z-index: 100;
     .mainPictureTitle {
-        color: white;
+        color: $white;
         font-size: 34px;
         font-weight: bold;
     }
@@ -55,12 +56,12 @@
         font-weight: 400;
         text-align: center;
         white-space: nowrap;
-        color: white;
+        color: $white;
     }
     .findDetails {
         width: 325px;
         height: 60px;
-        border: 1px solid white;
-        color: white;
+        border: 1px solid $white;
+        color: $white;
     }
 }
