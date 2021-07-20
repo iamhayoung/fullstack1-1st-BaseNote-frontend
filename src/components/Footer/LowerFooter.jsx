@@ -63,4 +63,5 @@ class LowerFooter extends Component {
     );
   }
 }
+
 export default LowerFooter;
