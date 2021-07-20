@@ -7,7 +7,6 @@ import {
 } from 'react-router-dom';
 import Category from './pages/category/Category';
 import Main from './pages/main/Main';
-import Member from './pages/member/Member';
 import Login from './pages/member/Login';
 import Signup from './pages/member/Signup';
 import { Cart } from './pages/order';
@@ -20,7 +19,6 @@ class Routes extends Component {
         <Switch>
           <Route exact path="/" component={Main} />
           <Route exact path="/category/:volume" component={Category} />
-          <Route exact path="/member" component={Member} />
           <Route exact path="/member/login" component={Login} />
           <Route exact path="/member/signup" component={Signup} />
           <Route exact path="/order/cart" component={Cart} />

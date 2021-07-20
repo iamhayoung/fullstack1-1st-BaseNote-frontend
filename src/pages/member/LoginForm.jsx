@@ -12,14 +12,16 @@ class LoginForm extends Component {
   }
 
   handleIdInput = event => {
+    const { value } = event.target;
     this.setState({
-      loginIdValue: event.target.value,
+      loginIdValue: value,
     });
   };
 
   handlePwInput = event => {
+    const { value } = event.target;
     this.setState({
-      loginPwValue: event.target.value,
+      loginPwValue: value,
     });
   };
 
