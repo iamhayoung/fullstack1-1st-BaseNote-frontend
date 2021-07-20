@@ -1,0 +1,9 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.upperFooter {
+    @include flex(space-between, normal);
+    margin-bottom: 55px;
+    padding-bottom: 55px;
+    border-bottom: 1px solid $grey-90;
+}
