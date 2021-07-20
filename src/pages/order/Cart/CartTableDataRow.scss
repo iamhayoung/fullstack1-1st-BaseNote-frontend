@@ -5,6 +5,12 @@
     border-top: 1px solid $grey-60;
     border-bottom: 1px solid $grey-60;
 
+    .cartItemImage {
+        width: 125px;
+        height: 160px;
+        object-fit: cover;
+    }
+
     .productColumn {
         text-align: left;
 
@@ -24,6 +30,10 @@
     .price {
         font-size: 20px;
         font-weight: 500;
+    }
+
+    &.isEmpty {
+        border-bottom: none;
     }
 }
 

@@ -3,22 +3,23 @@ import './CartTableDataRow.scss';
 
 class CartTableDataRow extends Component {
   render() {
-    const { series, seriesNumber, name } = this.props;
+    const { imageUrl, name, series, seriesNumber, volume, quantity, price } =
+      this.props;
 
     return (
       <tr className="cartTableDataRow">
         <td className="selectColumn">
           <input className="cartItemCheckBox" type="checkbox" />
-          <img src="https://placehold.jp/125x160.png" alt="Product thumbnail" />
+          <img className="cartItemImage" src={imageUrl} alt={name} />
         </td>
         <td className="productColumn">
           <p className="productName">{`${series} ${seriesNumber}. ${name}`}</p>
-          <p className="volume">40ML only</p>
+          {volume === 40 && <p className="volume">40ML only</p>}
         </td>
         <td>
           <div className="quantityBox">
             <div className="item btnQuantity decrease"></div>
-            <div className="item value">1개</div>
+            <div className="item value">{quantity}개</div>
             <div className="item btnQuantity increase"></div>
           </div>
         </td>
@@ -26,10 +27,11 @@ class CartTableDataRow extends Component {
           <p className="price">무료</p>
         </td>
         <td>
-          <p className="price">48000</p>
+          <p className="price">{price}</p>
         </td>
       </tr>
     );
   }
 }
+
 export default CartTableDataRow;
