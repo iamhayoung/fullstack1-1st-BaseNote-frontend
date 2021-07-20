@@ -4,6 +4,9 @@ import { BsPerson } from 'react-icons/bs';
 import { AiOutlineShopping } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import { ReactComponent as MainLogo } from '../../assets/logo-BASENOTE_icon.svg';
+import TopNavTeller from './TopNavTeller';
+import TopNavThumbnail from './TopNavThumbnail';
+import TopNavMenu from './TopNavMenu';
 
 class TopNav extends Component {
   constructor() {
@@ -14,23 +17,27 @@ class TopNav extends Component {
       hiddenMenu: true,
     };
   }
-  mouseEnter = () => {
+
+  showMenu = () => {
     this.setState({
       hiddenMenu: false,
     });
   };
-  mouseLeave = () => {
+
+  hideMenu = () => {
     this.setState({
       hiddenMenu: true,
     });
   };
-  cardMouseEnter = index => {
+
+  showThumbail = index => {
     this.setState({
       hiddenCard: false,
-      index: index,
+      index,
     });
   };
-  cardMouseLeave = () => {
+
+  hideThumbnail = () => {
     this.setState({
       hiddenCard: true,
       index: -1,
@@ -53,17 +60,12 @@ class TopNav extends Component {
       <div className="TopNavWrapper">
         <div className="TopNav shopHover">
           <ul className="navCategory">
-            <a
-              href="https://paffem.me/perfume_teller.html"
-              className="navCategoryLink"
-            >
-              Perfume Teller
-            </a>
+            <TopNavTeller />
             <Link
               to="/"
               className="navCategoryLink hideButton"
-              onMouseOver={this.mouseEnter}
-              onMouseLeave={this.mouseLeave}
+              onMouseOver={this.showMenu}
+              onMouseLeave={this.hideMenu}
             >
               SHOP
               <ul
@@ -72,22 +74,7 @@ class TopNav extends Component {
                 }
                 onMouseLeave={this.mouseLeave}
               >
-                <Link
-                  to="/category/2.5ml"
-                  className="hiddenMenuTitle"
-                  onMouseOver={() => this.cardMouseEnter(0)}
-                  onMouseLeave={this.cardMouseLeave}
-                >
-                  <p
-                    className={
-                      index === 0
-                        ? 'hiddenMenuTitleAfter'
-                        : 'hiddenMenuTitleBefore'
-                    }
-                  >
-                    2.5ml / 데일리키트
-                  </p>
-                </Link>
+                <TopNavThumbnail indexNum="0" title="2.5ml/데일리키트" />
                 <div
                   className={
                     hiddenCard ? 'hiddenCard cardInactive' : 'hiddenCard'
@@ -106,62 +93,13 @@ class TopNav extends Component {
                     </>
                   )}
                 </div>
-                <Link
-                  to="/category/40ml"
-                  className="hiddenMenuTitle"
-                  onMouseOver={() => this.cardMouseEnter(1)}
-                  onMouseLeave={this.cardMouseLeave}
-                >
-                  <p
-                    className={
-                      index === 1
-                        ? 'hiddenMenuTitleAfter'
-                        : 'hiddenMenuTitleBefore'
-                    }
-                  >
-                    40ml
-                  </p>
-                </Link>
-                <Link
-                  to="/"
-                  className="hiddenMenuTitle"
-                  onMouseOver={() => this.cardMouseEnter(2)}
-                  onMouseLeave={this.cardMouseLeave}
-                >
-                  <p
-                    className={
-                      index === 2
-                        ? 'hiddenMenuTitleAfter'
-                        : 'hiddenMenuTitleBefore'
-                    }
-                  >
-                    SET
-                  </p>
-                </Link>
-                <Link
-                  to="/"
-                  className="hiddenMenuTitle"
-                  onMouseOver={() => this.cardMouseEnter(3)}
-                  onMouseLeave={this.cardMouseLeave}
-                >
-                  <p
-                    className={
-                      index === 3
-                        ? 'hiddenMenuTitleAfter'
-                        : 'hiddenMenuTitleBefore'
-                    }
-                  >
-                    GOODS
-                  </p>
-                </Link>
+                <TopNavThumbnail indexNum="1" title="40ml" />
+                <TopNavThumbnail indexNum="2" title="SET" />
+                <TopNavThumbnail indexNum="3" title="GOODS" />
               </ul>
             </Link>
-            <Link to="/" className="navCategoryLink">
-              ABOUT
-            </Link>
-            <Link to="/" className="navCategoryLink">
-              EVENT
-            </Link>
+            <TopNavMenu menuTitle="About" />
+            <TopNavMenu menuTitle="Event" />
           </ul>
           <Link to="/" className="NavTitle">
             <MainLogo />
