@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Container from '../Container/Container';
-import LowerFooter from './LowerFooter';
 import UpperFooter from './UpperFooter';
+import LowerFooter from './LowerFooter';
 import './Footer.scss';
 
 class Footer extends Component {
