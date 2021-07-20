@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import UpperFooterMenuLink from './UpperFooterMenuLink';
 import './UpperFooterMenu.scss';
 
-class upperFooterMenu extends Component {
+class UpperFooterMenu extends Component {
   render() {
     const { category, links } = this.props;
 
@@ -17,4 +17,4 @@ class upperFooterMenu extends Component {
   }
 }
 
-export default upperFooterMenu;
+export default UpperFooterMenu;
