@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Container from '../../components/Container/Container';
 import ProductCard from './Components/ProductCard/ProductCard';
-import { PRODUCT_LIST_API } from '../../config';
+import { PRODUCTS_LIST_API } from '../../config';
 import './Category.scss';
 
 class Category extends Component {
@@ -18,7 +18,7 @@ class Category extends Component {
       if (!['2.5ml', '40ml'].includes(volume)) {
         this.props.history.push('');
       } else {
-        const response = await fetch(`${PRODUCT_LIST_API}${volume}`);
+        const response = await fetch(`${PRODUCTS_LIST_API}${volume}`);
         if (!response.ok)
           throw new Error(`HTTP Status code: ${response.status}`);
         const result = await response.json();
