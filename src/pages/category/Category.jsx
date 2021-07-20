@@ -25,6 +25,8 @@ class Category extends Component {
 
         const productData = result.products;
 
+        productData.sort((a, b) => parseInt(a.id) - parseInt(b.id));
+
         this.setState({ productData });
       }
     } catch (error) {
@@ -42,6 +44,8 @@ class Category extends Component {
   }
 
   render() {
+    const { productData } = this.state;
+    console.log('엥', productData);
     return (
       <div className="category">
         <Container option="wide listGrid">
