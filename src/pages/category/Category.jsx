@@ -44,8 +44,6 @@ class Category extends Component {
   }
 
   render() {
-    const { productData } = this.state;
-    console.log('엥', productData);
     return (
       <div className="category">
         <Container option="wide listGrid">
