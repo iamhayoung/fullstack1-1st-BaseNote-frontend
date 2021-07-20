@@ -9,13 +9,13 @@ class MainImageTitle extends Component {
     };
   }
 
-  mouseEnter = index => {
+  HiddenMenuAppear = index => {
     this.setState({
       index,
     });
   };
 
-  mouseLeave = () => {
+  HiddenMenuDisappear = () => {
     this.setState({
       index: -1,
     });
@@ -23,16 +23,23 @@ class MainImageTitle extends Component {
 
   render() {
     const { index } = this.state;
-    const { title, title2, buttonTitle } = this.props;
-    console.log('props:', this.props);
+    const {
+      title,
+      title2,
+      buttonTitle,
+      indexNum,
+      wrapperClassName,
+      videoTitleClassName,
+      videoTitle2ClassName,
+    } = this.props;
     return (
-      <div className="ImageTitleWrapper">
-        <div className="mainVideoTitle">"{title}"</div>
-        <div className="mainVideoTitle2">{title2}</div>
+      <div className={wrapperClassName}>
+        <div className={videoTitleClassName}>"{title}"</div>
+        <div className={videoTitle2ClassName}>{title2}</div>
         <button
-          className={index === { index } ? 'changedColor' : 'findDetails'}
-          onMouseOver={() => this.mouseEnter(0)}
-          onMouseLeave={this.mouseLeave}
+          className={index === indexNum ? 'changedColor' : 'findDetails'}
+          onMouseOver={() => this.HiddenMenuAppear(indexNum)}
+          onMouseLeave={this.HiddenMenuDisappear}
         >
           {buttonTitle}
         </button>

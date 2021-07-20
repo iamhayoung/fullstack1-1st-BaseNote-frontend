@@ -12,7 +12,7 @@ class MainVideo extends Component {
         src={src}
         type="video/mp4"
         className="mainVideo"
-      ></video>
+      />
     );
   }
 }
