@@ -11,13 +11,6 @@
         height: 380px;
         overflow: hidden;
         margin: 20px;
-
-        img {
-            width: 100%;
-            height: 100%;
-            display: block;
-            object-fit: cover;
-        }
     }
 
     .productTitle,
@@ -41,4 +34,11 @@
             margin: 10px 5px;
         }
     }
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
 }
