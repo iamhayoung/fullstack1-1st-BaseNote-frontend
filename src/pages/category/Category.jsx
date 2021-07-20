@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Container from '../../components/Container/Container';
 import ProductCard from './Components/ProductCard/ProductCard';
-import { PRODUCT_LIST_API } from '../../config.js';
+import { PRODUCT_LIST_API } from '../../config';
 import './Category.scss';
 
 class Category extends Component {
