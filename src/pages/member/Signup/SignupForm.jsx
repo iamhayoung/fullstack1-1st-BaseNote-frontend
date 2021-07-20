@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { SIGN_UP_API } from '../../../config';
 import './SignupForm.scss';
 
 class SignupForm extends Component {
@@ -58,7 +59,7 @@ class SignupForm extends Component {
   };
 
   signup = () => {
-    fetch('', {
+    fetch(`${SIGN_UP_API}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
