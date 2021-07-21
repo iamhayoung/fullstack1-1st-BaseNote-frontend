@@ -4,9 +4,11 @@ import { Link } from 'react-router-dom';
 
 class TopNavTeller extends Component {
   render() {
+    const { title } = this.props;
+
     return (
       <Link to="/" className="navCategoryLink">
-        Perfume Teller
+        {title}
       </Link>
     );
   }
