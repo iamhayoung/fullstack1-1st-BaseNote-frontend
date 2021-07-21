@@ -1,0 +1,12 @@
+@import '../../styles/variables';
+
+.upperFooterMenuLinkItem {
+    display: block;
+    margin-bottom: 10px;
+
+    .upperFooterMenuLinkText {
+        color: $white;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}

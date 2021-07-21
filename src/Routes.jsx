@@ -11,6 +11,7 @@ import Category from './pages/category/Category';
 import { Login, Signup } from './pages/member';
 import { Cart } from './pages/order';
 import Product from './pages/product/Product';
+import Footer from './components/Footer/Footer';
 
 class Routes extends Component {
   render() {
@@ -26,6 +27,7 @@ class Routes extends Component {
           <Route exact path="/product/:volume/:id" component={Product} />
           <Redirect path="*" to="/" />
         </Switch>
+        <Footer />
       </Router>
     );
   }
