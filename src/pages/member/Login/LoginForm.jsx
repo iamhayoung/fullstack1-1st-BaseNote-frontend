@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
+import { LOGIN_API } from '../../../config';
 import './LoginForm.scss';
 
 class LoginForm extends Component {
@@ -29,7 +30,7 @@ class LoginForm extends Component {
       return;
     }
 
-    fetch('', {
+    fetch(`${LOGIN_API}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
