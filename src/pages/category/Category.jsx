@@ -25,6 +25,8 @@ class Category extends Component {
 
         const productData = result.products;
 
+        productData.sort((a, b) => parseInt(a.id) - parseInt(b.id));
+
         this.setState({ productData });
       }
     } catch (error) {
