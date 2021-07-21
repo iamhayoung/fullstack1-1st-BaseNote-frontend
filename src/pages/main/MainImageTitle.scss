@@ -1,12 +1,12 @@
 @import '../../styles/variables';
 .ImageTitleWrapper {
     position: absolute;
+    top: 40%;
+    left: 30%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     display: flex;
-    top: 40%;
-    left: 30%;
     width: 40vw;
     z-index: 100;
     .mainVideoTitle {

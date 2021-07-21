@@ -25,9 +25,9 @@ class MainImageTitle extends Component {
     const { index } = this.state;
     const {
       title,
-      title2,
+      subTitle,
       buttonTitle,
-      indexNum,
+      titleNum,
       wrapperClassName,
       videoTitleClassName,
       videoTitle2ClassName,
@@ -35,10 +35,10 @@ class MainImageTitle extends Component {
     return (
       <div className={wrapperClassName}>
         <div className={videoTitleClassName}>"{title}"</div>
-        <div className={videoTitle2ClassName}>{title2}</div>
+        <div className={videoTitle2ClassName}>{subTitle}</div>
         <button
-          className={index === indexNum ? 'changedColor' : 'findDetails'}
-          onMouseOver={() => this.HiddenMenuAppear(indexNum)}
+          className={index === titleNum ? 'changedColor' : 'findDetails'}
+          onMouseOver={() => this.HiddenMenuAppear(titleNum)}
           onMouseLeave={this.HiddenMenuDisappear}
         >
           {buttonTitle}
