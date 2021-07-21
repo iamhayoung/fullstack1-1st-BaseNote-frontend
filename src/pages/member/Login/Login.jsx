@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
+import Container from '../../../components/Container/Container';
 import LoginTitle from './LoginTitle';
 import LoginForm from './LoginForm';
 import OtherLoginButton from './OtherLoginButton';
-import Container from '../../../components/Container/Container';
 import './Login.scss';
 
 class Login extends Component {
@@ -10,10 +10,11 @@ class Login extends Component {
     return (
       <div className="login">
         <div>
-          <LoginTitle />
-          <LoginForm />
-          <OtherLoginButton />
-          <Container />
+          <Container option="loginContainer">
+            <LoginTitle />
+            <LoginForm />
+            <OtherLoginButton />
+          </Container>
         </div>
       </div>
     );
