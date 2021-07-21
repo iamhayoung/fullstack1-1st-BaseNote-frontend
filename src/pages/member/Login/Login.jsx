@@ -11,8 +11,8 @@ class Login extends Component {
         <div>
           <LoginTitle />
           <LoginForm />
+          <OtherLoginButton />
         </div>
-        <OtherLoginButton />
       </div>
     );
   }
