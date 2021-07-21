@@ -2,9 +2,11 @@
 
 .category {
     background-color: $grey-10;
-}
-.listGrid {
-    display: grid;
-    grid-template-columns: repeat(4, calc(100% / 4));
-    grid-template-rows: 500px;
+
+    & .listGrid {
+        display: grid;
+        grid-template-columns: repeat(4, calc(100% / 4));
+        grid-template-rows: 500px;
+        padding-bottom: 230px;
+    }
 }
