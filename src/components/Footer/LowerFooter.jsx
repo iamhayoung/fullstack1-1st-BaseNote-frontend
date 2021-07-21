@@ -25,12 +25,12 @@ class LowerFooter extends Component {
         <div className="companyInfo">
           <p className="companyName">주식회사 베이스노트</p>
           <p className="companyDetail">
-            주소: 부산광역시 부산진구 베이스노트로 100 베이스노트타워 1004층 |
+            주소: 부산광역시 부산진구 베이스노트로 100 김관희타워 1004층 |
             사업자등록번호: 123-45-67890{' '}
             <Link className="companyInfoLink" to="/">
               사업자정보확인
             </Link>{' '}
-            | 상호: 베이스노트 | 대표: 최영열
+            | 상호: 베이스노트 | 대표: 이장현
             <br />
             고객 문의 이메일: basenote@here.com | 고객 센터: 051-1234-5678 |
             통신판매업신고번호: 제2021-부산진구-0524호 |{' '}
@@ -41,7 +41,7 @@ class LowerFooter extends Component {
             <Link className="companyInfoLink" to="/">
               이용약관
             </Link>{' '}
-            | 개인정보관리책임자: 최영열
+            | 개인정보관리책임자: 이소헌
           </p>
           <p className="copyright">
             Created by{' '}
