@@ -11,7 +11,7 @@ class NoteInfo extends Component {
       <div className="noteInfo">
         <h3 className="title">note</h3>
         <p className="noteDesc">{description}</p>
-        {keywords && <Hashtags {...keywords} />}
+        {keywords && <Hashtags keywords={keywords} />}
         <NoteTable {...notes} />
       </div>
     );
