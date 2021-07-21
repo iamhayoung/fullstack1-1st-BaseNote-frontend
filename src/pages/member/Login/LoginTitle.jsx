@@ -4,7 +4,7 @@ import './LoginTitle.scss';
 class LoginTitle extends Component {
   render() {
     return (
-      <div className="LoginTitle">
+      <div className="loginTitle">
         <header className="title">로그인</header>
       </div>
     );

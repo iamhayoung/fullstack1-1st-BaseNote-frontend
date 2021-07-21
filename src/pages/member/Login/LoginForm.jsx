@@ -53,7 +53,7 @@ class LoginForm extends Component {
 
   render() {
     return (
-      <form className="LoginForm">
+      <form className="loginForm">
         <div className="idWrap">
           <label className="loginIdName">아이디</label>
           <input
