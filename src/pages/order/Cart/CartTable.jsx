@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { CART_API } from '../../../config';
 import CartTableHeadRow from './CartTableHeadRow';
 import CartTableDataRow from './CartTableDataRow';
 import './CartTable.scss';
@@ -16,17 +17,24 @@ class CartTable extends Component {
     const accessToken = localStorage.getItem('token');
 
     if (accessToken) {
-      fetch('http://192.168.0.158:8000/order/cart', {
+      fetch(`${CART_API}`, {
         headers: {
           'Content-Type': 'application/json',
           Authorization: `Bearer ${accessToken}`,
         },
       })
         .then(res => res.json())
-        .then(result =>
-          this.setState({ cartItems: result.cartItems, isLoaded: true })
-        )
+        .then(result => {
+          if (result.message === 'INVALID_TOKEN') {
+            localStorage.removeItem('token');
+            this.setState({ isLoaded: true });
+          } else {
+            this.setState({ cartItems: result.cartItems, isLoaded: true });
+          }
+        })
         .catch(error => console.error(error));
+    } else {
+      this.setState({ isLoaded: true });
     }
   };
 
