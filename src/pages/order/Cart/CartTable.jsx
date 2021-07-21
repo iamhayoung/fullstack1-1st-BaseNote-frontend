@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 import { CART_API } from '../../../config';
 import CartTableHeadRow from './CartTableHeadRow';
 import CartTableDataRow from './CartTableDataRow';
@@ -28,6 +29,14 @@ class CartTable extends Component {
           if (result.message === 'INVALID_TOKEN') {
             localStorage.removeItem('token');
             this.setState({ isLoaded: true });
+
+            if (
+              window.confirm(
+                '안전한 서비스 이용을 위해, 일정 이용 시간 초과 후 자동 로그아웃 되었습니다.\n다시 로그인 후 이용해주세요 🌸'
+              )
+            ) {
+              this.props.history.push('/member/login');
+            }
           } else {
             this.setState({ cartItems: result.cartItems, isLoaded: true });
           }
@@ -54,7 +63,7 @@ class CartTable extends Component {
           {isLoaded && cartItems.length === 0 ? (
             <tr className="cartTableDataRow isEmpty">
               <td colSpan="5" className="emptyCartColumn">
-                🛒 장바구니에 담은 상품이 없습니다.
+                🛒&nbsp;&nbsp;장바구니에 담은 상품이 없습니다.
               </td>
             </tr>
           ) : (
@@ -68,4 +77,4 @@ class CartTable extends Component {
   }
 }
 
-export default CartTable;
+export default withRouter(CartTable);
