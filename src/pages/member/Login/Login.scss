@@ -1,5 +1,10 @@
-.Login {
-    display: flex;
-    justify-content: center;
-    margin-top: 200px;
+@import '../../../styles/mixins';
+
+.login {
+    &.container {
+        @include flex(center, center);
+        flex-direction: column;
+        // margin: 105px auto 0;
+        // padding: 75px 0;
+    }
 }
