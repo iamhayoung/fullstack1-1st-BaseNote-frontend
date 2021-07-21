@@ -25,7 +25,7 @@ class LowerFooter extends Component {
         <div className="companyInfo">
           <p className="companyName">주식회사 베이스노트</p>
           <p className="companyDetail">
-            주소: 부산광역시 부산진구 베이스노트로 100 김관희타워 1004층 |
+            주소: 부산광역시 부산진구 베이스노트로 100 가니타워 1004층 |
             사업자등록번호: 123-45-67890{' '}
             <Link className="companyInfoLink" to="/">
               사업자정보확인
