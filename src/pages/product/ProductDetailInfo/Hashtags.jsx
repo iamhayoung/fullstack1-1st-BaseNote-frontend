@@ -3,13 +3,15 @@ import './Hashtags.scss';
 
 class Hashtags extends Component {
   render() {
-    const { first_moods, series, seriesNumber, name } = this.props;
+    const { keywords, series, seriesNumber, name } = this.props;
 
     return (
       <div className="hashtags">
-        {first_moods?.map(keyword => (
-          <p key={keyword.mood} className="tag">{`#${keyword.mood}`}</p>
-        ))}
+        {keywords
+          ?.filter(keyword => keyword['grade'] === 'first')
+          .map(keyword => (
+            <p key={keyword.id} className="tag">{`#${keyword.name}`}</p>
+          ))}
         {series && seriesNumber && (
           <p className="tag">{`#${series}${seriesNumber}`}</p>
         )}
