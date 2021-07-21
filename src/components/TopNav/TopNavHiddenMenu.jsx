@@ -10,7 +10,7 @@ class TopNavHiddenMenu extends Component {
     };
   }
 
-  showThumbail = index => {
+  showThumbnail = index => {
     this.setState({
       index,
     });
@@ -39,7 +39,7 @@ class TopNavHiddenMenu extends Component {
         <Link
           to="/category/2.5ml"
           className="hiddenMenuTitle"
-          onMouseOver={() => this.showThumbail(hiddenMenuNum)}
+          onMouseOver={() => this.showThumbnail(hiddenMenuNum)}
           onMouseLeave={this.hideThumbnail}
         >
           <p
