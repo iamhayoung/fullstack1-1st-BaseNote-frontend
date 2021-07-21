@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { formatMoney } from '../../../utils';
 import { FaRegHeart } from 'react-icons/fa';
 import './ProductDetailSmallVolumeHead.scss';
 
@@ -14,13 +15,11 @@ class ProductDetailSmallVolumeHead extends Component {
   incrementItem = () => {
     this.setState({ clicks: this.state.clicks + 1 });
   };
+
   decreaseItem = () => {
     if (this.state.clicks > 1) {
       this.setState({ clicks: this.state.clicks - 1 });
     }
-  };
-  formatMoney = n => {
-    return (Math.round(n * 100) / 100).toLocaleString();
   };
 
   render() {
@@ -41,7 +40,7 @@ class ProductDetailSmallVolumeHead extends Component {
           <div className="productDetailTitle">
             {series} {series_number}. {name}
           </div>
-          <div className="productDetailPrice">{this.formatMoney(price)}원</div>
+          <div className="productDetailPrice">{formatMoney(price)}원</div>
           <div className="option_40ml_HiddenBox">
             <p className="only_40ml_HiddenTitle">
               {series} {series_number}. {name}
@@ -66,12 +65,12 @@ class ProductDetailSmallVolumeHead extends Component {
               </button>
             </div>
             <span className="productDetailOptionPrice">
-              {this.formatMoney(price * clicks)}원
+              {formatMoney(price * clicks)}원
             </span>
           </div>
           <div className="productTotalPrice">
             <p className="totalPriceTitle">총 상품금액</p>
-            <p className="totalPrice">{this.formatMoney(price * clicks)}원</p>
+            <p className="totalPrice">{formatMoney(price * clicks)}원</p>
           </div>
           <div className="productDetailButtons">
             <button className="productPurchaseButton buttonCommon">

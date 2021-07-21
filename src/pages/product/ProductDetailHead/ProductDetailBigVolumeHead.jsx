@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { formatMoney } from '../../../utils';
 import { FaRegHeart } from 'react-icons/fa';
 import './ProductDetailBigVolumeHead.scss';
 
@@ -10,6 +11,7 @@ class ProductDetailBigVolumeHead extends Component {
       show: true,
     };
   }
+
   click40mlOption = () => {
     this.setState({
       option_40ml_HiddenBox: false,
@@ -19,13 +21,11 @@ class ProductDetailBigVolumeHead extends Component {
   incrementItem = () => {
     this.setState({ clicks: this.state.clicks + 1 });
   };
+
   decreaseItem = () => {
     if (this.state.clicks > 1) {
       this.setState({ clicks: this.state.clicks - 1 });
     }
-  };
-  formatMoney = n => {
-    return (Math.round(n * 100) / 100).toLocaleString();
   };
 
   render() {
@@ -46,7 +46,7 @@ class ProductDetailBigVolumeHead extends Component {
           <div className="productDetailTitle">
             {series} {series_number}. {name}
           </div>
-          <div className="productDetailPrice">{this.formatMoney(price)}원</div>
+          <div className="productDetailPrice">{formatMoney(price)}원</div>
           <select className="productOption" onChange={this.click40mlOption}>
             <option value="productOptionTitle">
               -[필수] 옵션을 선택해 주세요 -
@@ -82,12 +82,12 @@ class ProductDetailBigVolumeHead extends Component {
               </button>
             </div>
             <span className="productDetailOptionPrice">
-              {this.formatMoney(price * clicks)}원
+              {formatMoney(price * clicks)}원
             </span>
           </div>
           <div className="productTotalPrice">
             <p className="totalPriceTitle">총 상품금액</p>
-            <p className="totalPrice">{this.formatMoney(price * clicks)}원</p>
+            <p className="totalPrice">{formatMoney(price * clicks)}원</p>
           </div>
           <div className="productDetailButtons">
             <button className="productPurchaseButton buttonCommon">
