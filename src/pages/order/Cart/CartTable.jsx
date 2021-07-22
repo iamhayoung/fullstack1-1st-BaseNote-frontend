@@ -15,7 +15,6 @@ class CartTable extends Component {
   }
 
   getCartData = async () => {
-    console.log('getCartData');
     const accessToken = localStorage.getItem('token');
 
     if (accessToken) {
@@ -54,8 +53,6 @@ class CartTable extends Component {
 
   render() {
     const { cartItems, isLoaded } = this.state;
-    console.log('render');
-    console.log('isLoaded', isLoaded);
 
     return (
       <table className="cartTable">
