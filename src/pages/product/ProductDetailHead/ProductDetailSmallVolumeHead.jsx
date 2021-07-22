@@ -12,18 +12,20 @@ class ProductDetailSmallVolumeHead extends Component {
     };
   }
 
-  incrementItem = () => {
+  increaseQuantity = () => {
     this.setState({ quantity: this.state.quantity + 1 });
   };
 
-  decreaseItem = () => {
-    if (this.state.quantity > 1) {
-      this.setState({ quantity: this.state.quantity - 1 });
+  decreaseQuantity = () => {
+    const { quantity } = this.state;
+
+    if (quantity > 1) {
+      this.setState({ quantity: quantity - 1 });
     }
   };
 
   render() {
-    const { quantity } = this.state;
+    const { quantity, show } = this.state;
     const { name, image_url, price, series_number, series } =
       this.props.productData;
 
@@ -49,17 +51,17 @@ class ProductDetailSmallVolumeHead extends Component {
               <button
                 type="button"
                 className="only_40ml_MinusButton"
-                onClick={this.decreaseItem}
+                onClick={this.decreaseQuantity}
               >
                 -
               </button>
               <div className="hiddenQuantity">
-                {this.state.show ? <h2>{this.state.quantity}</h2> : ''}
+                {show ? <h2>{quantity}</h2> : ''}
               </div>
               <button
                 type="button"
                 className="only_40ml_PlusButton"
-                onClick={this.incrementItem}
+                onClick={this.increaseQuantity}
               >
                 +
               </button>
