@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
+import { CART_API, ERROR_MESSAGES } from '../../../config';
 import { formatMoney } from '../../../utils';
 import './CartTableDataRow.scss';
 
@@ -11,15 +13,49 @@ class CartTableDataRow extends Component {
     };
   }
 
+  updateQuantity = async () => {
+    const accessToken = localStorage.getItem('token');
+
+    if (!accessToken) {
+      alert('로그인 후 이용하실 수 있습니다. 로그인을 해주세요 🌸');
+      return this.props.history.push('/member/login');
+    }
+
+    fetch(CART_API, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${accessToken}`,
+      },
+      body: JSON.stringify({
+        cartItemId: this.props.cartItemId,
+        quantity: this.state.quantity,
+      }),
+    })
+      .then(res => res.json())
+      .then(result => {
+        if (result.message === ERROR_MESSAGES.invalidToken) {
+          localStorage.removeItem('token');
+
+          window.confirm(
+            '안전한 서비스 이용을 위해, 일정 이용 시간 초과 후 자동 로그아웃 되었습니다.\n다시 로그인 후 이용해주세요 🌸'
+          ) && this.props.history.push('/member/login');
+        }
+      })
+      .catch(error => console.error(error));
+  };
+
   increaseQuantity = () => {
-    this.setState({ quantity: this.state.quantity + 1 });
+    this.setState({ quantity: this.state.quantity + 1 }, () =>
+      this.updateQuantity()
+    );
   };
 
   decreaseQuantity = () => {
     const { quantity } = this.state;
 
     if (quantity > 1) {
-      this.setState({ quantity: quantity - 1 });
+      this.setState({ quantity: quantity - 1 }, () => this.updateQuantity());
     }
   };
 
@@ -61,4 +97,4 @@ class CartTableDataRow extends Component {
   }
 }
 
-export default CartTableDataRow;
+export default withRouter(CartTableDataRow);
