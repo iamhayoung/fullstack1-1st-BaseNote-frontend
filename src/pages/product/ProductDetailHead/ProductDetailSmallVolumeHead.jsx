@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { formatMoney } from '../../../utils';
 import { FaRegHeart } from 'react-icons/fa';
 import './ProductDetailSmallVolumeHead.scss';
 
@@ -6,25 +7,25 @@ class ProductDetailSmallVolumeHead extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      clicks: 1,
+      quantity: 1,
       show: true,
     };
   }
 
-  incrementItem = () => {
-    this.setState({ clicks: this.state.clicks + 1 });
+  increaseQuantity = () => {
+    this.setState({ quantity: this.state.quantity + 1 });
   };
-  decreaseItem = () => {
-    if (this.state.clicks > 1) {
-      this.setState({ clicks: this.state.clicks - 1 });
+
+  decreaseQuantity = () => {
+    const { quantity } = this.state;
+
+    if (quantity > 1) {
+      this.setState({ quantity: quantity - 1 });
     }
-  };
-  formatMoney = n => {
-    return (Math.round(n * 100) / 100).toLocaleString();
   };
 
   render() {
-    const { clicks } = this.state;
+    const { quantity, show } = this.state;
     const { name, image_url, price, series_number, series } =
       this.props.productData;
 
@@ -41,7 +42,7 @@ class ProductDetailSmallVolumeHead extends Component {
           <div className="productDetailTitle">
             {series} {series_number}. {name}
           </div>
-          <div className="productDetailPrice">{this.formatMoney(price)}원</div>
+          <div className="productDetailPrice">{formatMoney(price)}원</div>
           <div className="option_40ml_HiddenBox">
             <p className="only_40ml_HiddenTitle">
               {series} {series_number}. {name}
@@ -50,28 +51,28 @@ class ProductDetailSmallVolumeHead extends Component {
               <button
                 type="button"
                 className="only_40ml_MinusButton"
-                onClick={this.decreaseItem}
+                onClick={this.decreaseQuantity}
               >
                 -
               </button>
               <div className="hiddenQuantity">
-                {this.state.show ? <h2>{this.state.clicks}</h2> : ''}
+                {show ? <h2>{quantity}</h2> : ''}
               </div>
               <button
                 type="button"
                 className="only_40ml_PlusButton"
-                onClick={this.incrementItem}
+                onClick={this.increaseQuantity}
               >
                 +
               </button>
             </div>
             <span className="productDetailOptionPrice">
-              {this.formatMoney(price * clicks)}원
+              {formatMoney(price * quantity)}원
             </span>
           </div>
           <div className="productTotalPrice">
             <p className="totalPriceTitle">총 상품금액</p>
-            <p className="totalPrice">{this.formatMoney(price * clicks)}원</p>
+            <p className="totalPrice">{formatMoney(price * quantity)}원</p>
           </div>
           <div className="productDetailButtons">
             <button className="productPurchaseButton buttonCommon">

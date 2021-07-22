@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { formatMoney } from '../../../utils';
 import './CartTableDataRow.scss';
 
 class CartTableDataRow extends Component {
@@ -53,7 +54,7 @@ class CartTableDataRow extends Component {
           <p className="price">무료</p>
         </td>
         <td>
-          <p className="price">{price * quantity}</p>
+          <p className="price">{formatMoney(price * quantity)}</p>
         </td>
       </tr>
     );
