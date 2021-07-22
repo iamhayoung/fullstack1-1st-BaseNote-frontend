@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
-import { CART_API } from '../../../config';
+import { CART_API, ERROR_MESSAGE } from '../../../config';
 import CartTableHeadRow from './CartTableHeadRow';
 import CartTableDataRow from './CartTableDataRow';
 import './CartTable.scss';
@@ -26,7 +26,7 @@ class CartTable extends Component {
       })
         .then(res => res.json())
         .then(result => {
-          if (result.message === 'INVALID_TOKEN') {
+          if (result.message === ERROR_MESSAGE.invalidToken) {
             localStorage.removeItem('token');
             this.setState({ isLoaded: true });
 
