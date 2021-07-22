@@ -21,7 +21,7 @@ class ProductCard extends Component {
             {series}
             &nbsp;
             {seriesNumber}
-            <span>.{name}</span>
+            <span>. {name}</span>
           </p>
           <div className="amount">
             {volume}
