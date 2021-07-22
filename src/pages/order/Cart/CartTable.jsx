@@ -18,7 +18,7 @@ class CartTable extends Component {
     const accessToken = localStorage.getItem('token');
 
     if (accessToken) {
-      fetch(`${CART_API}`, {
+      fetch(CART_API, {
         headers: {
           'Content-Type': 'application/json',
           Authorization: `Bearer ${accessToken}`,
