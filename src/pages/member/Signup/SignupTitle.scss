@@ -1,8 +1,10 @@
-.SignupTitle {
+@import '../../../styles/variables';
+
+.signupTitle {
     .title {
         margin-bottom: 36px;
         line-height: 1em;
-        color: rgb(0, 0, 0);
+        color: $black;
         font-size: 26px;
         font-weight: bold;
         text-align: center;

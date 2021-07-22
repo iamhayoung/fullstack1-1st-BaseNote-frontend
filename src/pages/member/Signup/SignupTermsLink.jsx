@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './SignupTermLink.scss';
+import './SignupTermsLink.scss';
 
-class SignupTermLink extends Component {
+class SignupTermsLink extends Component {
   render() {
     return (
-      <div className="signupTermLink">
+      <div className="signupTermsLink">
         <div className="termsLink">
           <Link to="#">이용약관</Link>
           <span className="sign">, </span>
@@ -19,4 +19,4 @@ class SignupTermLink extends Component {
   }
 }
 
-export default SignupTermLink;
+export default SignupTermsLink;

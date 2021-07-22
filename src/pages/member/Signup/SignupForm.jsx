@@ -76,6 +76,16 @@ class SignupForm extends Component {
     }
   };
 
+  pwCheck = () => {
+    const { password, passwordCheck } = this.state;
+    if (password !== passwordCheck) {
+      alert('비밀번호가 일치하지 않습니다');
+    }
+    if (password.length < 5) {
+      alert('패스워드 항목이 4자(개) 이상으로 해주십시오.');
+    }
+  };
+
   render() {
     return (
       <form className="signupForm">
@@ -147,7 +157,12 @@ class SignupForm extends Component {
             이벤트 및 할인 소식 알림 동의 (선택)
           </label>
         </div>
-        <button type="button" className="signUpBtn" onClick={this.signupCheck}>
+        <button
+          type="button"
+          className="signUpBtn"
+          onClick={this.signupCheck}
+          onClick={this.pwCheck}
+        >
           동의하고 회원가입
         </button>
       </form>

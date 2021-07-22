@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Container from '../../../components/Container/Container';
 import SignupTitle from './SignupTitle';
 import SignupForm from './SignupForm';
-import SignupTermLink from './SignupTermLink';
+import SignupTermsLink from './SignupTermsLink';
 import './Signup.scss';
 
 class SignUp extends Component {
@@ -12,7 +12,7 @@ class SignUp extends Component {
         <Container option="loginContainer">
           <SignupTitle />
           <SignupForm />
-          <SignupTermLink />
+          <SignupTermsLink />
         </Container>
       </div>
     );
