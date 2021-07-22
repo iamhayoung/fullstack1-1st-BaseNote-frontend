@@ -12,7 +12,7 @@ class LoginForm extends Component {
     };
   }
 
-  handleIdInput = event => {
+  handleInput = event => {
     const { value, name } = event.target;
     this.setState({
       [name]: value,
@@ -30,7 +30,7 @@ class LoginForm extends Component {
       return;
     }
 
-    fetch(`${LOGIN_API}`, {
+    fetch(LOGIN_API, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -60,6 +60,7 @@ class LoginForm extends Component {
             className="loginInput loginId"
             type="text"
             placeholder="아이디를 입력해주세요"
+            name="loginIdValue"
             onChange={this.handleInput}
           />
         </div>
@@ -69,6 +70,7 @@ class LoginForm extends Component {
             className="loginInput"
             type="password"
             placeholder="비밀번호를 입력해주세요"
+            name="loginPwValue"
             onChange={this.handleInput}
           />
           <div className="linkWrap">
