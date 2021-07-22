@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Loader from '../../components/Loader/Loader';
 import Container from '../../components/Container/Container';
 import ProductCard from './Components/ProductCard/ProductCard';
 import { PRODUCTS_LIST_API } from '../../config';
@@ -9,6 +10,7 @@ class Category extends Component {
     super();
     this.state = {
       productData: [],
+      isLoading: true,
     };
   }
 
@@ -27,7 +29,7 @@ class Category extends Component {
 
         productData.sort((a, b) => parseInt(a.id) - parseInt(b.id));
 
-        this.setState({ productData });
+        this.setState({ productData, isLoading: false });
       }
     } catch (error) {
       console.error(error);
@@ -44,10 +46,14 @@ class Category extends Component {
   }
 
   render() {
-    return (
+    const { isLoading, productData } = this.state;
+
+    return isLoading ? (
+      <Loader />
+    ) : (
       <div className="category">
         <Container option="wide listGrid">
-          {this.state.productData.map(products => {
+          {productData.map(products => {
             return (
               <ProductCard
                 key={products.id}
