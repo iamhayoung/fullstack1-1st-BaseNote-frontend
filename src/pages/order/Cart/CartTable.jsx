@@ -39,7 +39,7 @@ class CartTable extends Component {
           return this.setState({ isLoaded: true });
         }
 
-        this.setState({ cartItems: result.cartItems, isLoaded: true });
+        return this.setState({ cartItems: result.cartItems, isLoaded: true });
       })
       .catch(error => console.error(error));
   };
