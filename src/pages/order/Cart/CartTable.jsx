@@ -17,34 +17,32 @@ class CartTable extends Component {
   getCartData = async () => {
     const accessToken = localStorage.getItem('token');
 
-    if (accessToken) {
-      fetch(CART_API, {
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${accessToken}`,
-        },
-      })
-        .then(res => res.json())
-        .then(result => {
-          if (result.message === ERROR_MESSAGES.invalidToken) {
-            localStorage.removeItem('token');
-            this.setState({ isLoaded: true });
+    if (!accessToken) this.setState({ isLoaded: true });
 
-            if (
-              window.confirm(
-                '안전한 서비스 이용을 위해, 일정 이용 시간 초과 후 자동 로그아웃 되었습니다.\n다시 로그인 후 이용해주세요 🌸'
-              )
-            ) {
-              this.props.history.push('/member/login');
-            }
-          } else {
-            this.setState({ cartItems: result.cartItems, isLoaded: true });
+    fetch(CART_API, {
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${accessToken}`,
+      },
+    })
+      .then(res => res.json())
+      .then(result => {
+        if (result.message === ERROR_MESSAGES.invalidToken) {
+          localStorage.removeItem('token');
+          this.setState({ isLoaded: true });
+
+          if (
+            window.confirm(
+              '안전한 서비스 이용을 위해, 일정 이용 시간 초과 후 자동 로그아웃 되었습니다.\n다시 로그인 후 이용해주세요 🌸'
+            )
+          ) {
+            this.props.history.push('/member/login');
           }
-        })
-        .catch(error => console.error(error));
-    } else {
-      this.setState({ isLoaded: true });
-    }
+        } else {
+          this.setState({ cartItems: result.cartItems, isLoaded: true });
+        }
+      })
+      .catch(error => console.error(error));
   };
 
   componentDidMount() {
