@@ -7,23 +7,23 @@ class ProductDetailSmallVolumeHead extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      clicks: 1,
+      quantity: 1,
       show: true,
     };
   }
 
   incrementItem = () => {
-    this.setState({ clicks: this.state.clicks + 1 });
+    this.setState({ quantity: this.state.quantity + 1 });
   };
 
   decreaseItem = () => {
-    if (this.state.clicks > 1) {
-      this.setState({ clicks: this.state.clicks - 1 });
+    if (this.state.quantity > 1) {
+      this.setState({ quantity: this.state.quantity - 1 });
     }
   };
 
   render() {
-    const { clicks } = this.state;
+    const { quantity } = this.state;
     const { name, image_url, price, series_number, series } =
       this.props.productData;
 
@@ -54,7 +54,7 @@ class ProductDetailSmallVolumeHead extends Component {
                 -
               </button>
               <div className="hiddenQuantity">
-                {this.state.show ? <h2>{this.state.clicks}</h2> : ''}
+                {this.state.show ? <h2>{this.state.quantity}</h2> : ''}
               </div>
               <button
                 type="button"
@@ -65,12 +65,12 @@ class ProductDetailSmallVolumeHead extends Component {
               </button>
             </div>
             <span className="productDetailOptionPrice">
-              {formatMoney(price * clicks)}원
+              {formatMoney(price * quantity)}원
             </span>
           </div>
           <div className="productTotalPrice">
             <p className="totalPriceTitle">총 상품금액</p>
-            <p className="totalPrice">{formatMoney(price * clicks)}원</p>
+            <p className="totalPrice">{formatMoney(price * quantity)}원</p>
           </div>
           <div className="productDetailButtons">
             <button className="productPurchaseButton buttonCommon">
