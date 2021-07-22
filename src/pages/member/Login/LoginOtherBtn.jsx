@@ -4,7 +4,7 @@ import './LoginOtherBtn.scss';
 class LoginOtherBtn extends Component {
   render() {
     return (
-      <div className="LoginOtherBtn">
+      <div className="loginOtherBtn">
         <button
           className="otherBtn"
           onClick={() => alert('BASENOTE팀과 함께해보실까요?')}

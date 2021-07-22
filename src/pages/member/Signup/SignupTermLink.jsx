@@ -5,7 +5,7 @@ import './SignupTermLink.scss';
 class SignupTermLink extends Component {
   render() {
     return (
-      <div className="SignupTermLink">
+      <div className="signupTermLink">
         <div className="termsLink">
           <Link to="#">이용약관</Link>
           <span className="sign">, </span>

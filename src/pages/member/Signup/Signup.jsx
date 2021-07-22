@@ -8,14 +8,12 @@ import './Signup.scss';
 class SignUp extends Component {
   render() {
     return (
-      <div className="Signup">
-        <div>
+      <div className="signup">
+        <Container option="loginContainer">
           <SignupTitle />
-          <div>
-            <SignupForm />
-          </div>
+          <SignupForm />
           <SignupTermLink />
-        </div>
+        </Container>
       </div>
     );
   }

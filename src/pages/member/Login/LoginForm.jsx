@@ -19,7 +19,7 @@ class LoginForm extends Component {
     });
   };
 
-  login = () => {
+  loginCheck = () => {
     const { loginIdValue, loginPwValue } = this.state;
     if (!loginIdValue) {
       alert('아이디 항목은 필수 입력값입니다.');
@@ -83,7 +83,7 @@ class LoginForm extends Component {
               회원 가입하기
             </Link>
           </div>
-          <button className="loginBtn" type="button" onClick={this.login}>
+          <button className="loginBtn" type="button" onClick={this.loginCheck}>
             로그인
           </button>
         </div>

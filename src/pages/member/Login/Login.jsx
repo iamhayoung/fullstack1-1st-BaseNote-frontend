@@ -16,7 +16,6 @@ class Login extends Component {
             <OtherLoginButton />
           </Container>
         </div>
-        <LoginOtherBtn />
       </div>
     );
   }

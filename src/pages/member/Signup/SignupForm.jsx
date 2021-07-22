@@ -11,8 +11,8 @@ class SignupForm extends Component {
       id: '',
       email: '',
       phoneNumber: '',
-      pw: '',
-      pwCheck: '',
+      password: '',
+      passwordCheck: '',
     };
   }
 
@@ -22,45 +22,10 @@ class SignupForm extends Component {
     });
   };
 
-  handleNameInput = event => {
-    const { value } = event.target;
+  handleInput = event => {
+    const { value, name } = event.target;
     this.setState({
-      name: value,
-    });
-  };
-
-  handleIdInput = event => {
-    const { value } = event.target;
-    this.setState({
-      id: value,
-    });
-  };
-
-  handleEmailInput = event => {
-    const { value } = event.target;
-    this.setState({
-      email: value,
-    });
-  };
-
-  handlePhoneNumberInput = event => {
-    const { value } = event.target;
-    this.setState({
-      phoneNumber: value,
-    });
-  };
-
-  handlePwInput = event => {
-    const { value } = event.target;
-    this.setState({
-      pw: value,
-    });
-  };
-
-  handlePwCheckInput = event => {
-    const { value } = event.target;
-    this.setState({
-      pwCheck: value,
+      [name]: value,
     });
   };
 
@@ -79,21 +44,49 @@ class SignupForm extends Component {
       }),
     })
       .then(response => response.json())
-      .then(result => {
-        console.log(result);
-      });
+      .then(result => {});
+  };
+
+  signupCheck = () => {
+    const { name, id, email, phoneNumber, password, passwordCheck } =
+      this.state;
+    if (!name) {
+      alert('이름을 입력해주세요');
+      return;
+    }
+    if (!id) {
+      alert('아이디를 입력해주세요');
+      return;
+    }
+    if (!email) {
+      alert('이메일을 입력해주세요');
+      return;
+    }
+    if (!phoneNumber) {
+      alert('휴대전화 번호를 입력해주세요');
+      return;
+    }
+    if (!password) {
+      alert('비밀번호를 입력해주세요');
+      return;
+    }
+    if (!passwordCheck) {
+      alert('비밀번호를 입력해주세요');
+      return;
+    }
   };
 
   render() {
     return (
-      <form className="SignupForm">
+      <form className="signupForm">
         <div className="nameWrap">
           <label className="infoName">이름</label>
           <input
             className="infoInput name"
             type="text"
+            name="name"
             placeholder="이름을 입력해주세요"
-            onChange={this.handleNameInput}
+            onChange={this.handleInput}
           />
         </div>
         <div className="idWrap">
@@ -101,8 +94,9 @@ class SignupForm extends Component {
           <input
             className="infoInput id"
             type="text"
+            name="id"
             placeholder="아이디를 입력해주세요"
-            onChange={this.handleIdInput}
+            onChange={this.handleInput}
           />
         </div>
         <div className="emailWrap">
@@ -110,17 +104,19 @@ class SignupForm extends Component {
           <input
             className="infoInput email"
             type="email"
+            name="email"
             placeholder="이메일을 입력해주세요"
-            onChange={this.andleEmailInput}
+            onChange={this.handleInput}
           />
         </div>
         <div className="telWrap">
-          <label className="infoTel">휴대전화 번호</label>
+          <label className="infoPhoneNumber">휴대전화 번호</label>
           <input
-            className="infoInput tel"
+            className="infoInput phoneNumber"
             type="tel"
+            name="phoneNumber"
             placeholder="000-0000-0000"
-            onChange={this.handlePhoneNumberInput}
+            onChange={this.handleInput}
           />
         </div>
         <div className="pWWrap">
@@ -128,17 +124,19 @@ class SignupForm extends Component {
           <input
             className="infoInput pw"
             type="password"
+            name="password"
             placeholder="비밀번호를 입력해주세요"
-            onChange={this.handlePwInput}
+            onChange={this.handleInput}
           />
         </div>
-        <div className="pwCheckWrap">
-          <label className="infoPwCheck">비밀번호 확인</label>
+        <div className="passwordCheckWrap">
+          <label className="infoPasswordCheck">비밀번호 확인</label>
           <input
-            className="infoInput pwCheck"
+            className="infoInput passwordCheck"
             type="password"
+            name="passwordCheck"
             placeholder="비밀번호를 다시 입력해주세요"
-            onChange={this.handlePwCheckInput}
+            onChange={this.handleInput}
           />
           <input
             type="checkbox"
@@ -149,7 +147,7 @@ class SignupForm extends Component {
             이벤트 및 할인 소식 알림 동의 (선택)
           </label>
         </div>
-        <button type="button" className="signUpBtn" onClick={this.signup}>
+        <button type="button" className="signUpBtn" onClick={this.signupCheck}>
           동의하고 회원가입
         </button>
       </form>
