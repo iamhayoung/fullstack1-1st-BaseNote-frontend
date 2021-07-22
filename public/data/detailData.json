@@ -16,64 +16,68 @@
         "middle_note": ["Rose", "Cedarwood"],
         "base_note": ["Lily of the valley"]
       },
-      "keywords": {
-        "first_moods": [
-          {
-            "id": 1,
-            "mood": "겨울숲"
-          },
-          {
-            "id": 2,
-            "mood": "부드러운"
-          },
-          {
-            "id": 3,
-            "mood": "자스민"
-          }
-        ],
-        "second_moods": [
-          {
-            "id": 1,
-            "mood": "초여름"
-          },
-          {
-            "id": 2,
-            "mood": "나무"
-          },
-          {
-            "id": 3,
-            "mood": "시원한"
-          }
-        ],
-        "third_moods": [
-          {
-            "id": 1,
-            "mood": "프루티"
-          },
-          {
-            "id": 2,
-            "mood": "따뜻한"
-          },
-          {
-            "id": 3,
-            "mood": "청량한"
-          }
-        ],
-        "fourth_moods": [
-          {
-            "id": 1,
-            "mood": "차분한"
-          },
-          {
-            "id": 2,
-            "mood": "깔끔함"
-          },
-          {
-            "id": 3,
-            "mood": "부드러운"
-          }
-        ]
-      }
+      "keywords": [
+        {
+          "id": 1,
+          "grade": "first",
+          "name": "겨울숲"
+        },
+        {
+          "id": 2,
+          "grade": "first",
+          "name": "부드러운"
+        },
+        {
+          "id": 3,
+          "grade": "first",
+          "name": "자스민"
+        },
+        {
+          "id": 4,
+          "grade": "second",
+          "name": "초여름"
+        },
+        {
+          "id": 5,
+          "grade": "second",
+          "name": "나무"
+        },
+        {
+          "id": 6,
+          "grade": "second",
+          "name": "시원한"
+        },
+        {
+          "id": 7,
+          "grade": "third",
+          "name": "프루티"
+        },
+        {
+          "id": 8,
+          "grade": "third",
+          "name": "따뜻한"
+        },
+        {
+          "id": 9,
+          "grade": "third",
+          "name": "청량한"
+        },
+        {
+          "id": 10,
+          "grade": "fourth",
+          "name": "차분한"
+        },
+        {
+          "id": 11,
+          "grade": "fourth",
+          "name": "깔끔함"
+        },
+        {
+          "id": 12,
+          "grade": "fourth",
+          "name": "부드러운"
+        }
+      ]
     },
     {
       "id": 2,
@@ -91,64 +95,68 @@
         "middle_note": ["Mandarin", "Leather"],
         "base_note": ["Cedarwood", "Orange", "Blood orange"]
       },
-      "keywords": {
-        "first_moods": [
-          {
-            "id": 1,
-            "mood": "겨울숲"
-          },
-          {
-            "id": 2,
-            "mood": "사랑스러운"
-          },
-          {
-            "id": 3,
-            "mood": "비누향"
-          }
-        ],
-        "second_moods": [
-          {
-            "id": 1,
-            "mood": "달달한"
-          },
-          {
-            "id": 2,
-            "mood": "커피"
-          },
-          {
-            "id": 3,
-            "mood": "푸르른"
-          }
-        ],
-        "third_moods": [
-          {
-            "id": 1,
-            "mood": "풀잎"
-          },
-          {
-            "id": 2,
-            "mood": "프리지아"
-          },
-          {
-            "id": 3,
-            "mood": "내추럴"
-          }
-        ],
-        "fourth_moods": [
-          {
-            "id": 1,
-            "mood": "귀여운"
-          },
-          {
-            "id": 2,
-            "mood": "달달한"
-          },
-          {
-            "id": 3,
-            "mood": "프루티"
-          }
-        ]
-      }
+      "keywords": [
+        {
+          "id": 1,
+          "grade": "first",
+          "name": "겨울숲"
+        },
+        {
+          "id": 2,
+          "grade": "first",
+          "name": "사랑스러운"
+        },
+        {
+          "id": 3,
+          "grade": "first",
+          "name": "비누향"
+        },
+        {
+          "id": 4,
+          "grade": "second",
+          "name": "달달한"
+        },
+        {
+          "id": 5,
+          "grade": "second",
+          "name": "커피"
+        },
+        {
+          "id": 6,
+          "grade": "second",
+          "name": "푸르른"
+        },
+        {
+          "id": 7,
+          "grade": "third",
+          "name": "풀잎"
+        },
+        {
+          "id": 8,
+          "grade": "third",
+          "name": "프리지아"
+        },
+        {
+          "id": 9,
+          "grade": "third",
+          "name": "내추럴"
+        },
+        {
+          "id": 10,
+          "grade": "fourth",
+          "name": "귀여운"
+        },
+        {
+          "id": 11,
+          "grade": "fourth",
+          "name": "달달한"
+        },
+        {
+          "id": 12,
+          "grade": "fourth",
+          "name": "프루티"
+        }
+      ]
     },
     {
       "id": 3,
@@ -164,64 +172,68 @@
       "notes": {
         "top_note": ["Honey"]
       },
-      "keywords": {
-        "first_moods": [
-          {
-            "id": 1,
-            "mood": "따뜻한"
-          },
-          {
-            "id": 2,
-            "mood": "내추럴"
-          },
-          {
-            "id": 3,
-            "mood": "청량한"
-          }
-        ],
-        "second_moods": [
-          {
-            "id": 1,
-            "mood": "차분한"
-          },
-          {
-            "id": 2,
-            "mood": "샤프한"
-          },
-          {
-            "id": 3,
-            "mood": "귀여운"
-          }
-        ],
-        "third_moods": [
-          {
-            "id": 1,
-            "mood": "데일리"
-          },
-          {
-            "id": 2,
-            "mood": "커피"
-          },
-          {
-            "id": 3,
-            "mood": "초콜릿"
-          }
-        ],
-        "fourth_moods": [
-          {
-            "id": 1,
-            "mood": "투명한"
-          },
-          {
-            "id": 2,
-            "mood": "초여름"
-          },
-          {
-            "id": 3,
-            "mood": "푸르른"
-          }
-        ]
-      }
+      "keywords": [
+        {
+          "id": 1,
+          "grade": "first",
+          "name": "따뜻한"
+        },
+        {
+          "id": 2,
+          "grade": "first",
+          "name": "내추럴"
+        },
+        {
+          "id": 3,
+          "grade": "first",
+          "name": "청량한"
+        },
+        {
+          "id": 4,
+          "grade": "second",
+          "name": "차분한"
+        },
+        {
+          "id": 5,
+          "grade": "second",
+          "name": "샤프한"
+        },
+        {
+          "id": 6,
+          "grade": "second",
+          "name": "귀여운"
+        },
+        {
+          "id": 7,
+          "grade": "third",
+          "name": "데일리"
+        },
+        {
+          "id": 8,
+          "grade": "third",
+          "name": "커피"
+        },
+        {
+          "id": 9,
+          "grade": "third",
+          "name": "초콜릿"
+        },
+        {
+          "id": 10,
+          "grade": "fourth",
+          "name": "투명한"
+        },
+        {
+          "id": 11,
+          "grade": "fourth",
+          "name": "초여름"
+        },
+        {
+          "id": 12,
+          "grade": "fourth",
+          "name": "푸르른"
+        }
+      ]
     },
     {
       "id": 4,
@@ -239,64 +251,68 @@
         "middle_note": ["Mandarin", "Gin", "Leather"],
         "base_note": ["Sandalwood", "Jasmine"]
       },
-      "keywords": {
-        "first_moods": [
-          {
-            "id": 1,
-            "mood": "어른스러운"
-          },
-          {
-            "id": 2,
-            "mood": "풀잎"
-          },
-          {
-            "id": 3,
-            "mood": "프리지아"
-          }
-        ],
-        "second_moods": [
-          {
-            "id": 1,
-            "mood": "내추럴"
-          },
-          {
-            "id": 2,
-            "mood": "과일"
-          },
-          {
-            "id": 3,
-            "mood": "귀여운"
-          }
-        ],
-        "third_moods": [
-          {
-            "id": 1,
-            "mood": "물"
-          },
-          {
-            "id": 2,
-            "mood": "샤프한"
-          },
-          {
-            "id": 3,
-            "mood": "시원한"
-          }
-        ],
-        "fourth_moods": [
-          {
-            "id": 1,
-            "mood": "가벼운"
-          },
-          {
-            "id": 2,
-            "mood": "섬세한"
-          },
-          {
-            "id": 3,
-            "mood": "나무"
-          }
-        ]
-      }
+      "keywords": [
+        {
+          "id": 1,
+          "grade": "first",
+          "name": "어른스러운"
+        },
+        {
+          "id": 2,
+          "grade": "first",
+          "name": "풀잎"
+        },
+        {
+          "id": 3,
+          "grade": "first",
+          "name": "프리지아"
+        },
+        {
+          "id": 4,
+          "grade": "second",
+          "name": "내추럴"
+        },
+        {
+          "id": 5,
+          "grade": "second",
+          "name": "과일"
+        },
+        {
+          "id": 6,
+          "grade": "second",
+          "name": "귀여운"
+        },
+        {
+          "id": 7,
+          "grade": "third",
+          "name": "물"
+        },
+        {
+          "id": 8,
+          "grade": "third",
+          "name": "샤프한"
+        },
+        {
+          "id": 9,
+          "grade": "third",
+          "name": "시원한"
+        },
+        {
+          "id": 10,
+          "grade": "fourth",
+          "name": "가벼운"
+        },
+        {
+          "id": 11,
+          "grade": "fourth",
+          "name": "섬세한"
+        },
+        {
+          "id": 12,
+          "grade": "fourth",
+          "name": "나무"
+        }
+      ]
     },
     {
       "id": 5,
@@ -314,64 +330,68 @@
         "middle_note": ["Geranium", "Honey", "Cedarwood", "Blond wood"],
         "base_note": ["Gin", "Lily of the valley"]
       },
-      "keywords": {
-        "first_moods": [
-          {
-            "id": 1,
-            "mood": "지적인"
-          },
-          {
-            "id": 2,
-            "mood": "청량한"
-          },
-          {
-            "id": 3,
-            "mood": "따뜻한"
-          }
-        ],
-        "second_moods": [
-          {
-            "id": 1,
-            "mood": "프루티"
-          },
-          {
-            "id": 2,
-            "mood": "달달한"
-          },
-          {
-            "id": 3,
-            "mood": "비누향"
-          }
-        ],
-        "third_moods": [
-          {
-            "id": 1,
-            "mood": "사랑스러운"
-          },
-          {
-            "id": 2,
-            "mood": "부드러운"
-          },
-          {
-            "id": 3,
-            "mood": "겨울숲"
-          }
-        ],
-        "fourth_moods": [
-          {
-            "id": 1,
-            "mood": "깔끔한"
-          },
-          {
-            "id": 2,
-            "mood": "차분한"
-          },
-          {
-            "id": 3,
-            "mood": "자스민"
-          }
-        ]
-      }
+      "keywords": [
+        {
+          "id": 1,
+          "grade": "first",
+          "name": "지적인"
+        },
+        {
+          "id": 2,
+          "grade": "first",
+          "name": "청량한"
+        },
+        {
+          "id": 3,
+          "grade": "first",
+          "name": "따뜻한"
+        },
+        {
+          "id": 4,
+          "grade": "second",
+          "name": "프루티"
+        },
+        {
+          "id": 5,
+          "grade": "second",
+          "name": "달달한"
+        },
+        {
+          "id": 6,
+          "grade": "second",
+          "name": "비누향"
+        },
+        {
+          "id": 7,
+          "grade": "third",
+          "name": "사랑스러운"
+        },
+        {
+          "id": 8,
+          "grade": "third",
+          "name": "부드러운"
+        },
+        {
+          "id": 9,
+          "grade": "third",
+          "name": "겨울숲"
+        },
+        {
+          "id": 10,
+          "grade": "fourth",
+          "name": "깔끔한"
+        },
+        {
+          "id": 11,
+          "grade": "fourth",
+          "name": "차분한"
+        },
+        {
+          "id": 12,
+          "grade": "fourth",
+          "name": "자스민"
+        }
+      ]
     },
     {
       "id": 6,
@@ -394,64 +414,68 @@
         "middle_note": ["Gin", "Woody", "Jasmine"],
         "base_note": ["Tonka been", "Blood orange"]
       },
-      "keywords": {
-        "first_moods": [
-          {
-            "id": 1,
-            "mood": "차분한"
-          },
-          {
-            "id": 2,
-            "mood": "깔끔한"
-          },
-          {
-            "id": 3,
-            "mood": "겨울숲"
-          }
-        ],
-        "second_moods": [
-          {
-            "id": 1,
-            "mood": "부드러운"
-          },
-          {
-            "id": 2,
-            "mood": "사랑스러운"
-          },
-          {
-            "id": 3,
-            "mood": "비누향"
-          }
-        ],
-        "third_moods": [
-          {
-            "id": 1,
-            "mood": "달달한"
-          },
-          {
-            "id": 2,
-            "mood": "프루티"
-          },
-          {
-            "id": 3,
-            "mood": "따뜻한"
-          }
-        ],
-        "fourth_moods": [
-          {
-            "id": 1,
-            "mood": "청량한"
-          },
-          {
-            "id": 2,
-            "mood": "지적인"
-          },
-          {
-            "id": 3,
-            "mood": "나무"
-          }
-        ]
-      }
+      "keywords": [
+        {
+          "id": 1,
+          "grade": "first",
+          "name": "차분한"
+        },
+        {
+          "id": 2,
+          "grade": "first",
+          "name": "깔끔한"
+        },
+        {
+          "id": 3,
+          "grade": "first",
+          "name": "겨울숲"
+        },
+        {
+          "id": 4,
+          "grade": "second",
+          "name": "부드러운"
+        },
+        {
+          "id": 5,
+          "grade": "second",
+          "name": "사랑스러운"
+        },
+        {
+          "id": 6,
+          "grade": "second",
+          "name": "비누향"
+        },
+        {
+          "id": 7,
+          "grade": "third",
+          "name": "달달한"
+        },
+        {
+          "id": 8,
+          "grade": "third",
+          "name": "프루티"
+        },
+        {
+          "id": 9,
+          "grade": "third",
+          "name": "따뜻한"
+        },
+        {
+          "id": 10,
+          "grade": "fourth",
+          "name": "청량한"
+        },
+        {
+          "id": 11,
+          "grade": "fourth",
+          "name": "지적인"
+        },
+        {
+          "id": 12,
+          "grade": "fourth",
+          "name": "나무"
+        }
+      ]
     },
     {
       "id": 7,
@@ -469,64 +493,68 @@
         "middle_note": ["Tonka been", "Amber"],
         "base_note": ["Rose", "Musk", "Gin", "Cedarwood"]
       },
-      "keywords": {
-        "first_moods": [
-          {
-            "id": 1,
-            "mood": "섬세한"
-          },
-          {
-            "id": 2,
-            "mood": "가벼운"
-          },
-          {
-            "id": 3,
-            "mood": "시원한"
-          }
-        ],
-        "second_moods": [
-          {
-            "id": 1,
-            "mood": "샤프한"
-          },
-          {
-            "id": 2,
-            "mood": "물"
-          },
-          {
-            "id": 3,
-            "mood": "귀여운"
-          }
-        ],
-        "third_moods": [
-          {
-            "id": 1,
-            "mood": "과일"
-          },
-          {
-            "id": 2,
-            "mood": "내추럴"
-          },
-          {
-            "id": 3,
-            "mood": "프리지아"
-          }
-        ],
-        "fourth_moods": [
-          {
-            "id": 1,
-            "mood": "풀잎"
-          },
-          {
-            "id": 2,
-            "mood": "어른스러운"
-          },
-          {
-            "id": 3,
-            "mood": "푸르른"
-          }
-        ]
-      }
+      "keywords": [
+        {
+          "id": 1,
+          "grade": "first",
+          "name": "섬세한"
+        },
+        {
+          "id": 2,
+          "grade": "first",
+          "name": "가벼운"
+        },
+        {
+          "id": 3,
+          "grade": "first",
+          "name": "시원한"
+        },
+        {
+          "id": 4,
+          "grade": "second",
+          "name": "샤프한"
+        },
+        {
+          "id": 5,
+          "grade": "second",
+          "name": "물"
+        },
+        {
+          "id": 6,
+          "grade": "second",
+          "name": "귀여운"
+        },
+        {
+          "id": 7,
+          "grade": "third",
+          "name": "과일"
+        },
+        {
+          "id": 8,
+          "grade": "third",
+          "name": "내추럴"
+        },
+        {
+          "id": 9,
+          "grade": "third",
+          "name": "프리지아"
+        },
+        {
+          "id": 10,
+          "grade": "fourth",
+          "name": "풀잎"
+        },
+        {
+          "id": 11,
+          "grade": "fourth",
+          "name": "어른스러운"
+        },
+        {
+          "id": 12,
+          "grade": "fourth",
+          "name": "푸르른"
+        }
+      ]
     },
     {
       "id": 8,
@@ -544,64 +572,68 @@
         "middle_note": ["Amber", "Sandalwood", "Jasmine", "Leather"],
         "base_note": ["Musk"]
       },
-      "keywords": {
-        "first_moods": [
-          {
-            "id": 1,
-            "mood": "초여름"
-          },
-          {
-            "id": 2,
-            "mood": "투명한"
-          },
-          {
-            "id": 3,
-            "mood": "초콜릿"
-          }
-        ],
-        "second_moods": [
-          {
-            "id": 1,
-            "mood": "차분한"
-          },
-          {
-            "id": 2,
-            "mood": "깔끔한"
-          },
-          {
-            "id": 3,
-            "mood": "겨울숲"
-          }
-        ],
-        "third_moods": [
-          {
-            "id": 1,
-            "mood": "차분한"
-          },
-          {
-            "id": 2,
-            "mood": "깔끔한"
-          },
-          {
-            "id": 3,
-            "mood": "겨울숲"
-          }
-        ],
-        "fourth_moods": [
-          {
-            "id": 1,
-            "mood": "부드러운"
-          },
-          {
-            "id": 2,
-            "mood": "사랑스러운"
-          },
-          {
-            "id": 3,
-            "mood": "비누향"
-          }
-        ]
-      }
+      "keywords": [
+        {
+          "id": 1,
+          "grade": "first",
+          "name": "초여름"
+        },
+        {
+          "id": 2,
+          "grade": "first",
+          "name": "투명한"
+        },
+        {
+          "id": 3,
+          "grade": "first",
+          "name": "초콜릿"
+        },
+        {
+          "id": 4,
+          "grade": "second",
+          "name": "차분한"
+        },
+        {
+          "id": 5,
+          "grade": "second",
+          "name": "깔끔한"
+        },
+        {
+          "id": 6,
+          "grade": "second",
+          "name": "겨울숲"
+        },
+        {
+          "id": 7,
+          "grade": "third",
+          "name": "차분한"
+        },
+        {
+          "id": 8,
+          "grade": "third",
+          "name": "깔끔한"
+        },
+        {
+          "id": 9,
+          "grade": "third",
+          "name": "겨울숲"
+        },
+        {
+          "id": 10,
+          "grade": "fourth",
+          "name": "부드러운"
+        },
+        {
+          "id": 11,
+          "grade": "fourth",
+          "name": "사랑스러운"
+        },
+        {
+          "id": 12,
+          "grade": "fourth",
+          "name": "비누향"
+        }
+      ]
     },
     {
       "id": 9,
@@ -619,64 +651,68 @@
         "middle_note": ["Rose", "Musk"],
         "base_note": ["Woody"]
       },
-      "keywords": {
-        "first_moods": [
-          {
-            "id": 1,
-            "mood": "달달한"
-          },
-          {
-            "id": 2,
-            "mood": "프루티"
-          },
-          {
-            "id": 3,
-            "mood": "따뜻한"
-          }
-        ],
-        "second_moods": [
-          {
-            "id": 1,
-            "mood": "청량한"
-          },
-          {
-            "id": 2,
-            "mood": "지적인"
-          },
-          {
-            "id": 3,
-            "mood": "나무"
-          }
-        ],
-        "third_moods": [
-          {
-            "id": 1,
-            "mood": "섬세한"
-          },
-          {
-            "id": 2,
-            "mood": "가벼운"
-          },
-          {
-            "id": 3,
-            "mood": "시원한"
-          }
-        ],
-        "fourth_moods": [
-          {
-            "id": 1,
-            "mood": "샤프한"
-          },
-          {
-            "id": 2,
-            "mood": "물"
-          },
-          {
-            "id": 3,
-            "mood": "귀여운"
-          }
-        ]
-      }
+      "keywords": [
+        {
+          "id": 1,
+          "grade": "first",
+          "name": "달달한"
+        },
+        {
+          "id": 2,
+          "grade": "first",
+          "name": "프루티"
+        },
+        {
+          "id": 3,
+          "grade": "first",
+          "name": "따뜻한"
+        },
+        {
+          "id": 4,
+          "grade": "second",
+          "name": "청량한"
+        },
+        {
+          "id": 5,
+          "grade": "second",
+          "name": "지적인"
+        },
+        {
+          "id": 6,
+          "grade": "second",
+          "name": "나무"
+        },
+        {
+          "id": 7,
+          "grade": "third",
+          "name": "섬세한"
+        },
+        {
+          "id": 8,
+          "grade": "third",
+          "name": "가벼운"
+        },
+        {
+          "id": 9,
+          "grade": "third",
+          "name": "시원한"
+        },
+        {
+          "id": 10,
+          "grade": "fourth",
+          "name": "샤프한"
+        },
+        {
+          "id": 11,
+          "grade": "fourth",
+          "name": "물"
+        },
+        {
+          "id": 12,
+          "grade": "fourth",
+          "name": "귀여운"
+        }
+      ]
     }
   ]
 }

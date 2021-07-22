@@ -1,5 +1,10 @@
-.Signup {
-    display: flex;
-    justify-content: center;
-    margin-top: 200px;
+@import '../../../styles/mixins';
+
+.signup {
+    &.container {
+        @include flex(center, center);
+        flex-direction: column;
+        margin: 120px auto 0;
+        padding: 70px 0;
+    }
 }

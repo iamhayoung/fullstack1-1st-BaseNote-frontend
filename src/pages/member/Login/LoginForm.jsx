@@ -12,17 +12,10 @@ class LoginForm extends Component {
     };
   }
 
-  handleIdInput = event => {
-    const { value } = event.target;
+  handleInput = event => {
+    const { value, name } = event.target;
     this.setState({
-      loginIdValue: value,
-    });
-  };
-
-  handlePwInput = event => {
-    const { value } = event.target;
-    this.setState({
-      loginPwValue: value,
+      [name]: value,
     });
   };
 
@@ -49,7 +42,6 @@ class LoginForm extends Component {
     })
       .then(response => response.json())
       .then(result => {
-        console.log(result.accessToken);
         if (result.accessToken) {
           localStorage.setItem('token', result.accessToken);
           this.props.history.push('/');
@@ -61,14 +53,15 @@ class LoginForm extends Component {
 
   render() {
     return (
-      <form className="LoginForm">
+      <form className="loginForm">
         <div className="idWrap">
-          <label className="loginIdName">아이디</label>
+          <label className="loginIdNam">아이디</label>
           <input
             className="loginInput loginId"
             type="text"
+            name="loginIdValue"
             placeholder="아이디를 입력해주세요"
-            onChange={this.handleIdInput}
+            onChange={this.handleInput}
           />
         </div>
         <div className="pwWrap">
@@ -76,8 +69,9 @@ class LoginForm extends Component {
           <input
             className="loginInput"
             type="password"
+            name="loginPwValue"
             placeholder="비밀번호를 입력해주세요"
-            onChange={this.handlePwInput}
+            onChange={this.handleInput}
           />
           <div className="linkWrap">
             <div className="forgotLink">
