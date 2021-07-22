@@ -1,25 +1,10 @@
-.Login {
-    display: flex;
-    justify-content: center;
-    margin-top: 200px;
+@import '../../../styles/mixins';
 
-    .title {
-        margin-bottom: 36px;
-        line-height: 1em;
-        color: rgb(0, 0, 0);
-        font-size: 26px;
-        font-weight: bold;
-        text-align: center;
-    }
-
-    .otherBtn {
-        width: 460px;
-        height: 48px;
-        margin-top: 15px;
-        background-color: rgb(215, 215, 216);
-        color: rgb(0, 0, 0);
-        font-weight: bold;
-        cursor: pointer;
-        user-select: none;
+.loginContainer {
+    &.container {
+        @include flex(center, center);
+        flex-direction: column;
+        margin: 120px auto 10px;
+        padding: 70px 0;
     }
 }

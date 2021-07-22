@@ -1,22 +1,20 @@
 import React, { Component } from 'react';
+import Container from '../../../components/Container/Container';
+import LoginTitle from './LoginTitle';
 import LoginForm from './LoginForm';
+import OtherLoginButton from './OtherLoginButton';
 import './Login.scss';
 
 class Login extends Component {
   render() {
     return (
-      <div className="Login">
+      <div className="login">
         <div>
-          <header className="title">로그인</header>
-          <div>
+          <Container option="loginContainer">
+            <LoginTitle />
             <LoginForm />
-          </div>
-          <button
-            className="otherBtn"
-            onClick={() => alert('BASENOTE팀과 함께해보실까요?')}
-          >
-            다른 방법으로 시작하기
-          </button>
+            <OtherLoginButton />
+          </Container>
         </div>
       </div>
     );
