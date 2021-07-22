@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { formatMoney } from '../../../utils';
 import { FaRegHeart } from 'react-icons/fa';
+import { formatMoney, onClickAlert } from '../../../utils';
+import { PURCHASE_MESSAGES } from '../../../config';
 import './ProductDetailSmallVolumeHead.scss';
 
 class ProductDetailSmallVolumeHead extends Component {
@@ -75,12 +76,18 @@ class ProductDetailSmallVolumeHead extends Component {
             <p className="totalPrice">{formatMoney(price * quantity)}원</p>
           </div>
           <div className="productDetailButtons">
-            <button className="productPurchaseButton buttonCommon">
-              단품장바구니
+            <button
+              className="productPurchaseButton buttonCommon"
+              onClick={() => onClickAlert(PURCHASE_MESSAGES.addCart)}
+            >
+              단품 장바구니
             </button>
             <div className="cardButton_Heart">
-              <button className="productCartButton buttonCommon">
-                데일리키트담기
+              <button
+                className="productCartButton buttonCommon"
+                onClick={() => onClickAlert(PURCHASE_MESSAGES.addDailyKit)}
+              >
+                데일리키트 담기
               </button>
               <FaRegHeart className="productHeartIcon" />
             </div>
