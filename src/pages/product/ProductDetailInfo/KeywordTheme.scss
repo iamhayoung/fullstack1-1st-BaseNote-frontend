@@ -1,60 +1,60 @@
 @mixin keywordTheme($name) {
     @if $name == 'default' {
-        .xlarge {
+        .first {
             background: rgba(227, 212, 203, 0.9);
         }
-        .large {
+        .second {
             background: rgba(252, 243, 234, 0.7);
         }
-        .medium {
+        .third {
             background: rgba(242, 230, 216, 0.8);
         }
-        .small {
+        .fourth {
             background: rgba(204, 210, 207, 0.7);
         }
     }
 
     @if $name == 'wind' {
-        .xlarge {
+        .first {
             background: rgba(234, 240, 247, 0.9);
         }
-        .large {
+        .second {
             background: rgba(243, 246, 250, 0.7);
         }
-        .medium {
+        .third {
             background: rgba(243, 241, 248, 0.8);
         }
-        .small {
+        .fourth {
             background: rgba(210, 215, 225, 0.7);
         }
     }
 
     @if $name == 'melt' {
-        .xlarge {
+        .first {
             background: rgba(171, 183, 192, 0.9);
         }
-        .large {
+        .second {
             background: rgba(192, 172, 173, 0.7);
         }
-        .medium {
+        .third {
             background: rgba(228, 223, 205, 0.8);
         }
-        .small {
+        .fourth {
             background: rgba(174, 185, 184, 0.7);
         }
     }
 
     @if $name == 'path' {
-        .xlarge {
+        .first {
             background: rgba(252, 231, 224, 0.9);
         }
-        .large {
+        .second {
             background: rgba(255, 242, 242, 0.7);
         }
-        .medium {
+        .third {
             background: rgba(249, 197, 193, 0.8);
         }
-        .small {
+        .fourth {
             background: rgba(239, 243, 249, 0.7);
         }
     }

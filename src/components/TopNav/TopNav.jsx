@@ -23,7 +23,7 @@ class TopNav extends Component {
             <MainLogo />
           </Link>
           <div className="NavIcons">
-            <Link to="/member">
+            <Link to="/member/login">
               <BsPerson className="LoginIcon" />
             </Link>
             <Link to="/order/cart">

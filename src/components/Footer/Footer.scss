@@ -1,0 +1,10 @@
+@import '../../styles/variables';
+
+.footer {
+    background: $black;
+
+    &.container {
+        margin: 0 auto;
+        padding: 75px 0 25px;
+    }
+}

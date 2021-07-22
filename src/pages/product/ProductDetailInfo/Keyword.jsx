@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Hashtags from './Hashtags';
+import Circle from './Circle';
 import './Keyword.scss';
 
 class Keyword extends Component {
@@ -15,26 +16,13 @@ class Keyword extends Component {
           사용자와 주변 사람들이 어떻게 느낄지 유추할 수 있습니다.
         </p>
         <Hashtags series={series} seriesNumber={series_number} name={name} />
-        <div className={`bubbles ${series ? series : ''}`}>
-          {keywords.first_moods.map(keyword => (
-            <div key={keyword.id} className="circle xlarge">
-              {keyword.mood}
-            </div>
-          ))}
-          {keywords.first_moods.map(keyword => (
-            <div key={keyword.id} className="circle large">
-              {keyword.mood}
-            </div>
-          ))}
-          {keywords.third_moods.map(keyword => (
-            <div key={keyword.id} className="circle medium">
-              {keyword.mood}
-            </div>
-          ))}
-          {keywords.fourth_moods.map(keyword => (
-            <div key={keyword.id} className="circle small">
-              {keyword.mood}
-            </div>
+        <div className={`bubbles ${series || ''}`}>
+          {keywords.map(keyword => (
+            <Circle
+              key={keyword.id}
+              mood={keyword.name}
+              grade={keyword.grade}
+            />
           ))}
         </div>
       </div>

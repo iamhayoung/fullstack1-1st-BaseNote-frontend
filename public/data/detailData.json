@@ -1,0 +1,718 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "작은 소년",
+      "series": "wind",
+      "series_number": "01",
+      "image_url": "https://images.unsplash.com/photo-1526505262320-81542978f63b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+      "price": {
+        "2.5ml": "4000",
+        "40ml": "48000"
+      },
+      "description": "옅은 시트러스와 플로럴을 알싸한 카디멈이 깔끔하게 정돈하는, 투명하고 차분한 향",
+      "notes": {
+        "top_note": ["Pink pepper", "Leather", "Gin"],
+        "middle_note": ["Rose", "Cedarwood"],
+        "base_note": ["Lily of the valley"]
+      },
+      "keywords": [
+        {
+          "id": 1,
+          "grade": "first",
+          "name": "겨울숲"
+        },
+        {
+          "id": 2,
+          "grade": "first",
+          "name": "부드러운"
+        },
+        {
+          "id": 3,
+          "grade": "first",
+          "name": "자스민"
+        },
+        {
+          "id": 4,
+          "grade": "second",
+          "name": "초여름"
+        },
+        {
+          "id": 5,
+          "grade": "second",
+          "name": "나무"
+        },
+        {
+          "id": 6,
+          "grade": "second",
+          "name": "시원한"
+        },
+        {
+          "id": 7,
+          "grade": "third",
+          "name": "프루티"
+        },
+        {
+          "id": 8,
+          "grade": "third",
+          "name": "따뜻한"
+        },
+        {
+          "id": 9,
+          "grade": "third",
+          "name": "청량한"
+        },
+        {
+          "id": 10,
+          "grade": "fourth",
+          "name": "차분한"
+        },
+        {
+          "id": 11,
+          "grade": "fourth",
+          "name": "깔끔함"
+        },
+        {
+          "id": 12,
+          "grade": "fourth",
+          "name": "부드러운"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "신스케의 솜사탕",
+      "series": "wind",
+      "series_number": "02",
+      "image_url": "https://images.unsplash.com/photo-1602473395999-7e8b95d173e4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2734&q=80",
+      "price": {
+        "2.5ml": "4000",
+        "40ml": "48000"
+      },
+      "description": "농도 짙은 자스민과 녹진한 바닐라, 짙게 깔린 우드 노트의 찐득한 만남",
+      "notes": {
+        "top_note": ["Blond wood, Musk"],
+        "middle_note": ["Mandarin", "Leather"],
+        "base_note": ["Cedarwood", "Orange", "Blood orange"]
+      },
+      "keywords": [
+        {
+          "id": 1,
+          "grade": "first",
+          "name": "겨울숲"
+        },
+        {
+          "id": 2,
+          "grade": "first",
+          "name": "사랑스러운"
+        },
+        {
+          "id": 3,
+          "grade": "first",
+          "name": "비누향"
+        },
+        {
+          "id": 4,
+          "grade": "second",
+          "name": "달달한"
+        },
+        {
+          "id": 5,
+          "grade": "second",
+          "name": "커피"
+        },
+        {
+          "id": 6,
+          "grade": "second",
+          "name": "푸르른"
+        },
+        {
+          "id": 7,
+          "grade": "third",
+          "name": "풀잎"
+        },
+        {
+          "id": 8,
+          "grade": "third",
+          "name": "프리지아"
+        },
+        {
+          "id": 9,
+          "grade": "third",
+          "name": "내추럴"
+        },
+        {
+          "id": 10,
+          "grade": "fourth",
+          "name": "귀여운"
+        },
+        {
+          "id": 11,
+          "grade": "fourth",
+          "name": "달달한"
+        },
+        {
+          "id": 12,
+          "grade": "fourth",
+          "name": "프루티"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "도토리의 추억",
+      "series": "wind",
+      "series_number": "03",
+      "image_url": "https://images.unsplash.com/photo-1602078794418-dba87dccba4d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=788&q=80",
+      "price": {
+        "2.5ml": "4000",
+        "40ml": "48000"
+      },
+      "description": "다람쥐가 좋아하는 고소한 도토리의 추억",
+      "notes": {
+        "top_note": ["Honey"]
+      },
+      "keywords": [
+        {
+          "id": 1,
+          "grade": "first",
+          "name": "따뜻한"
+        },
+        {
+          "id": 2,
+          "grade": "first",
+          "name": "내추럴"
+        },
+        {
+          "id": 3,
+          "grade": "first",
+          "name": "청량한"
+        },
+        {
+          "id": 4,
+          "grade": "second",
+          "name": "차분한"
+        },
+        {
+          "id": 5,
+          "grade": "second",
+          "name": "샤프한"
+        },
+        {
+          "id": 6,
+          "grade": "second",
+          "name": "귀여운"
+        },
+        {
+          "id": 7,
+          "grade": "third",
+          "name": "데일리"
+        },
+        {
+          "id": 8,
+          "grade": "third",
+          "name": "커피"
+        },
+        {
+          "id": 9,
+          "grade": "third",
+          "name": "초콜릿"
+        },
+        {
+          "id": 10,
+          "grade": "fourth",
+          "name": "투명한"
+        },
+        {
+          "id": 11,
+          "grade": "fourth",
+          "name": "초여름"
+        },
+        {
+          "id": 12,
+          "grade": "fourth",
+          "name": "푸르른"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "생각의 창의성",
+      "series": "melt",
+      "series_number": "01",
+      "image_url": "https://images.unsplash.com/photo-1489419714522-eb568919d2ed?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "price": {
+        "2.5ml": "4000",
+        "40ml": "48000"
+      },
+      "description": "머리가 맑아지는 도시 느낌의 향",
+      "notes": {
+        "top_note": ["Tonka been", "Geranium", "Cedarwood"],
+        "middle_note": ["Mandarin", "Gin", "Leather"],
+        "base_note": ["Sandalwood", "Jasmine"]
+      },
+      "keywords": [
+        {
+          "id": 1,
+          "grade": "first",
+          "name": "어른스러운"
+        },
+        {
+          "id": 2,
+          "grade": "first",
+          "name": "풀잎"
+        },
+        {
+          "id": 3,
+          "grade": "first",
+          "name": "프리지아"
+        },
+        {
+          "id": 4,
+          "grade": "second",
+          "name": "내추럴"
+        },
+        {
+          "id": 5,
+          "grade": "second",
+          "name": "과일"
+        },
+        {
+          "id": 6,
+          "grade": "second",
+          "name": "귀여운"
+        },
+        {
+          "id": 7,
+          "grade": "third",
+          "name": "물"
+        },
+        {
+          "id": 8,
+          "grade": "third",
+          "name": "샤프한"
+        },
+        {
+          "id": 9,
+          "grade": "third",
+          "name": "시원한"
+        },
+        {
+          "id": 10,
+          "grade": "fourth",
+          "name": "가벼운"
+        },
+        {
+          "id": 11,
+          "grade": "fourth",
+          "name": "섬세한"
+        },
+        {
+          "id": 12,
+          "grade": "fourth",
+          "name": "나무"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "카페인",
+      "series": "melt",
+      "series_number": "02",
+      "image_url": "https://images.unsplash.com/photo-1515471897120-85416077e011?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80",
+      "price": {
+        "2.5ml": "4000",
+        "40ml": "48000"
+      },
+      "description": "정신이 번쩍드는 커피 향",
+      "notes": {
+        "top_note": ["Vanilla", "Ginger"],
+        "middle_note": ["Geranium", "Honey", "Cedarwood", "Blond wood"],
+        "base_note": ["Gin", "Lily of the valley"]
+      },
+      "keywords": [
+        {
+          "id": 1,
+          "grade": "first",
+          "name": "지적인"
+        },
+        {
+          "id": 2,
+          "grade": "first",
+          "name": "청량한"
+        },
+        {
+          "id": 3,
+          "grade": "first",
+          "name": "따뜻한"
+        },
+        {
+          "id": 4,
+          "grade": "second",
+          "name": "프루티"
+        },
+        {
+          "id": 5,
+          "grade": "second",
+          "name": "달달한"
+        },
+        {
+          "id": 6,
+          "grade": "second",
+          "name": "비누향"
+        },
+        {
+          "id": 7,
+          "grade": "third",
+          "name": "사랑스러운"
+        },
+        {
+          "id": 8,
+          "grade": "third",
+          "name": "부드러운"
+        },
+        {
+          "id": 9,
+          "grade": "third",
+          "name": "겨울숲"
+        },
+        {
+          "id": 10,
+          "grade": "fourth",
+          "name": "깔끔한"
+        },
+        {
+          "id": 11,
+          "grade": "fourth",
+          "name": "차분한"
+        },
+        {
+          "id": 12,
+          "grade": "fourth",
+          "name": "자스민"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "저녁의 디저트",
+      "series": "melt",
+      "series_number": "03",
+      "image_url": "https://images.unsplash.com/photo-1615832494873-b0c52d519696?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2734&q=80",
+      "price": {
+        "2.5ml": "4000",
+        "40ml": "48000"
+      },
+      "description": "초콜릿의 달콤함을 머스크가 부드럽고 달콤하게 품은 부산 3대 향",
+      "notes": {
+        "top_note": [
+          "Vanilla",
+          "Geranium",
+          "Pink pepper",
+          "Lily of the valley"
+        ],
+        "middle_note": ["Gin", "Woody", "Jasmine"],
+        "base_note": ["Tonka been", "Blood orange"]
+      },
+      "keywords": [
+        {
+          "id": 1,
+          "grade": "first",
+          "name": "차분한"
+        },
+        {
+          "id": 2,
+          "grade": "first",
+          "name": "깔끔한"
+        },
+        {
+          "id": 3,
+          "grade": "first",
+          "name": "겨울숲"
+        },
+        {
+          "id": 4,
+          "grade": "second",
+          "name": "부드러운"
+        },
+        {
+          "id": 5,
+          "grade": "second",
+          "name": "사랑스러운"
+        },
+        {
+          "id": 6,
+          "grade": "second",
+          "name": "비누향"
+        },
+        {
+          "id": 7,
+          "grade": "third",
+          "name": "달달한"
+        },
+        {
+          "id": 8,
+          "grade": "third",
+          "name": "프루티"
+        },
+        {
+          "id": 9,
+          "grade": "third",
+          "name": "따뜻한"
+        },
+        {
+          "id": 10,
+          "grade": "fourth",
+          "name": "청량한"
+        },
+        {
+          "id": 11,
+          "grade": "fourth",
+          "name": "지적인"
+        },
+        {
+          "id": 12,
+          "grade": "fourth",
+          "name": "나무"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "바닷가 데이트",
+      "series": "path",
+      "series_number": "01",
+      "image_url": "https://images.unsplash.com/photo-1522098605161-cc0c1434c31a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2734&q=80",
+      "price": {
+        "2.5ml": "4000",
+        "40ml": "48000"
+      },
+      "description": "풋풋한 바다 향과 연한 푸른빛의 상큼한 시트러스와 달콤함 열매가 어우러진 산뜻 달콤한 향",
+      "notes": {
+        "top_note": ["Sandalwood", "Pink pepper", "Leather", "Vanilla"],
+        "middle_note": ["Tonka been", "Amber"],
+        "base_note": ["Rose", "Musk", "Gin", "Cedarwood"]
+      },
+      "keywords": [
+        {
+          "id": 1,
+          "grade": "first",
+          "name": "섬세한"
+        },
+        {
+          "id": 2,
+          "grade": "first",
+          "name": "가벼운"
+        },
+        {
+          "id": 3,
+          "grade": "first",
+          "name": "시원한"
+        },
+        {
+          "id": 4,
+          "grade": "second",
+          "name": "샤프한"
+        },
+        {
+          "id": 5,
+          "grade": "second",
+          "name": "물"
+        },
+        {
+          "id": 6,
+          "grade": "second",
+          "name": "귀여운"
+        },
+        {
+          "id": 7,
+          "grade": "third",
+          "name": "과일"
+        },
+        {
+          "id": 8,
+          "grade": "third",
+          "name": "내추럴"
+        },
+        {
+          "id": 9,
+          "grade": "third",
+          "name": "프리지아"
+        },
+        {
+          "id": 10,
+          "grade": "fourth",
+          "name": "풀잎"
+        },
+        {
+          "id": 11,
+          "grade": "fourth",
+          "name": "어른스러운"
+        },
+        {
+          "id": 12,
+          "grade": "fourth",
+          "name": "푸르른"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "푸른 오렌지길",
+      "series": "path",
+      "series_number": "02",
+      "image_url": "https://images.unsplash.com/photo-1552089123-2d26226fc2b7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "price": {
+        "2.5ml": "4000",
+        "40ml": "48000"
+      },
+      "description": "시원 상큼한 오렌지 꽃향기를 만다린과 각종 플로럴 노트로 더욱 달콤하게 살린 시트러스",
+      "notes": {
+        "top_note": ["Vanilla", "Ginger"],
+        "middle_note": ["Amber", "Sandalwood", "Jasmine", "Leather"],
+        "base_note": ["Musk"]
+      },
+      "keywords": [
+        {
+          "id": 1,
+          "grade": "first",
+          "name": "초여름"
+        },
+        {
+          "id": 2,
+          "grade": "first",
+          "name": "투명한"
+        },
+        {
+          "id": 3,
+          "grade": "first",
+          "name": "초콜릿"
+        },
+        {
+          "id": 4,
+          "grade": "second",
+          "name": "차분한"
+        },
+        {
+          "id": 5,
+          "grade": "second",
+          "name": "깔끔한"
+        },
+        {
+          "id": 6,
+          "grade": "second",
+          "name": "겨울숲"
+        },
+        {
+          "id": 7,
+          "grade": "third",
+          "name": "차분한"
+        },
+        {
+          "id": 8,
+          "grade": "third",
+          "name": "깔끔한"
+        },
+        {
+          "id": 9,
+          "grade": "third",
+          "name": "겨울숲"
+        },
+        {
+          "id": 10,
+          "grade": "fourth",
+          "name": "부드러운"
+        },
+        {
+          "id": 11,
+          "grade": "fourth",
+          "name": "사랑스러운"
+        },
+        {
+          "id": 12,
+          "grade": "fourth",
+          "name": "비누향"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "편안한 인센스",
+      "series": "path",
+      "series_number": "03",
+      "image_url": "https://images.unsplash.com/photo-1613750255797-7d4f877615df?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80",
+      "price": {
+        "2.5ml": "4000",
+        "40ml": "48000"
+      },
+      "description": "잘 숙성된 와인에서 나는 달큼함과 이국적이고 따뜻한 향이 어우러져 편안한 느낌을 풍기는 향",
+      "notes": {
+        "top_note": ["Mandarin", "Orange", "Rose"],
+        "middle_note": ["Rose", "Musk"],
+        "base_note": ["Woody"]
+      },
+      "keywords": [
+        {
+          "id": 1,
+          "grade": "first",
+          "name": "달달한"
+        },
+        {
+          "id": 2,
+          "grade": "first",
+          "name": "프루티"
+        },
+        {
+          "id": 3,
+          "grade": "first",
+          "name": "따뜻한"
+        },
+        {
+          "id": 4,
+          "grade": "second",
+          "name": "청량한"
+        },
+        {
+          "id": 5,
+          "grade": "second",
+          "name": "지적인"
+        },
+        {
+          "id": 6,
+          "grade": "second",
+          "name": "나무"
+        },
+        {
+          "id": 7,
+          "grade": "third",
+          "name": "섬세한"
+        },
+        {
+          "id": 8,
+          "grade": "third",
+          "name": "가벼운"
+        },
+        {
+          "id": 9,
+          "grade": "third",
+          "name": "시원한"
+        },
+        {
+          "id": 10,
+          "grade": "fourth",
+          "name": "샤프한"
+        },
+        {
+          "id": 11,
+          "grade": "fourth",
+          "name": "물"
+        },
+        {
+          "id": 12,
+          "grade": "fourth",
+          "name": "귀여운"
+        }
+      ]
+    }
+  ]
+}

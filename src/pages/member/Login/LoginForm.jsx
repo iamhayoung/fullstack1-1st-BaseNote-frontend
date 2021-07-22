@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
+import { LOGIN_API } from '../../../config';
 import './LoginForm.scss';
 
 class LoginForm extends Component {
@@ -12,14 +13,9 @@ class LoginForm extends Component {
   }
 
   handleIdInput = event => {
+    const { value, name } = event.target;
     this.setState({
-      loginIdValue: event.target.value,
-    });
-  };
-
-  handlePwInput = event => {
-    this.setState({
-      loginPwValue: event.target.value,
+      [name]: value,
     });
   };
 
@@ -34,28 +30,37 @@ class LoginForm extends Component {
       return;
     }
 
-    fetch('', {
+    fetch(`${LOGIN_API}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        user_account: this.state.loginIdValue,
+        userAccount: this.state.loginIdValue,
         password: this.state.loginPwValue,
       }),
-    }).then(response => response.json());
+    })
+      .then(response => response.json())
+      .then(result => {
+        if (result.accessToken) {
+          localStorage.setItem('token', result.accessToken);
+          this.props.history.push('/');
+        } else {
+          alert('아이디 또는 비밀번호가 일치하지 않습니다.');
+        }
+      });
   };
 
   render() {
     return (
-      <form className="LoginForm">
+      <form className="loginForm">
         <div className="idWrap">
           <label className="loginIdName">아이디</label>
           <input
             className="loginInput loginId"
             type="text"
             placeholder="아이디를 입력해주세요"
-            onChange={this.handleIdInput}
+            onChange={this.handleInput}
           />
         </div>
         <div className="pwWrap">
@@ -64,7 +69,7 @@ class LoginForm extends Component {
             className="loginInput"
             type="password"
             placeholder="비밀번호를 입력해주세요"
-            onChange={this.handlePwInput}
+            onChange={this.handleInput}
           />
           <div className="linkWrap">
             <div className="forgotLink">
@@ -85,4 +90,4 @@ class LoginForm extends Component {
   }
 }
 
-export default LoginForm;
+export default withRouter(LoginForm);
