@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
+import { PRODUCTS_LIST_API } from '../../config';
 import Loader from '../../components/Loader/Loader';
 import Container from '../../components/Container/Container';
 import ProductCard from './Components/ProductCard/ProductCard';
-import { PRODUCTS_LIST_API } from '../../config';
 import './Category.scss';
 
 class Category extends Component {
@@ -35,6 +35,7 @@ class Category extends Component {
       console.error(error);
     }
   };
+
   componentDidMount() {
     this.getProductData();
   }
@@ -47,19 +48,19 @@ class Category extends Component {
 
   render() {
     const { isLoading, productData } = this.state;
+    const { volume } = this.props.match.params;
 
     return isLoading ? (
       <Loader />
     ) : (
       <div className="category">
+        <div className="categoryTitle">
+          <h2>{volume}</h2>
+        </div>
         <Container option="wide listGrid">
           {productData.map(products => {
             return (
-              <ProductCard
-                key={products.id}
-                {...products}
-                volume={this.props.match.params.volume}
-              />
+              <ProductCard key={products.id} {...products} volume={volume} />
             );
           })}
         </Container>
