@@ -1,12 +1,12 @@
 @import '../../styles/mixins';
 @import '../../styles/variables';
-.TopNavWrapper {
+.TopNav {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 10000;
-    .TopNav {
+    .TopNavWrapper {
         @include flex(space-around, center);
         background-color: $white;
         border-bottom: 3px solid $grey-20;

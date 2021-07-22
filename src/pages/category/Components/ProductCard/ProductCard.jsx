@@ -5,10 +5,6 @@ import './ProductCard.scss';
 class ProductCard extends Component {
   goToDetail = () => {
     this.props.history.push(`/product/${this.props.volume}/${this.props.id}`);
-    console.log('this.porps:', this.props);
-    console.log('id:', this.props.id);
-    console.log('volume:', this.props.volume);
-    console.log('URL:', `/product/${this.props.volume}/${this.props.id}`);
   };
 
   render() {

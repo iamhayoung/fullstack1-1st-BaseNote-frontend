@@ -11,8 +11,8 @@ import { AiOutlineShopping } from 'react-icons/ai';
 class TopNav extends Component {
   render() {
     return (
-      <div className="TopNavWrapper">
-        <div className="TopNav">
+      <div className="TopNav">
+        <div className="TopNavWrapper">
           <ul className="navCategory">
             <TopNavTeller title="Perfume teller" />
             <TopNavHiddenMenuWrapper />

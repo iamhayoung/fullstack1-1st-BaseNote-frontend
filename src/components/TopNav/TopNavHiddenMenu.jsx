@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './TopNavHiddenMenu.scss';
 import { Link } from 'react-router-dom';
+import { sideMenuImageTitles } from './data';
 
 class TopNavHiddenMenu extends Component {
   constructor() {
@@ -25,20 +26,12 @@ class TopNavHiddenMenu extends Component {
   render() {
     const { hiddenMenuNum, title } = this.props;
     const { hiddenCard, index } = this.state;
-    const sideMenuImageTitles = {
-      Images: [
-        'https://images.unsplash.com/photo-1582616698198-f978da534162?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fHBlcmZ1bWV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
-        'https://images.unsplash.com/photo-1612871178341-33f941a841e3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTg2fHxwZXJmdW1lfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
-        'https://images.unsplash.com/photo-1588159509476-9a71061bd9e2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDIxfHxwZXJmdW1lfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
-        'https://images.unsplash.com/photo-1612871178341-33f941a841e3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTg2fHxwZXJmdW1lfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
-      ],
-      Titles: ['데일리키트', '40ml', 'SET', 'GOODS'],
-    };
+
     return (
       <>
         <Link
           to="/category/2.5ml"
-          className="hiddenMenuTitle"
+          className="TopNavHiddenMenu"
           onMouseOver={() => this.showThumbnail(hiddenMenuNum)}
           onMouseLeave={this.hideThumbnail}
         >
@@ -57,11 +50,11 @@ class TopNavHiddenMenu extends Component {
             <>
               <img
                 className="hiddenCardImage"
-                src={sideMenuImageTitles.Images[index]}
+                src={sideMenuImageTitles.images[index]}
                 alt="참고사진"
               />
               <span className="hiddenCardDescription">
-                {sideMenuImageTitles.Titles[index]}
+                {sideMenuImageTitles.titles[index]}
               </span>
             </>
           )}

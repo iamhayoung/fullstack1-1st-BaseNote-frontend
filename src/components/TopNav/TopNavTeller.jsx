@@ -7,7 +7,7 @@ class TopNavTeller extends Component {
     const { title } = this.props;
 
     return (
-      <Link to="/" className="navCategoryLink">
+      <Link to="/" className="TopNavTeller">
         {title}
       </Link>
     );

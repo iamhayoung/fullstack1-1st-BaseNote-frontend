@@ -7,7 +7,7 @@ class TopNavMenu extends Component {
     const { menuTitle } = this.props;
 
     return (
-      <Link to="/" className="navCategoryLink">
+      <Link to="/" className="TopNavMenu">
         {menuTitle}
       </Link>
     );
