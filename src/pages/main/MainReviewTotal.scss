@@ -1,0 +1,6 @@
+@import '../../styles/mixins';
+.totalReviewWrapper {
+    @include flex(space-around, center);
+    margin-top: 50px;
+    margin-bottom: 40px;
+}

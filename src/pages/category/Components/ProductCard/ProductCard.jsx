@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
+import { formatMoney } from '../../../../utils';
 import './ProductCard.scss';
 
 class ProductCard extends Component {
@@ -20,12 +21,12 @@ class ProductCard extends Component {
             {series}
             &nbsp;
             {seriesNumber}
-            <span>.{name}</span>
+            <span>. {name}</span>
           </p>
           <div className="amount">
             {volume}
             <span className="divider">/</span>
-            {price}
+            {formatMoney(price)}
           </div>
         </div>
       </div>

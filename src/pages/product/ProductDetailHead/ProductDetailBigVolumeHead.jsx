@@ -1,35 +1,38 @@
 import React, { Component } from 'react';
 import { FaRegHeart } from 'react-icons/fa';
+import { formatMoney, onClickAlert } from '../../../utils';
+import { PURCHASE_MESSAGES } from '../../../config';
 import './ProductDetailBigVolumeHead.scss';
 
 class ProductDetailBigVolumeHead extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      clicks: 1,
+      quantity: 1,
       show: true,
     };
   }
+
   click40mlOption = () => {
     this.setState({
       option_40ml_HiddenBox: false,
     });
   };
 
-  incrementItem = () => {
-    this.setState({ clicks: this.state.clicks + 1 });
+  increaseQuantity = () => {
+    this.setState({ quantity: this.state.quantity + 1 });
   };
-  decreaseItem = () => {
-    if (this.state.clicks > 1) {
-      this.setState({ clicks: this.state.clicks - 1 });
+
+  decreaseQuantity = () => {
+    const { quantity } = this.state;
+
+    if (quantity > 1) {
+      this.setState({ quantity: quantity - 1 });
     }
-  };
-  formatMoney = n => {
-    return (Math.round(n * 100) / 100).toLocaleString();
   };
 
   render() {
-    const { clicks, option_40ml_HiddenBox } = this.state;
+    const { quantity, option_40ml_HiddenBox, show } = this.state;
     const { name, image_url, price, series_number, series } =
       this.props.productData;
 
@@ -46,7 +49,7 @@ class ProductDetailBigVolumeHead extends Component {
           <div className="productDetailTitle">
             {series} {series_number}. {name}
           </div>
-          <div className="productDetailPrice">{this.formatMoney(price)}원</div>
+          <div className="productDetailPrice">{formatMoney(price)}원</div>
           <select className="productOption" onChange={this.click40mlOption}>
             <option value="productOptionTitle">
               -[필수] 옵션을 선택해 주세요 -
@@ -66,34 +69,40 @@ class ProductDetailBigVolumeHead extends Component {
               <button
                 type="button"
                 className="only_40ml_MinusButton"
-                onClick={this.decreaseItem}
+                onClick={this.decreaseQuantity}
               >
                 -
               </button>
               <div className="hiddenQuantity">
-                {this.state.show ? <h2>{this.state.clicks}</h2> : ''}
+                {show ? <h2>{quantity}</h2> : ''}
               </div>
               <button
                 type="button"
                 className="only_40ml_PlusButton"
-                onClick={this.incrementItem}
+                onClick={this.increaseQuantity}
               >
                 +
               </button>
             </div>
             <span className="productDetailOptionPrice">
-              {this.formatMoney(price * clicks)}원
+              {formatMoney(price * quantity)}원
             </span>
           </div>
           <div className="productTotalPrice">
             <p className="totalPriceTitle">총 상품금액</p>
-            <p className="totalPrice">{this.formatMoney(price * clicks)}원</p>
+            <p className="totalPrice">{formatMoney(price * quantity)}원</p>
           </div>
           <div className="productDetailButtons">
-            <button className="productPurchaseButton buttonCommon">
-              바로구매
+            <button
+              className="productPurchaseButton buttonCommon"
+              onClick={() => onClickAlert(PURCHASE_MESSAGES.complete)}
+            >
+              바로 구매
             </button>
-            <button className="productNaverPurchaseButton buttonCommon">
+            <button
+              className="productNaverPurchaseButton buttonCommon"
+              onClick={() => onClickAlert(PURCHASE_MESSAGES.naverPayComplete)}
+            >
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtfSR-h7jsc9ADW5NBa-KbcW_Mb4VpR6nj2KzJDeIDC5N8Nruxq2dJUgYXkjI_wuPB9TA&usqp=CAU"
                 alt="NaverIcon"
@@ -102,7 +111,10 @@ class ProductDetailBigVolumeHead extends Component {
               네이버로 구매하기
             </button>
             <div className="cardButton_Heart">
-              <button className="productCartButton buttonCommon">
+              <button
+                className="productCartButton buttonCommon"
+                onClick={() => onClickAlert(PURCHASE_MESSAGES.addCart)}
+              >
                 장바구니
               </button>
               <FaRegHeart className="productHeartIcon" />

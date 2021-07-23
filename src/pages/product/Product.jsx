@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Loader from '../../components/Loader/Loader';
 import Container from '../../components/Container/Container';
 import ProductDetailBigVolumeHead from './ProductDetailHead/ProductDetailBigVolumeHead';
 import ProductDetailSmallVolumeHead from './ProductDetailHead/ProductDetailSmallVolumeHead';
@@ -10,6 +11,7 @@ class Product extends Component {
     super();
     this.state = {
       productData: {},
+      isLoading: true,
     };
   }
 
@@ -29,9 +31,11 @@ class Product extends Component {
         const productData = result.products.filter(
           data => data.id === parseInt(id)
         );
+        console.log('location:', this.props);
+
         productData[0].price = productData[0].price[volume];
 
-        return this.setState({ productData: productData[0] });
+        return this.setState({ productData: productData[0], isLoading: false });
       }
     } catch (error) {
       console.error(error);
@@ -43,10 +47,12 @@ class Product extends Component {
   }
 
   render() {
-    const { productData } = this.state;
+    const { isLoading, productData } = this.state;
     const { volume } = this.props.match.params;
 
-    return (
+    return isLoading ? (
+      <Loader />
+    ) : (
       <Container>
         {volume === '40ml' ? (
           <ProductDetailBigVolumeHead productData={productData} />

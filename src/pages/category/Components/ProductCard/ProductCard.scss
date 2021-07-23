@@ -1,4 +1,5 @@
-@import '../../../../Styles/mixins';
+@import '../../../../styles/variables';
+@import '../../../../styles/mixins';
 
 .productCard {
     @include flex(space-around, center);
@@ -26,9 +27,10 @@
 
     .amount {
         @include flex(center, center);
-        font-size: 10px;
-        font-weight: 200px;
         margin-bottom: 30px;
+        color: $grey-70;
+        font-size: 14px;
+        font-weight: 400;
 
         .divider {
             margin: 10px 5px;

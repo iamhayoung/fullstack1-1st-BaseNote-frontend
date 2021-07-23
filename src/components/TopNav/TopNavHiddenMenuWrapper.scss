@@ -1,0 +1,28 @@
+.TopNavHiddenMenuWrapper {
+    margin-left: 20px;
+    margin-right: 30px;
+    padding-bottom: 60px;
+    height: 101px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.hideButton {
+    .hiddenMenu {
+        position: absolute;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        top: 100px;
+        left: 0px;
+        width: 1800px;
+        height: 260px;
+        background-color: rgba(255, 255, 255, 0.9);
+        font-weight: normal;
+        z-index: 100;
+    }
+    .menuInactive {
+        display: none;
+        height: 60px;
+    }
+}
