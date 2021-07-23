@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './TopNavHiddenMenuWrapper.scss';
 import { Link } from 'react-router-dom';
 import TopNavHiddenMenu from './TopNavHiddenMenu';
 import { hiddenMenuTitle } from './data';
+import './TopNavHiddenMenuWrapper.scss';
 
 class TopNavHiddenMenuWrapper extends Component {
   constructor() {
@@ -26,6 +26,7 @@ class TopNavHiddenMenuWrapper extends Component {
 
   render() {
     const { hiddenMenu } = this.state;
+
     return (
       <Link
         to="/"
@@ -35,7 +36,7 @@ class TopNavHiddenMenuWrapper extends Component {
       >
         SHOP
         <ul
-          className={hiddenMenu ? 'hiddenMenu menuInactive' : 'hiddenMenu'}
+          className={`hiddenMenu ${hiddenMenu ? 'menuInactive' : ''}`}
           onMouseLeave={this.mouseLeave}
         >
           {hiddenMenuTitle.map(menuData => {

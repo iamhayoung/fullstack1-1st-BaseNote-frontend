@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './TopNavTeller.scss';
 import { Link } from 'react-router-dom';
+import './TopNavTeller.scss';
 
 class TopNavTeller extends Component {
   render() {

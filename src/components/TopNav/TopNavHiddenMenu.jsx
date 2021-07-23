@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './TopNavHiddenMenu.scss';
 import { Link } from 'react-router-dom';
 import { sideMenuImageTitles } from './data';
+import './TopNavHiddenMenu.scss';
 
 class TopNavHiddenMenu extends Component {
   constructor() {

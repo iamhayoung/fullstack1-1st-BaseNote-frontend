@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './TopNav.scss';
 import { Link } from 'react-router-dom';
 import TopNavTeller from './TopNavTeller';
 import TopNavHiddenMenuWrapper from './TopNavHiddenMenuWrapper';
@@ -7,6 +6,7 @@ import TopNavMenu from './TopNavMenu';
 import { ReactComponent as MainLogo } from '../../assets/logo-BASENOTE_icon.svg';
 import { BsPerson } from 'react-icons/bs';
 import { AiOutlineShopping } from 'react-icons/ai';
+import './TopNav.scss';
 
 class TopNav extends Component {
   render() {
