@@ -9,13 +9,13 @@ class MainImageTitle extends Component {
     };
   }
 
-  HiddenMenuAppear = index => {
+  hiddenMenuAppear = index => {
     this.setState({
       index,
     });
   };
 
-  HiddenMenuDisappear = () => {
+  hiddenMenuDisappear = () => {
     this.setState({
       index: -1,
     });
@@ -38,8 +38,8 @@ class MainImageTitle extends Component {
         <div className={videoTitle2ClassName}>{subTitle}</div>
         <button
           className={index === titleNum ? 'changedColor' : 'findDetails'}
-          onMouseOver={() => this.HiddenMenuAppear(titleNum)}
-          onMouseLeave={this.HiddenMenuDisappear}
+          onMouseOver={() => this.hiddenMenuAppear(titleNum)}
+          onMouseLeave={this.hiddenMenuDisappear}
         >
           {buttonTitle}
         </button>
