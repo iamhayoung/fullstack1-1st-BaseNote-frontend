@@ -58,8 +58,13 @@ BackEnd
 
 ---
 
-- Trello, Slack, GitHub, Postman
-
+<br/>
+<p align="center">
+<img src="https://img.shields.io/badge/Trello-0052CC?style=flat&logo=Trello&logoColor=white"/></a>
+<img src="https://img.shields.io/badge/Slack-4A154B?style=flat&logo=Slack&logoColor=white"/></a>
+<img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=GitHub&logoColor=white"/></a>
+<img src="https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=Postman&logoColor=white"/></a>
+<br/>
 <br/>
 
 ## 구현 기능 상세
@@ -115,6 +120,14 @@ BackEnd
   - 로그인 성공 시 메인페이지로 이동
   - 로그인 성공 시 로컬 스토리지에 access token 저장
 - 회원가입
+
   - 회원가입시 특정 항목을 입력하지 않았을 때, 그 항목에 해당하는 alert를 띄움
   - 비밀번호 유효성 검사
   - 회원가입 성공 시 로그인 페이지로 이동
+
+  ## Reference
+
+  ***
+
+  - 이 프로젝트는 파펨 사이트를 참조하여 학습목적으로 만들었습니다. 이 코드를 활용하여 이득을 취하거나 무단 배포할 경우 법적으로 문제될 수 있습니다.
+  - 이 프로젝트에서 사용하고 있는 사진과 동영상은 unsplash와 pixabay에서 공유받은 Free 이미지 및 동영상이므로 해당 프로젝트 외부인이 사용할 수 없습니다.
