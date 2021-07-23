@@ -42,8 +42,10 @@ class TopNavHiddenMenuWrapper extends Component {
           {hiddenMenuTitle.map(menuData => {
             return (
               <TopNavHiddenMenu
+                key={menuData.id}
                 hiddenMenuNum={menuData.hiddenMenuNum}
                 title={menuData.title}
+                path={menuData.path}
               />
             );
           })}

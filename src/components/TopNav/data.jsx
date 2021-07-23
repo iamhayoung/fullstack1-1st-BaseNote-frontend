@@ -13,21 +13,25 @@ const hiddenMenuTitle = [
     id: 1,
     hiddenMenuNum: '0',
     title: '2.5ml/데일리키트',
+    path: '2.5ml',
   },
   {
     id: 2,
     hiddenMenuNum: '1',
     title: '40ml',
+    path: '40ml',
   },
   {
     id: 3,
     hiddenMenuNum: '2',
     title: ' SET',
+    path: '',
   },
   {
     id: 4,
     hiddenMenuNum: '3',
     title: ' GOODS',
+    path: '',
   },
 ];
 

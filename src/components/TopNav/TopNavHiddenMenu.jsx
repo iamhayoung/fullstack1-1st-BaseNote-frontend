@@ -24,13 +24,13 @@ class TopNavHiddenMenu extends Component {
   };
 
   render() {
-    const { hiddenMenuNum, title } = this.props;
+    const { hiddenMenuNum, title, path } = this.props;
     const { hiddenCard, index } = this.state;
 
     return (
       <>
         <Link
-          to="/category/2.5ml"
+          to={`/category/${path}`}
           className="TopNavHiddenMenu"
           onMouseOver={() => this.showThumbnail(hiddenMenuNum)}
           onMouseLeave={this.hideThumbnail}

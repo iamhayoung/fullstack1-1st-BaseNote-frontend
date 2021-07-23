@@ -61,7 +61,6 @@ class LoginForm extends Component {
             type="text"
             name="loginIdValue"
             placeholder="아이디를 입력해주세요"
-            name="loginIdValue"
             onChange={this.handleInput}
           />
         </div>
@@ -72,7 +71,6 @@ class LoginForm extends Component {
             type="password"
             name="loginPwValue"
             placeholder="비밀번호를 입력해주세요"
-            name="loginPwValue"
             onChange={this.handleInput}
           />
           <div className="linkWrap">
