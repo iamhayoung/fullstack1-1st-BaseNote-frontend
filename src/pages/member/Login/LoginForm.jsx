@@ -30,7 +30,7 @@ class LoginForm extends Component {
       return;
     }
 
-    fetch(`${LOGIN_API}`, {
+    fetch(LOGIN_API, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -55,7 +55,7 @@ class LoginForm extends Component {
     return (
       <form className="loginForm">
         <div className="idWrap">
-          <label className="loginIdNam">아이디</label>
+          <label className="loginIdName">아이디</label>
           <input
             className="loginInput loginId"
             type="text"

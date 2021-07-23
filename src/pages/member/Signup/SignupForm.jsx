@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 import { SIGNUP_API } from '../../../config';
 import './SignupForm.scss';
 
@@ -30,7 +31,7 @@ class SignupForm extends Component {
   };
 
   signup = () => {
-    fetch(`${SIGNUP_API}`, {
+    fetch(SIGNUP_API, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -40,11 +41,14 @@ class SignupForm extends Component {
         userAccount: this.state.id,
         email: this.state.email,
         phoneNumber: this.state.phoneNumber,
-        password: this.state.pw,
+        password: this.state.password,
       }),
     })
       .then(response => response.json())
-      .then(result => {});
+      .then(result => {
+        alert('회원가입을 축하드립니다🥳!!');
+        this.props.history.push('/member/login');
+      });
   };
 
   signupCheck = () => {
@@ -76,10 +80,14 @@ class SignupForm extends Component {
     }
     if (password !== passwordCheck) {
       alert('비밀번호가 일치하지 않습니다');
+      return;
     }
     if (password.length < 5) {
       alert('패스워드 항목이 4자(개) 이상으로 해주십시오.');
+      return;
     }
+
+    this.signup();
   };
 
   render() {
@@ -161,4 +169,4 @@ class SignupForm extends Component {
   }
 }
 
-export default SignupForm;
+export default withRouter(SignupForm);
