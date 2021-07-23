@@ -5,25 +5,29 @@ import './CartTable.scss';
 
 class CartTable extends Component {
   render() {
+    const { cartItems } = this.props;
+
     return (
       <table className="cartTable">
         <thead>
           <CartTableHeadRow />
         </thead>
         <tbody>
-          <CartTableDataRow
-            series="wind"
-            seriesNumber="03"
-            name="오후의 디저트"
-          />
-          <CartTableDataRow
-            series="time"
-            seriesNumber="02"
-            name="포근한 겨울밤"
-          />
+          {cartItems.length === 0 ? (
+            <tr className="cartTableDataRow isEmpty">
+              <td colSpan="5" className="emptyCartColumn">
+                🛒&nbsp;&nbsp;장바구니에 담은 상품이 없습니다.
+              </td>
+            </tr>
+          ) : (
+            cartItems.map(item => (
+              <CartTableDataRow key={item.cartItemId} {...item} />
+            ))
+          )}
         </tbody>
       </table>
     );
   }
 }
+
 export default CartTable;

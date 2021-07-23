@@ -1,0 +1,33 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.loader {
+    &.container {
+        @include flex(center, center);
+        flex-direction: column;
+        height: calc(100vh - 104px);
+        margin: 0 auto;
+    }
+
+    .loadingSpinner {
+        @include keyframes(spinner) {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(1turn);
+            }
+        }
+        @include animation('spinner 2s linear infinite');
+
+        color: $grey-60;
+        font-size: 50px;
+    }
+
+    .loadingText {
+        margin-top: 20px;
+        font-size: 15px;
+        font-weight: 200;
+        text-transform: capitalize;
+    }
+}

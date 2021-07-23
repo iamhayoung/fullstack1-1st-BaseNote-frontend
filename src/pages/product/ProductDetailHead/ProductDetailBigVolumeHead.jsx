@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { formatMoney } from '../../../utils';
 import { FaRegHeart } from 'react-icons/fa';
+import { formatMoney, onClickAlert } from '../../../utils';
+import { PURCHASE_MESSAGES } from '../../../config';
 import './ProductDetailBigVolumeHead.scss';
 
 class ProductDetailBigVolumeHead extends Component {
@@ -92,10 +93,16 @@ class ProductDetailBigVolumeHead extends Component {
             <p className="totalPrice">{formatMoney(price * quantity)}원</p>
           </div>
           <div className="productDetailButtons">
-            <button className="productPurchaseButton buttonCommon">
-              바로구매
+            <button
+              className="productPurchaseButton buttonCommon"
+              onClick={() => onClickAlert(PURCHASE_MESSAGES.complete)}
+            >
+              바로 구매
             </button>
-            <button className="productNaverPurchaseButton buttonCommon">
+            <button
+              className="productNaverPurchaseButton buttonCommon"
+              onClick={() => onClickAlert(PURCHASE_MESSAGES.naverPayComplete)}
+            >
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtfSR-h7jsc9ADW5NBa-KbcW_Mb4VpR6nj2KzJDeIDC5N8Nruxq2dJUgYXkjI_wuPB9TA&usqp=CAU"
                 alt="NaverIcon"
@@ -104,7 +111,10 @@ class ProductDetailBigVolumeHead extends Component {
               네이버로 구매하기
             </button>
             <div className="cardButton_Heart">
-              <button className="productCartButton buttonCommon">
+              <button
+                className="productCartButton buttonCommon"
+                onClick={() => onClickAlert(PURCHASE_MESSAGES.addCart)}
+              >
                 장바구니
               </button>
               <FaRegHeart className="productHeartIcon" />
