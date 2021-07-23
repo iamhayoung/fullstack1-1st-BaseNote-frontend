@@ -20,7 +20,8 @@ class Cart extends Component {
     const accessToken = localStorage.getItem('token');
 
     if (!accessToken) {
-      return this.setState({ isLoading: false });
+      this.setState({ isLoading: false });
+      return;
     }
 
     fetch(CART_API, {
@@ -38,10 +39,11 @@ class Cart extends Component {
             '안전한 서비스 이용을 위해, 일정 이용 시간 초과 후 자동 로그아웃 되었습니다.\n다시 로그인 후 이용해주세요 🌸'
           ) && this.props.history.push('/member/login');
 
-          return this.setState({ isLoading: false });
+          this.setState({ isLoading: false });
+          return;
         }
 
-        return this.setState({ cartItems: result.cartItems, isLoading: false });
+        this.setState({ cartItems: result.cartItems, isLoading: false });
       })
       .catch(error => console.error(error));
   };
