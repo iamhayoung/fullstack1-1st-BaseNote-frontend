@@ -4,10 +4,10 @@ import './MainReview.scss';
 
 class MainReview extends Component {
   render() {
-    const { reviewTitle, reviewText, reviewDate, src } = this.props;
+    const { reviewTitle, reviewText, reviewDate, src, volume, id } = this.props;
     return (
       <div className="reviewWrapper">
-        <Link to="/product/40ml/1">
+        <Link to={`/product/${volume}/${id}`}>
           <div className="review">
             <div className="reviewTitle">{reviewTitle}</div>
             <div className="reviewText">{reviewText}</div>
