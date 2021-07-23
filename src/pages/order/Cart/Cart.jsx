@@ -45,7 +45,7 @@ class Cart extends Component {
 
         this.setState({ cartItems: result.cartItems, isLoading: false });
       })
-      .catch(error => console.error(error));
+      .catch(console.error);
   };
 
   componentDidMount() {

@@ -42,7 +42,7 @@ class CartTableDataRow extends Component {
           ) && this.props.history.push('/member/login');
         }
       })
-      .catch(error => console.error(error));
+      .catch(console.error);
   };
 
   increaseQuantity = () => {
