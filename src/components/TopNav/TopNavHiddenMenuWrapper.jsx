@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import TopNavHiddenMenu from './TopNavHiddenMenu';
 import { hiddenMenuTitle } from './data';
 import './TopNavHiddenMenuWrapper.scss';
@@ -28,8 +27,7 @@ class TopNavHiddenMenuWrapper extends Component {
     const { hiddenMenu } = this.state;
 
     return (
-      <Link
-        to="/"
+      <span
         className="TopNavHiddenMenuWrapper hideButton"
         onMouseOver={this.showMenu}
         onMouseLeave={this.hideMenu}
@@ -50,7 +48,7 @@ class TopNavHiddenMenuWrapper extends Component {
             );
           })}
         </ul>
-      </Link>
+      </span>
     );
   }
 }
