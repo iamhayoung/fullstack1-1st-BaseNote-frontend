@@ -1,8 +1,14 @@
-# BASENOTE Front-end/Back-end 소개
+# BASENOTE Front-end 소개
 
 ### Find Your Scent, 가장 나다운 향을 찾아드립니다.
 
 - 향수 판매 사이트 [파펨](https://paffem.me/) 클론 프로젝트
+
+## 🎬 프로젝트 Demo 영상
+
+---
+
+[BASENOTE Demo 영상](https://vimeo.com/579384175)
 
 ## 💁‍♀️💁‍♂️ 팀원
 
@@ -12,6 +18,8 @@
 - [김민성](https://github.com/Minseongkimm)
 - [오송미](https://github.com/songmiO)
 - [감하영](https://github.com/iamhayoung)
+
+---
 
 ## 📆 프로젝트 기간
 
@@ -67,7 +75,13 @@ BackEnd
 <br/>
 <br/>
 
-## 구현 기능 상세
+## Back-end Repository
+
+---
+
+[BASENOTE Back-end Repository Link](https://github.com/wecode-bootcamp-korea/fullstack1-1st-BaseNote-backend)
+
+## Front-end 구현 기능 상세
 
 ---
 
@@ -118,9 +132,10 @@ BackEnd
 - 로그인
 
 - 아이디와 비밀번호가 일치하지 않으면 alert를 띄우는 기능
+
   - 로그인 성공 시 메인페이지로 이동
   - 로그인 성공 시 로컬 스토리지에 access token 저장
- 
+
 - 회원가입
 
   - 회원가입시 특정 항목을 입력하지 않았을 때, 그 항목에 해당하는 alert를 띄움
